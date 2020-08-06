@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace proyectoFinal
 {
-    public partial class Login : Form
+    public partial class CuadroCalificaiciones : Form
     {
-        public Login()
+        public CuadroCalificaiciones()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            PantallaPrincipal Pp = new PantallaPrincipal();
-            Pp.Show();
-            this.Hide();
         }
     }
 }

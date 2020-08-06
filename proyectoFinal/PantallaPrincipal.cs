@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace proyectoFinal
 {
-    public partial class Login : Form
+    public partial class PantallaPrincipal : Form
     {
-        public Login()
+        public PantallaPrincipal()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void calificacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PantallaPrincipal Pp = new PantallaPrincipal();
-            Pp.Show();
-            this.Hide();
+
         }
     }
 }
