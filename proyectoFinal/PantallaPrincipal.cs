@@ -19,7 +19,9 @@ namespace proyectoFinal
 
         private void calificacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            CuadroCalificaiciones CC = new CuadroCalificaiciones();
+            CC.MdiParent = this;
+            CC.Show();
         }
     }
 }

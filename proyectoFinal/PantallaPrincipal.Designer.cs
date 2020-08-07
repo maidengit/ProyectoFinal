@@ -51,7 +51,7 @@
             this.moduloEducativoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calificacionesToolStripMenuItem});
             this.moduloEducativoToolStripMenuItem.Name = "moduloEducativoToolStripMenuItem";
-            this.moduloEducativoToolStripMenuItem.Size = new System.Drawing.Size(173, 29);
+            this.moduloEducativoToolStripMenuItem.Size = new System.Drawing.Size(173, 32);
             this.moduloEducativoToolStripMenuItem.Text = "Modulo Educativo";
             // 
             // calificacionesToolStripMenuItem
