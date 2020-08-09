@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="consultaDeAsignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaDeAsignaturas.Designer.cs">
+      <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="CuadroCalificaiciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="consultaDeAsignaturas.resx">
+      <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CuadroCalificaiciones.resx">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </EmbeddedResource>
