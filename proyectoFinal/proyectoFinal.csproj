@@ -55,6 +55,12 @@
     <Compile Include="CuadroCalificaiciones.Designer.cs">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="listadoEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listadoEstudiantes.Designer.cs">
+      <DependentUpon>listadoEstudiantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CuadroCalificaiciones.resx">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listadoEstudiantes.resx">
+      <DependentUpon>listadoEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -112,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_244.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
