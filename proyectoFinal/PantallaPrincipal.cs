@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyectoFinal
 {
-    public partial class PantallaPrincipal : Form
+    public partial class Menú : Form
     {
-        public PantallaPrincipal()
+        public Menú()
         {
             InitializeComponent();
         }
@@ -41,6 +41,12 @@ namespace proyectoFinal
             consultaDeAsignaturas ca = new consultaDeAsignaturas();
             ca.MdiParent = this;
             ca.Show();
+        }
+
+        private void consultaDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaUsuarios cu = new ConsultaUsuarios();
+            cu.Show();
         }
     }
 }
