@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace proyectoFinal
 {
-    public class ConexionN
+    class ConexionN
     {
         public SqlConnection con;
         SqlCommand cmd;
@@ -20,7 +20,8 @@ namespace proyectoFinal
             {
                 con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True");
                 con.Open();
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
             }
@@ -45,40 +46,46 @@ namespace proyectoFinal
                 Console.WriteLine(e.ToString());
             }
         }
-        public void Opcional (DataGridView tabla,string sexo,string estado,string grado,string materia,string nombre,string tipo)
+        public void Opcional(DataGridView tabla, string sexo, string estado, string grado, string materia, string nombre, string tipo)
         {
             try
             {
                 string sql = "select Nombre,Grado,Parcial,Materia,Calificacion from vCalificaciones ";
-                if ( (sexo.Equals("nada")==false) || (grado.Equals("nada") == false) || (estado.Equals("nada") == false) || (materia.Equals("nada") == false) || (nombre.Equals("nada") == false) || (tipo.Equals("nada") == false))
+                if ((sexo.Equals("nada") == false) || (grado.Equals("nada") == false) || (estado.Equals("nada") == false) || (materia.Equals("nada") == false) || (nombre.Equals("nada") == false) || (tipo.Equals("nada") == false))
                 {
                     sql += "where ";
-                    if (sexo.Equals("nada") == false) {
-                        sql += " sexo = '"+sexo+"' " ;
+                    if (sexo.Equals("nada") == false)
+                    {
+                        sql += " sexo = '" + sexo + "' ";
                         sql += "and";
                     }
-                    if (estado.Equals("nada") == false) {
+                    if (estado.Equals("nada") == false)
+                    {
                         sql += " estado = '" + estado + "' ";
                         sql += "and";
                     }
-                    if (materia.Equals("nada") == false) {
+                    if (materia.Equals("nada") == false)
+                    {
                         sql += " materia = '" + materia + "' ";
                         sql += "and";
                     }
-                    if (nombre.Equals("nada") == false) {
+                    if (nombre.Equals("nada") == false)
+                    {
                         sql += " nombre like '%" + nombre + "%' ";
                         sql += "and";
                     }
-                    if (grado.Equals("nada") == false) {
+                    if (grado.Equals("nada") == false)
+                    {
                         sql += " grado = '" + grado + "' ";
                         sql += "and";
                     }
-                    if (tipo.Equals("nada") == false) {
+                    if (tipo.Equals("nada") == false)
+                    {
                         sql += " tipo = '" + tipo + "' ";
                         sql += "and";
                     }
-                    sql = sql.Remove(sql.Length - 3); 
-                }                               
+                    sql = sql.Remove(sql.Length - 3);
+                }
                 MessageBox.Show(sql);
                 cmd = new SqlCommand(sql, con);
                 cmd.ExecuteNonQuery();
@@ -92,12 +99,12 @@ namespace proyectoFinal
                 Console.WriteLine(e.ToString());
             }
         }
-        public void llenarComboBox(ComboBox comboBox,string tabla,string campo)
+        public void llenarComboBox(ComboBox comboBox, string tabla, string campo)
         {
             try
             {
                 string sql = "select * from " + tabla;
-                cmd = new SqlCommand(sql,con);
+                cmd = new SqlCommand(sql, con);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
@@ -107,7 +114,7 @@ namespace proyectoFinal
             }
             catch (Exception e)
             {
-                Console.WriteLine("Algo paso"+e.ToString());
+                Console.WriteLine("Algo paso" + e.ToString());
             }
         }
     }
