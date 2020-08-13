@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CuadroCalificaiciones));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbGrado = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbEstudiante = new System.Windows.Forms.ComboBox();
+            this.cbAsignatura = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbParcial = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nmCalificacion = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmCalificacion)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,71 +67,68 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Grado:";
             // 
-            // comboBox1
+            // cbGrado
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(26, 162);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(378, 30);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "Seleccione un grado";
+            this.cbGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGrado.ForeColor = System.Drawing.Color.Black;
+            this.cbGrado.FormattingEnabled = true;
+            this.cbGrado.Location = new System.Drawing.Point(26, 162);
+            this.cbGrado.Name = "cbGrado";
+            this.cbGrado.Size = new System.Drawing.Size(378, 30);
+            this.cbGrado.TabIndex = 3;
+            this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 222);
+            this.label3.Location = new System.Drawing.Point(22, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Estudiante:";
             // 
-            // comboBox2
+            // cbEstudiante
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(26, 247);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(378, 30);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.Text = "Seleccione un estudiante";
+            this.cbEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstudiante.ForeColor = System.Drawing.Color.Black;
+            this.cbEstudiante.FormattingEnabled = true;
+            this.cbEstudiante.Location = new System.Drawing.Point(26, 337);
+            this.cbEstudiante.Name = "cbEstudiante";
+            this.cbEstudiante.Size = new System.Drawing.Size(378, 30);
+            this.cbEstudiante.TabIndex = 5;
             // 
-            // comboBox3
+            // cbAsignatura
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(26, 337);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(378, 30);
-            this.comboBox3.TabIndex = 9;
-            this.comboBox3.Text = "Seleccione una asignatura";
+            this.cbAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAsignatura.ForeColor = System.Drawing.Color.Black;
+            this.cbAsignatura.FormattingEnabled = true;
+            this.cbAsignatura.Location = new System.Drawing.Point(26, 247);
+            this.cbAsignatura.Name = "cbAsignatura";
+            this.cbAsignatura.Size = new System.Drawing.Size(378, 30);
+            this.cbAsignatura.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 312);
+            this.label4.Location = new System.Drawing.Point(22, 222);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 22);
             this.label4.TabIndex = 8;
             this.label4.Text = "Asignatura:";
             // 
-            // comboBox4
+            // cbParcial
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(560, 162);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(378, 30);
-            this.comboBox4.TabIndex = 7;
-            this.comboBox4.Text = "Seleccione un grado";
+            this.cbParcial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbParcial.ForeColor = System.Drawing.Color.Black;
+            this.cbParcial.FormattingEnabled = true;
+            this.cbParcial.Location = new System.Drawing.Point(560, 162);
+            this.cbParcial.Name = "cbParcial";
+            this.cbParcial.Size = new System.Drawing.Size(378, 30);
+            this.cbParcial.TabIndex = 7;
             // 
             // label5
             // 
@@ -140,9 +137,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(556, 137);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 22);
+            this.label5.Size = new System.Drawing.Size(78, 22);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Grado:";
+            this.label5.Text = "Parcial:";
             // 
             // label6
             // 
@@ -155,14 +152,14 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Calificacion:";
             // 
-            // numericUpDown1
+            // nmCalificacion
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.ForeColor = System.Drawing.Color.Gray;
-            this.numericUpDown1.Location = new System.Drawing.Point(560, 250);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(378, 28);
-            this.numericUpDown1.TabIndex = 11;
+            this.nmCalificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmCalificacion.ForeColor = System.Drawing.Color.Black;
+            this.nmCalificacion.Location = new System.Drawing.Point(560, 250);
+            this.nmCalificacion.Name = "nmCalificacion";
+            this.nmCalificacion.Size = new System.Drawing.Size(378, 28);
+            this.nmCalificacion.TabIndex = 11;
             // 
             // button1
             // 
@@ -192,20 +189,21 @@
             this.ClientSize = new System.Drawing.Size(990, 595);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nmCalificacion);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbAsignatura);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cbParcial);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbEstudiante);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbGrado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CuadroCalificaiciones";
             this.Text = "Calificaiciones";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Load += new System.EventHandler(this.CuadroCalificaiciones_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nmCalificacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,16 +213,16 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.ComboBox cbGrado;
+        public System.Windows.Forms.ComboBox cbAsignatura;
+        public System.Windows.Forms.ComboBox cbEstudiante;
+        public System.Windows.Forms.ComboBox cbParcial;
+        public System.Windows.Forms.NumericUpDown nmCalificacion;
     }
 }
