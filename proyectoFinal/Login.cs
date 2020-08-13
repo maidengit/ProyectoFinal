@@ -19,9 +19,10 @@ namespace proyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PantallaPrincipal Pp = new PantallaPrincipal();
+            Menú Pp = new Menú();
             Pp.Show();
             this.Hide();
+
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)

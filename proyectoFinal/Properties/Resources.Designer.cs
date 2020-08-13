@@ -61,11 +61,30 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Data Source = DESKTOP-R0IB2V5; Initial Catalog = proyescuela; Integrated Security = True;.
+        /// </summary>
+        internal static string cadenaConexion {
+            get {
+                return ResourceManager.GetString("cadenaConexion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap fon2 {
             get {
                 object obj = ResourceManager.GetObject("fon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_244 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_244", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
