@@ -27,7 +27,7 @@ namespace proyectoFinal
 
         private void btnListadoAsignaturas_Click(object sender, EventArgs e)
         {
-            consultaDeAsignaturas link = new consultaDeAsignaturas();
+            listadoAsignaturas link = new listadoAsignaturas();
             //link.MdiParent = this;
             link.Show();
         }
@@ -141,9 +141,13 @@ namespace proyectoFinal
         private void btnListadoEstudiantes_Click_1(object sender, EventArgs e)
         {
             listadoEstudiantes link = new listadoEstudiantes();
-            //link.MdiParent = this;
             link.Show();
-            //this.Visible = false;
+        }
+
+        private void btnListadoAsignaturas_Click_1(object sender, EventArgs e)
+        {
+            listadoEstudiantes link = new listadoEstudiantes();
+            link.Show();
         }
     }
 }

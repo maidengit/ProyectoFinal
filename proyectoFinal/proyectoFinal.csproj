@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Desktop\Analisis y Sistemas\proy\ICONOS\btn\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Archivos\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -59,12 +59,6 @@
     <Compile Include="ConsultaAsignaturaAdministrativa.Designer.cs">
       <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
     </Compile>
-    <Compile Include="consultaDeAsignaturas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="consultaDeAsignaturas.Designer.cs">
-      <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConsultaEmpleadoAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +82,12 @@
     </Compile>
     <Compile Include="IngresoEmpleado.Designer.cs">
       <DependentUpon>IngresoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listadoAsignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listadoAsignaturas.Designer.cs">
+      <DependentUpon>listadoAsignaturas.cs</DependentUpon>
     </Compile>
     <Compile Include="listadoEstudiantes.cs">
       <SubType>Form</SubType>
@@ -124,9 +124,6 @@
     <EmbeddedResource Include="ConsultaAsignaturaAdministrativa.resx">
       <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="consultaDeAsignaturas.resx">
-      <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEmpleadoAdministrativo.resx">
       <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresoEmpleado.resx">
       <DependentUpon>IngresoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listadoAsignaturas.resx">
+      <DependentUpon>listadoAsignaturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listadoEstudiantes.resx">
       <DependentUpon>listadoEstudiantes.cs</DependentUpon>

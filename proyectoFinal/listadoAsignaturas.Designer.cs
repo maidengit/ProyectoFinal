@@ -1,6 +1,6 @@
 ﻿namespace proyectoFinal
 {
-    partial class listadoEstudiantes
+    partial class listadoAsignaturas
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menupic = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.EmpleadoWrapper = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             this.MenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
+            this.panel1.SuspendLayout();
             this.EmpleadoWrapper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
             this.SuspendLayout();
@@ -128,9 +130,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(75, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 25);
+            this.label1.Size = new System.Drawing.Size(232, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Listado de Estudiantes";
+            this.label1.Text = "Listado de Asignaturas";
             // 
             // menupic
             // 
@@ -146,11 +148,20 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 58);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(61, 392);
             this.panel1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(3, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 195);
+            this.label3.TabIndex = 0;
+            this.label3.Paint += new System.Windows.Forms.PaintEventHandler(this.label3_Paint);
             // 
             // EmpleadoWrapper
             // 
@@ -178,7 +189,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 15);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Estudiante:";
+            this.label6.Text = "Asignatura:";
             // 
             // label5
             // 
@@ -269,7 +280,7 @@
             this.Tabla.Size = new System.Drawing.Size(704, 316);
             this.Tabla.TabIndex = 9;
             // 
-            // listadoEstudiantes
+            // listadoAsignaturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,7 +289,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MenuSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "listadoEstudiantes";
+            this.Name = "listadoAsignaturas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaEmpleadoAdministrativo";
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).EndInit();
@@ -288,6 +299,7 @@
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.EmpleadoWrapper.ResumeLayout(false);
             this.EmpleadoWrapper.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
@@ -309,6 +321,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbAignatura;
         private System.Windows.Forms.DataGridView Tabla;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
