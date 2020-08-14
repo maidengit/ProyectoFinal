@@ -19,7 +19,7 @@ namespace proyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menú Pp = new Menú();
+            Menu Pp = new Menu();
             Pp.Show();
             this.Hide();
 

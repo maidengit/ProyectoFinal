@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Analisis y Sistemas\proy\ICONOS\btn\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -50,11 +53,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionN.cs" />
+    <Compile Include="ConsultaAsignaturaAdministrativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaAsignaturaAdministrativa.Designer.cs">
+      <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
+    </Compile>
     <Compile Include="consultaDeAsignaturas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="consultaDeAsignaturas.Designer.cs">
       <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaEmpleadoAdministrativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaEmpleadoAdministrativo.Designer.cs">
+      <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultaUsuarios.cs">
       <SubType>Form</SubType>
@@ -67,6 +82,12 @@
     </Compile>
     <Compile Include="CuadroCalificaiciones.Designer.cs">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoEmpleado.Designer.cs">
+      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="listadoEstudiantes.cs">
       <SubType>Form</SubType>
@@ -86,11 +107,11 @@
     <Compile Include="MantenimientoCalificaciones.Designer.cs">
       <DependentUpon>MantenimientoCalificaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaPrincipal.cs">
+    <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PantallaPrincipal.Designer.cs">
-      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,14 +121,23 @@
     <Compile Include="RegistroUsuarios.Designer.cs">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConsultaAsignaturaAdministrativa.resx">
+      <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consultaDeAsignaturas.resx">
       <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaEmpleadoAdministrativo.resx">
+      <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaUsuarios.resx">
       <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CuadroCalificaiciones.resx">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoEmpleado.resx">
+      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listadoEstudiantes.resx">
       <DependentUpon>listadoEstudiantes.cs</DependentUpon>
@@ -118,8 +148,8 @@
     <EmbeddedResource Include="MantenimientoCalificaciones.resx">
       <DependentUpon>MantenimientoCalificaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaPrincipal.resx">
-      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +182,117 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot_244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrativo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asignatura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calificaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_ 2 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Educacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estudiante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize Window_2 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_2 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporteria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore Window 2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrativo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asignatura1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calificaciones1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Educacio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estudiante1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporteria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_ 2 48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize Window_2 48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_2 48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore Window 2_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Educacio2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporteria2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
