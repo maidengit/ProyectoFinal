@@ -81,6 +81,15 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-76J3QBF\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True.
+        /// </summary>
+        internal static string cadena {
+            get {
+                return ResourceManager.GetString("cadena", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Data Source = DESKTOP-R0IB2V5; Initial Catalog = proyescuela; Integrated Security = True;.
         /// </summary>
         internal static string cadenaConexion {
