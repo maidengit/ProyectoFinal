@@ -39,9 +39,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.EmpleadoWrapper = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.docente = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -167,9 +167,9 @@
             // EmpleadoWrapper
             // 
             this.EmpleadoWrapper.Controls.Add(this.textBox1);
-            this.EmpleadoWrapper.Controls.Add(this.label7);
+            this.EmpleadoWrapper.Controls.Add(this.labelID);
             this.EmpleadoWrapper.Controls.Add(this.label6);
-            this.EmpleadoWrapper.Controls.Add(this.label5);
+            this.EmpleadoWrapper.Controls.Add(this.docente);
             this.EmpleadoWrapper.Controls.Add(this.label4);
             this.EmpleadoWrapper.Controls.Add(this.button1);
             this.EmpleadoWrapper.Controls.Add(this.label2);
@@ -189,17 +189,17 @@
             this.textBox1.Size = new System.Drawing.Size(221, 20);
             this.textBox1.TabIndex = 19;
             // 
-            // label7
+            // labelID
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(404, 3);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Identidad";
-            this.label7.Visible = false;
+            this.labelID.AutoSize = true;
+            this.labelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelID.Location = new System.Drawing.Point(404, 3);
+            this.labelID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(67, 15);
+            this.labelID.TabIndex = 18;
+            this.labelID.Text = "Identidad";
+            this.labelID.Visible = false;
             // 
             // label6
             // 
@@ -212,16 +212,16 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "Asignatura:";
             // 
-            // label5
+            // docente
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(86, 3);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "null";
+            this.docente.AutoSize = true;
+            this.docente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.docente.Location = new System.Drawing.Point(86, 3);
+            this.docente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.docente.Name = "docente";
+            this.docente.Size = new System.Drawing.Size(31, 15);
+            this.docente.TabIndex = 16;
+            this.docente.Text = "null";
             // 
             // label4
             // 
@@ -338,8 +338,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label labelID;
+        public System.Windows.Forms.Label docente;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

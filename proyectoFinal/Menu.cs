@@ -141,16 +141,17 @@ namespace proyectoFinal
         private void btnListadoEstudiantes_Click_1(object sender, EventArgs e)
         {
             listadoEstudiantes link = new listadoEstudiantes();
-            link.label5.Text = this.label2.Text;
-            link.label7.Text = this.label3.Text;
+            link.docente.Text = this.Nombre.Text;
+            link.labelID.Text = this.labelID.Text;
             link.Show();
         }
 
         private void btnListadoAsignaturas_Click_1(object sender, EventArgs e)
         {
-            listadoEstudiantes link = new listadoEstudiantes();
-            link.label5.Text = this.label2.Text;
-            link.label7.Text = this.label3.Text;
+            listadoAsignaturas link = new listadoAsignaturas();
+            link.docente.Text = this.Nombre.Text;
+            link.labelID.Text = this.labelID.Text;
+            link.Show();
             link.Show();
         }
 

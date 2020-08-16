@@ -44,13 +44,15 @@
             this.Maximizarpic = new System.Windows.Forms.PictureBox();
             this.btnAsignatura = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MenuWrapper = new System.Windows.Forms.Panel();
+            this.btnConsultaUsuarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListadoEstudiantes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListadoAsignaturas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCalificaciones = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEstudiante = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnConsultaUsuarios = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Nombre = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
@@ -373,6 +375,8 @@
             // 
             // MenuWrapper
             // 
+            this.MenuWrapper.Controls.Add(this.labelID);
+            this.MenuWrapper.Controls.Add(this.Nombre);
             this.MenuWrapper.Controls.Add(this.btnConsultaUsuarios);
             this.MenuWrapper.Controls.Add(this.btnListadoEstudiantes);
             this.MenuWrapper.Controls.Add(this.btnListadoAsignaturas);
@@ -386,6 +390,43 @@
             this.MenuWrapper.Name = "MenuWrapper";
             this.MenuWrapper.Size = new System.Drawing.Size(800, 450);
             this.MenuWrapper.TabIndex = 5;
+            // 
+            // btnConsultaUsuarios
+            // 
+            this.btnConsultaUsuarios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btnConsultaUsuarios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnConsultaUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btnConsultaUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsultaUsuarios.BorderRadius = 0;
+            this.btnConsultaUsuarios.ButtonText = "Usuarios";
+            this.btnConsultaUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultaUsuarios.DisabledColor = System.Drawing.Color.Gray;
+            this.btnConsultaUsuarios.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnConsultaUsuarios.Iconimage = global::proyectoFinal.Properties.Resources.estudiante;
+            this.btnConsultaUsuarios.Iconimage_right = null;
+            this.btnConsultaUsuarios.Iconimage_right_Selected = null;
+            this.btnConsultaUsuarios.Iconimage_Selected = null;
+            this.btnConsultaUsuarios.IconMarginLeft = 0;
+            this.btnConsultaUsuarios.IconMarginRight = 0;
+            this.btnConsultaUsuarios.IconRightVisible = true;
+            this.btnConsultaUsuarios.IconRightZoom = 0D;
+            this.btnConsultaUsuarios.IconVisible = true;
+            this.btnConsultaUsuarios.IconZoom = 90D;
+            this.btnConsultaUsuarios.IsTab = false;
+            this.btnConsultaUsuarios.Location = new System.Drawing.Point(349, 201);
+            this.btnConsultaUsuarios.Name = "btnConsultaUsuarios";
+            this.btnConsultaUsuarios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btnConsultaUsuarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.btnConsultaUsuarios.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnConsultaUsuarios.selected = false;
+            this.btnConsultaUsuarios.Size = new System.Drawing.Size(270, 100);
+            this.btnConsultaUsuarios.TabIndex = 8;
+            this.btnConsultaUsuarios.Text = "Usuarios";
+            this.btnConsultaUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultaUsuarios.Textcolor = System.Drawing.Color.Black;
+            this.btnConsultaUsuarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaUsuarios.Visible = false;
+            this.btnConsultaUsuarios.Click += new System.EventHandler(this.btnConsultaUsuarios_Click);
             // 
             // btnListadoEstudiantes
             // 
@@ -606,42 +647,23 @@
             this.btnEmpleado.Visible = false;
             this.btnEmpleado.Click += new System.EventHandler(this.btnEmpleado_Click_1);
             // 
-            // btnConsultaUsuarios
+            // Nombre
             // 
-            this.btnConsultaUsuarios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnConsultaUsuarios.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnConsultaUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnConsultaUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsultaUsuarios.BorderRadius = 0;
-            this.btnConsultaUsuarios.ButtonText = "Usuarios";
-            this.btnConsultaUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsultaUsuarios.DisabledColor = System.Drawing.Color.Gray;
-            this.btnConsultaUsuarios.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnConsultaUsuarios.Iconimage = global::proyectoFinal.Properties.Resources.estudiante;
-            this.btnConsultaUsuarios.Iconimage_right = null;
-            this.btnConsultaUsuarios.Iconimage_right_Selected = null;
-            this.btnConsultaUsuarios.Iconimage_Selected = null;
-            this.btnConsultaUsuarios.IconMarginLeft = 0;
-            this.btnConsultaUsuarios.IconMarginRight = 0;
-            this.btnConsultaUsuarios.IconRightVisible = true;
-            this.btnConsultaUsuarios.IconRightZoom = 0D;
-            this.btnConsultaUsuarios.IconVisible = true;
-            this.btnConsultaUsuarios.IconZoom = 90D;
-            this.btnConsultaUsuarios.IsTab = false;
-            this.btnConsultaUsuarios.Location = new System.Drawing.Point(349, 201);
-            this.btnConsultaUsuarios.Name = "btnConsultaUsuarios";
-            this.btnConsultaUsuarios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnConsultaUsuarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.btnConsultaUsuarios.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnConsultaUsuarios.selected = false;
-            this.btnConsultaUsuarios.Size = new System.Drawing.Size(270, 100);
-            this.btnConsultaUsuarios.TabIndex = 8;
-            this.btnConsultaUsuarios.Text = "Usuarios";
-            this.btnConsultaUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultaUsuarios.Textcolor = System.Drawing.Color.Black;
-            this.btnConsultaUsuarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultaUsuarios.Visible = false;
-            this.btnConsultaUsuarios.Click += new System.EventHandler(this.btnConsultaUsuarios_Click);
+            this.Nombre.AutoSize = true;
+            this.Nombre.Location = new System.Drawing.Point(218, 74);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(184, 13);
+            this.Nombre.TabIndex = 9;
+            this.Nombre.Text = "[Aqui va el nombre del usuario activo]";
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(218, 99);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(108, 13);
+            this.labelID.TabIndex = 10;
+            this.labelID.Text = "[aqui va su identidad]";
             // 
             // Menu
             // 
@@ -665,6 +687,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizarpic)).EndInit();
             this.MenuWrapper.ResumeLayout(false);
+            this.MenuWrapper.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -693,5 +716,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnEmpleado;
         private Bunifu.Framework.UI.BunifuFlatButton ModulosPagos;
         private Bunifu.Framework.UI.BunifuFlatButton btnConsultaUsuarios;
+        private System.Windows.Forms.Label Nombre;
+        private System.Windows.Forms.Label labelID;
     }
 }
