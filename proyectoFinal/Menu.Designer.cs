@@ -34,7 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menupic = new System.Windows.Forms.PictureBox();
             this.MenuLateral = new System.Windows.Forms.Panel();
-            this.ModuloPagos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ModulosPagos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ModuloAdministracionUsuarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ModuloReporteria = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ModuloEducativo = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ModuloAdministativo = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -49,6 +50,7 @@
             this.btnEstudiante = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnConsultaUsuarios = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
@@ -107,7 +109,8 @@
             // MenuLateral
             // 
             this.MenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.MenuLateral.Controls.Add(this.ModuloPagos);
+            this.MenuLateral.Controls.Add(this.ModulosPagos);
+            this.MenuLateral.Controls.Add(this.ModuloAdministracionUsuarios);
             this.MenuLateral.Controls.Add(this.ModuloReporteria);
             this.MenuLateral.Controls.Add(this.ModuloEducativo);
             this.MenuLateral.Controls.Add(this.ModuloAdministativo);
@@ -117,39 +120,74 @@
             this.MenuLateral.Size = new System.Drawing.Size(199, 393);
             this.MenuLateral.TabIndex = 4;
             // 
-            // ModuloPagos
+            // ModulosPagos
             // 
-            this.ModuloPagos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ModuloPagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ModuloPagos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ModuloPagos.BorderRadius = 0;
-            this.ModuloPagos.ButtonText = "Modulo de Pagos";
-            this.ModuloPagos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ModuloPagos.DisabledColor = System.Drawing.Color.Gray;
-            this.ModuloPagos.Iconcolor = System.Drawing.Color.Transparent;
-            this.ModuloPagos.Iconimage = global::proyectoFinal.Properties.Resources.Pagos1;
-            this.ModuloPagos.Iconimage_right = null;
-            this.ModuloPagos.Iconimage_right_Selected = null;
-            this.ModuloPagos.Iconimage_Selected = null;
-            this.ModuloPagos.IconMarginLeft = 2;
-            this.ModuloPagos.IconMarginRight = 0;
-            this.ModuloPagos.IconRightVisible = true;
-            this.ModuloPagos.IconRightZoom = 0D;
-            this.ModuloPagos.IconVisible = true;
-            this.ModuloPagos.IconZoom = 80D;
-            this.ModuloPagos.IsTab = false;
-            this.ModuloPagos.Location = new System.Drawing.Point(10, 179);
-            this.ModuloPagos.Name = "ModuloPagos";
-            this.ModuloPagos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ModuloPagos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.ModuloPagos.OnHoverTextColor = System.Drawing.Color.White;
-            this.ModuloPagos.selected = false;
-            this.ModuloPagos.Size = new System.Drawing.Size(185, 38);
-            this.ModuloPagos.TabIndex = 3;
-            this.ModuloPagos.Text = "Modulo de Pagos";
-            this.ModuloPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ModuloPagos.Textcolor = System.Drawing.Color.Black;
-            this.ModuloPagos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModulosPagos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModulosPagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModulosPagos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ModulosPagos.BorderRadius = 0;
+            this.ModulosPagos.ButtonText = "Modulo de Pagos";
+            this.ModulosPagos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ModulosPagos.DisabledColor = System.Drawing.Color.Gray;
+            this.ModulosPagos.Iconcolor = System.Drawing.Color.Transparent;
+            this.ModulosPagos.Iconimage = global::proyectoFinal.Properties.Resources.Pagos1;
+            this.ModulosPagos.Iconimage_right = null;
+            this.ModulosPagos.Iconimage_right_Selected = null;
+            this.ModulosPagos.Iconimage_Selected = null;
+            this.ModulosPagos.IconMarginLeft = 2;
+            this.ModulosPagos.IconMarginRight = 0;
+            this.ModulosPagos.IconRightVisible = true;
+            this.ModulosPagos.IconRightZoom = 0D;
+            this.ModulosPagos.IconVisible = true;
+            this.ModulosPagos.IconZoom = 80D;
+            this.ModulosPagos.IsTab = false;
+            this.ModulosPagos.Location = new System.Drawing.Point(7, 177);
+            this.ModulosPagos.Name = "ModulosPagos";
+            this.ModulosPagos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModulosPagos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.ModulosPagos.OnHoverTextColor = System.Drawing.Color.White;
+            this.ModulosPagos.selected = false;
+            this.ModulosPagos.Size = new System.Drawing.Size(185, 38);
+            this.ModulosPagos.TabIndex = 4;
+            this.ModulosPagos.Text = "Modulo de Pagos";
+            this.ModulosPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ModulosPagos.Textcolor = System.Drawing.Color.Black;
+            this.ModulosPagos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // ModuloAdministracionUsuarios
+            // 
+            this.ModuloAdministracionUsuarios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModuloAdministracionUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModuloAdministracionUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ModuloAdministracionUsuarios.BorderRadius = 0;
+            this.ModuloAdministracionUsuarios.ButtonText = "Administración de usuarios";
+            this.ModuloAdministracionUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ModuloAdministracionUsuarios.DisabledColor = System.Drawing.Color.Gray;
+            this.ModuloAdministracionUsuarios.Iconcolor = System.Drawing.Color.Transparent;
+            this.ModuloAdministracionUsuarios.Iconimage = ((System.Drawing.Image)(resources.GetObject("ModuloAdministracionUsuarios.Iconimage")));
+            this.ModuloAdministracionUsuarios.Iconimage_right = null;
+            this.ModuloAdministracionUsuarios.Iconimage_right_Selected = null;
+            this.ModuloAdministracionUsuarios.Iconimage_Selected = null;
+            this.ModuloAdministracionUsuarios.IconMarginLeft = 2;
+            this.ModuloAdministracionUsuarios.IconMarginRight = 0;
+            this.ModuloAdministracionUsuarios.IconRightVisible = true;
+            this.ModuloAdministracionUsuarios.IconRightZoom = 0D;
+            this.ModuloAdministracionUsuarios.IconVisible = true;
+            this.ModuloAdministracionUsuarios.IconZoom = 80D;
+            this.ModuloAdministracionUsuarios.IsTab = false;
+            this.ModuloAdministracionUsuarios.Location = new System.Drawing.Point(7, 231);
+            this.ModuloAdministracionUsuarios.Name = "ModuloAdministracionUsuarios";
+            this.ModuloAdministracionUsuarios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModuloAdministracionUsuarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.ModuloAdministracionUsuarios.OnHoverTextColor = System.Drawing.Color.White;
+            this.ModuloAdministracionUsuarios.selected = false;
+            this.ModuloAdministracionUsuarios.Size = new System.Drawing.Size(185, 38);
+            this.ModuloAdministracionUsuarios.TabIndex = 3;
+            this.ModuloAdministracionUsuarios.Text = "Administración de usuarios";
+            this.ModuloAdministracionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ModuloAdministracionUsuarios.Textcolor = System.Drawing.Color.Black;
+            this.ModuloAdministracionUsuarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModuloAdministracionUsuarios.Click += new System.EventHandler(this.ModuloAdministracionUsuarios_Click);
             // 
             // ModuloReporteria
             // 
@@ -335,6 +373,7 @@
             // 
             // MenuWrapper
             // 
+            this.MenuWrapper.Controls.Add(this.btnConsultaUsuarios);
             this.MenuWrapper.Controls.Add(this.btnListadoEstudiantes);
             this.MenuWrapper.Controls.Add(this.btnListadoAsignaturas);
             this.MenuWrapper.Controls.Add(this.btnCalificaciones);
@@ -567,6 +606,43 @@
             this.btnEmpleado.Visible = false;
             this.btnEmpleado.Click += new System.EventHandler(this.btnEmpleado_Click_1);
             // 
+            // btnConsultaUsuarios
+            // 
+            this.btnConsultaUsuarios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btnConsultaUsuarios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnConsultaUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btnConsultaUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsultaUsuarios.BorderRadius = 0;
+            this.btnConsultaUsuarios.ButtonText = "Usuarios";
+            this.btnConsultaUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultaUsuarios.DisabledColor = System.Drawing.Color.Gray;
+            this.btnConsultaUsuarios.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnConsultaUsuarios.Iconimage = global::proyectoFinal.Properties.Resources.estudiante;
+            this.btnConsultaUsuarios.Iconimage_right = null;
+            this.btnConsultaUsuarios.Iconimage_right_Selected = null;
+            this.btnConsultaUsuarios.Iconimage_Selected = null;
+            this.btnConsultaUsuarios.IconMarginLeft = 0;
+            this.btnConsultaUsuarios.IconMarginRight = 0;
+            this.btnConsultaUsuarios.IconRightVisible = true;
+            this.btnConsultaUsuarios.IconRightZoom = 0D;
+            this.btnConsultaUsuarios.IconVisible = true;
+            this.btnConsultaUsuarios.IconZoom = 90D;
+            this.btnConsultaUsuarios.IsTab = false;
+            this.btnConsultaUsuarios.Location = new System.Drawing.Point(349, 201);
+            this.btnConsultaUsuarios.Name = "btnConsultaUsuarios";
+            this.btnConsultaUsuarios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.btnConsultaUsuarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.btnConsultaUsuarios.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnConsultaUsuarios.selected = false;
+            this.btnConsultaUsuarios.Size = new System.Drawing.Size(270, 100);
+            this.btnConsultaUsuarios.TabIndex = 8;
+            this.btnConsultaUsuarios.Text = "Usuarios";
+            this.btnConsultaUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultaUsuarios.Textcolor = System.Drawing.Color.Black;
+            this.btnConsultaUsuarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaUsuarios.Visible = false;
+            this.btnConsultaUsuarios.Click += new System.EventHandler(this.btnConsultaUsuarios_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -600,7 +676,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox menupic;
         private System.Windows.Forms.Panel MenuLateral;
-        private Bunifu.Framework.UI.BunifuFlatButton ModuloPagos;
+        private Bunifu.Framework.UI.BunifuFlatButton ModuloAdministracionUsuarios;
         private Bunifu.Framework.UI.BunifuFlatButton ModuloReporteria;
         private Bunifu.Framework.UI.BunifuFlatButton ModuloEducativo;
         private Bunifu.Framework.UI.BunifuFlatButton ModuloAdministativo;
@@ -615,5 +691,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnEstudiante;
         private Bunifu.Framework.UI.BunifuFlatButton btnTutor;
         private Bunifu.Framework.UI.BunifuFlatButton btnEmpleado;
+        private Bunifu.Framework.UI.BunifuFlatButton ModulosPagos;
+        private Bunifu.Framework.UI.BunifuFlatButton btnConsultaUsuarios;
     }
 }
