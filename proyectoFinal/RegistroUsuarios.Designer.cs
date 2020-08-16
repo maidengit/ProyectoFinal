@@ -59,6 +59,7 @@
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(298, 23);
             this.txtNombreUsuario.TabIndex = 2;
+            this.txtNombreUsuario.TextChanged += new System.EventHandler(this.txtNombreUsuario_TextChanged);
             this.txtNombreUsuario.Validated += new System.EventHandler(this.txtNombreUsuario_Validated);
             // 
             // label1

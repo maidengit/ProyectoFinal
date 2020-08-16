@@ -142,5 +142,10 @@ namespace proyectoFinal
                 validacionEmpleadoID = true;
             }
         }
+
+        private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
