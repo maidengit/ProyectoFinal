@@ -153,5 +153,26 @@ namespace proyectoFinal
             link.label7.Text = this.label3.Text;
             link.Show();
         }
+
+        private void ModuloAdministracionUsuarios_Click(object sender, EventArgs e)
+        {
+            if(btnConsultaUsuarios.Visible == true)
+            {
+                btnCalificaciones.Visible = false;
+                btnListadoAsignaturas.Visible = false;
+                btnListadoEstudiantes.Visible = false;
+                btnAsignatura.Visible = false;
+                btnEmpleado.Visible = false;
+                btnEstudiante.Visible = false;
+                btnTutor.Visible = false;
+            }
+        }
+
+        private void btnConsultaUsuarios_Click(object sender, EventArgs e)
+        {
+            ConsultaUsuarios link = new ConsultaUsuarios();
+            link.Visible = true;
+            link.Show();
+        }
     }
 }
