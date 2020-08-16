@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Restaurarpic = new System.Windows.Forms.PictureBox();
             this.Minimizarpic = new System.Windows.Forms.PictureBox();
             this.Maximizarpic = new System.Windows.Forms.PictureBox();
@@ -36,26 +38,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menupic = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.EmpleadoWrapper = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.filtro = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.docente = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbAignatura = new System.Windows.Forms.ComboBox();
-            this.Tabla = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.grid1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             this.MenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
-            this.panel1.SuspendLayout();
             this.EmpleadoWrapper.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid1)).BeginInit();
             this.SuspendLayout();
             // 
             // Restaurarpic
@@ -149,45 +149,39 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 58);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(61, 392);
             this.panel1.TabIndex = 3;
             // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(3, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 195);
-            this.label3.TabIndex = 0;
-            this.label3.Paint += new System.Windows.Forms.PaintEventHandler(this.label3_Paint);
-            // 
             // EmpleadoWrapper
             // 
-            this.EmpleadoWrapper.Controls.Add(this.textBox1);
+            this.EmpleadoWrapper.Controls.Add(this.filtro);
             this.EmpleadoWrapper.Controls.Add(this.labelID);
             this.EmpleadoWrapper.Controls.Add(this.label6);
             this.EmpleadoWrapper.Controls.Add(this.docente);
             this.EmpleadoWrapper.Controls.Add(this.label4);
             this.EmpleadoWrapper.Controls.Add(this.button1);
             this.EmpleadoWrapper.Controls.Add(this.label2);
-            this.EmpleadoWrapper.Controls.Add(this.cbAignatura);
-            this.EmpleadoWrapper.Controls.Add(this.Tabla);
+            this.EmpleadoWrapper.Controls.Add(this.comboBox1);
+            this.EmpleadoWrapper.Controls.Add(this.grid1);
             this.EmpleadoWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmpleadoWrapper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmpleadoWrapper.Location = new System.Drawing.Point(61, 58);
             this.EmpleadoWrapper.Name = "EmpleadoWrapper";
             this.EmpleadoWrapper.Size = new System.Drawing.Size(739, 392);
             this.EmpleadoWrapper.TabIndex = 4;
+            this.EmpleadoWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.EmpleadoWrapper_Paint);
             // 
-            // textBox1
+            // filtro
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 20);
-            this.textBox1.TabIndex = 19;
+            this.filtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filtro.Location = new System.Drawing.Point(89, 31);
+            this.filtro.Name = "filtro";
+            this.filtro.Size = new System.Drawing.Size(221, 20);
+            this.filtro.TabIndex = 19;
+            this.filtro.TextChanged += new System.EventHandler(this.filtro_TextChanged);
             // 
             // labelID
             // 
@@ -244,6 +238,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Refrescar datos";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -256,10 +251,11 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Grado:";
             // 
-            // cbAignatura
+            // comboBox1
             // 
-            this.cbAignatura.FormattingEnabled = true;
-            this.cbAignatura.Items.AddRange(new object[] {
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "Todos",
             "Primero",
             "Segundo",
@@ -270,28 +266,44 @@
             "Septimo",
             "Octavo",
             "Noveno"});
-            this.cbAignatura.Location = new System.Drawing.Point(322, 31);
-            this.cbAignatura.Margin = new System.Windows.Forms.Padding(2);
-            this.cbAignatura.Name = "cbAignatura";
-            this.cbAignatura.Size = new System.Drawing.Size(226, 21);
-            this.cbAignatura.TabIndex = 8;
-            this.cbAignatura.SelectedIndexChanged += new System.EventHandler(this.cbAignatura_SelectedIndexChanged_1);
+            this.comboBox1.Location = new System.Drawing.Point(322, 31);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(226, 21);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.cbAignatura_SelectedIndexChanged_1);
             // 
-            // Tabla
+            // grid1
             // 
-            this.Tabla.AllowUserToAddRows = false;
-            this.Tabla.AllowUserToDeleteRows = false;
-            this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabla.Location = new System.Drawing.Point(7, 67);
-            this.Tabla.Margin = new System.Windows.Forms.Padding(2);
-            this.Tabla.Name = "Tabla";
-            this.Tabla.ReadOnly = true;
-            this.Tabla.RowHeadersWidth = 62;
-            this.Tabla.RowTemplate.Height = 28;
-            this.Tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Tabla.Size = new System.Drawing.Size(704, 316);
-            this.Tabla.TabIndex = 9;
+            this.grid1.AllowUserToAddRows = false;
+            this.grid1.AllowUserToDeleteRows = false;
+            this.grid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.grid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.grid1.Location = new System.Drawing.Point(7, 67);
+            this.grid1.Margin = new System.Windows.Forms.Padding(2);
+            this.grid1.Name = "grid1";
+            this.grid1.ReadOnly = true;
+            this.grid1.RowHeadersWidth = 62;
+            this.grid1.RowTemplate.Height = 28;
+            this.grid1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.grid1.Size = new System.Drawing.Size(704, 316);
+            this.grid1.TabIndex = 9;
             // 
             // listadoAsignaturas
             // 
@@ -312,10 +324,9 @@
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.EmpleadoWrapper.ResumeLayout(false);
             this.EmpleadoWrapper.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,14 +343,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel EmpleadoWrapper;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbAignatura;
-        private System.Windows.Forms.DataGridView Tabla;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView grid1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label labelID;
         public System.Windows.Forms.Label docente;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox filtro;
     }
 }
