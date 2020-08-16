@@ -38,10 +38,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.EmpleadoWrapper = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbAignatura = new System.Windows.Forms.ComboBox();
@@ -165,10 +166,11 @@
             // 
             // EmpleadoWrapper
             // 
+            this.EmpleadoWrapper.Controls.Add(this.textBox1);
+            this.EmpleadoWrapper.Controls.Add(this.label7);
             this.EmpleadoWrapper.Controls.Add(this.label6);
             this.EmpleadoWrapper.Controls.Add(this.label5);
             this.EmpleadoWrapper.Controls.Add(this.label4);
-            this.EmpleadoWrapper.Controls.Add(this.txtNombre);
             this.EmpleadoWrapper.Controls.Add(this.button1);
             this.EmpleadoWrapper.Controls.Add(this.label2);
             this.EmpleadoWrapper.Controls.Add(this.cbAignatura);
@@ -179,6 +181,25 @@
             this.EmpleadoWrapper.Name = "EmpleadoWrapper";
             this.EmpleadoWrapper.Size = new System.Drawing.Size(739, 392);
             this.EmpleadoWrapper.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(89, 33);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(221, 20);
+            this.textBox1.TabIndex = 19;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(404, 3);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Identidad";
+            this.label7.Visible = false;
             // 
             // label6
             // 
@@ -212,14 +233,6 @@
             this.label4.Size = new System.Drawing.Size(68, 15);
             this.label4.TabIndex = 15;
             this.label4.Text = "Docente: ";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(87, 31);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(231, 20);
-            this.txtNombre.TabIndex = 14;
             // 
             // button1
             // 
@@ -323,9 +336,10 @@
         private System.Windows.Forms.DataGridView Tabla;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -45,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbAignatura = new System.Windows.Forms.ComboBox();
             this.Tabla = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizarpic)).BeginInit();
@@ -154,6 +155,7 @@
             // 
             // EmpleadoWrapper
             // 
+            this.EmpleadoWrapper.Controls.Add(this.label7);
             this.EmpleadoWrapper.Controls.Add(this.label6);
             this.EmpleadoWrapper.Controls.Add(this.label5);
             this.EmpleadoWrapper.Controls.Add(this.label4);
@@ -269,6 +271,18 @@
             this.Tabla.Size = new System.Drawing.Size(704, 316);
             this.Tabla.TabIndex = 9;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(382, 3);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Identidad";
+            this.label7.Visible = false;
+            // 
             // listadoEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,9 +324,10 @@
         private System.Windows.Forms.ComboBox cbAignatura;
         private System.Windows.Forms.DataGridView Tabla;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label5;
     }
 }

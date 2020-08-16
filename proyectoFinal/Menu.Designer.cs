@@ -49,6 +49,8 @@
             this.btnEstudiante = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
@@ -335,6 +337,8 @@
             // 
             // MenuWrapper
             // 
+            this.MenuWrapper.Controls.Add(this.label3);
+            this.MenuWrapper.Controls.Add(this.label2);
             this.MenuWrapper.Controls.Add(this.btnListadoEstudiantes);
             this.MenuWrapper.Controls.Add(this.btnListadoAsignaturas);
             this.MenuWrapper.Controls.Add(this.btnCalificaciones);
@@ -567,6 +571,24 @@
             this.btnEmpleado.Visible = false;
             this.btnEmpleado.Click += new System.EventHandler(this.btnEmpleado_Click_1);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(218, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Miguel";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(218, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "1943199400094";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,6 +611,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizarpic)).EndInit();
             this.MenuWrapper.ResumeLayout(false);
+            this.MenuWrapper.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,5 +638,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnEstudiante;
         private Bunifu.Framework.UI.BunifuFlatButton btnTutor;
         private Bunifu.Framework.UI.BunifuFlatButton btnEmpleado;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
