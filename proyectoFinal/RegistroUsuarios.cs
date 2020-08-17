@@ -6,10 +6,12 @@ namespace proyectoFinal
 {
     public partial class RegistroUsuarios : Form
     {
+        SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+
         bool validacionUsuario = false;
         bool validacionContrasenia = false;
         bool validacionConfirmacionContrasenia = false;
-        bool validacionEmpleadoID = false;
+        bool validacionIdentidad = false;
 
         public RegistroUsuarios()
         {
@@ -23,10 +25,10 @@ namespace proyectoFinal
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (!validacionEmpleadoID)
+            if (!validacionIdentidad)
             {
-                MessageBox.Show("EmpleadoID es incorrecto");
-                txtEmpleadoID.Focus();
+                MessageBox.Show("La identidad del empleado es incorrecta");
+                txtIdentidad.Focus();
                 return;
             }
             else if (!validacionUsuario)
@@ -49,7 +51,25 @@ namespace proyectoFinal
             }
             else
             {
-                MessageBox.Show("Datos almacenados satisfactoriamente");
+                string sql = "Insert into Usuarios values(@usuario, @contrasenia, 'Activo')";
+                SqlCommand cmd = new SqlCommand(sql, conexion);
+                cmd.Parameters.AddWithValue("@usuario", txtNombreUsuario.Text);
+                cmd.Parameters.AddWithValue("@contrasenia", txtContrasenia.Text);
+                try
+                {
+                    cmd.Connection.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Datos almacenados satisfactoriamente");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    cmd.Connection.Close();
+                }
+                
                 this.Dispose();
             }
             
@@ -91,7 +111,7 @@ namespace proyectoFinal
             }
             else if(txtConfirmarContrasenia.Text != txtContrasenia.Text)
             {
-                errorProviderConfirmarContrasenia.SetError(txtConfirmarContrasenia, "Contraseña no concuerda");
+                errorProviderConfirmarContrasenia.SetError(txtConfirmarContrasenia, "Contraseña no coincide");
             }
             else
             {
@@ -100,25 +120,32 @@ namespace proyectoFinal
             }
         }
 
-        private void txtEmpleadoID_Validated(object sender, EventArgs e)
+        private void txtIdentidad_Validated(object sender, EventArgs e)
         {
-
-            SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
-            String sql = "Select EmpleadoID, Nombre from Empleado where EmpleadoID like '%" + txtEmpleadoID.Text + "%'";
+            //string sql = "Select Nombre from Empleado where Identidad like '%" + txtIdentidad.Text + "%'";
+            string sql = "select e.Nombre, d.Nombre as Departamento from Empleado as e inner join Departamento as d on e.DepartamentoID = d.DepartamentoID where e.Identidad = @identidad";
             SqlCommand cmd = new SqlCommand(sql, conexion);
+            cmd.Parameters.AddWithValue("@identidad", txtIdentidad.Text);
+            cmd.Parameters.AddWithValue("@departamento", txtDepartamento.Text);
+            cmd.Parameters.AddWithValue("@nombre", txtNombreEmpleado.Text);
             try
             {
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 SqlDataReader reader = cmd.ExecuteReader();
-                txtNombreEmpleado.Text = "";
-                if(reader.Read())
+                if(reader.HasRows)
                 {
-                    txtNombreEmpleado.Text = reader["Nombre"] as string;
+                    while (reader.Read())
+                    {
+                        txtNombreEmpleado.Text = reader[0] as string;
+                        txtDepartamento.Text = reader[1] as string;
+                    }
+
                 }
                 else
                 {
-                    errorProviderEmpleadoID.SetError(txtEmpleadoID, "EmpleadoID no está registrado");
+                    MessageBox.Show("La identidad del empleado no está registrada");
+                    //errorProviderEmpleadoID.SetError(txtIdentidad, "EmpleadoID no está registrado");
                     return;
                 }
             }
@@ -131,21 +158,33 @@ namespace proyectoFinal
                 cmd.Connection.Close();
             }
 
-            if(txtEmpleadoID.Text.Trim().Length == 0)
+            if(txtIdentidad.Text.Trim().Length == 0)
             {
-                errorProviderEmpleadoID.SetError(txtEmpleadoID, "Ingrese el empleadoID");
+                errorProviderEmpleadoID.SetError(txtIdentidad, "Ingrese el empleadoID");
                 txtNombreEmpleado.Text = "";
             }
             else
             {
                 errorProviderEmpleadoID.Clear();
-                validacionEmpleadoID = true;
+                validacionIdentidad = true;
             }
         }
 
-        private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
+        private void RegistroUsuarios_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

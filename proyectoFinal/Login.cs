@@ -13,10 +13,6 @@ namespace proyectoFinal
 {
     public partial class Login : Form
     {
-
-        bool validacionUsuario = false;
-        bool validacionContrasenia = false;
-
         public Login()
         {
             InitializeComponent();
@@ -25,8 +21,10 @@ namespace proyectoFinal
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
-            String sql = "SELECT UsuarioNombre, Clave from Usuario where UsuarioNombre like '" + txtUsuario.Text + "' and Clave like '" + txtPassword.Text + "'";
+            string sql = "SELECT UsuarioNombre, Clave from Usuario where UsuarioNombre like @Usuario and Clave like @Password ";
             SqlCommand cmd = new SqlCommand(sql, conexion);
+            cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
+            cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
             try
             {
                 cmd.Connection.Open();
@@ -35,6 +33,7 @@ namespace proyectoFinal
                 if (reader.Read())
                 {
                     Menu pp = new Menu();
+                    MessageBox.Show("Bienvenido " + txtUsuario.Text);
                     pp.Show();
                     this.Hide();
                 }

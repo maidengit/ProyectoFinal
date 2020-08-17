@@ -61,6 +61,18 @@ namespace proyectoFinal
         {
             if (btnListadoAsignaturas.Visible == true)
             {
+                btnConsultaUsuarios.Visible = false;
+                btnCalificaciones.Visible = false;
+                btnListadoAsignaturas.Visible = false;
+                btnListadoEstudiantes.Visible = false;
+                btnAsignatura.Visible = true;
+                btnEmpleado.Visible = true;
+                btnEstudiante.Visible = true;
+                btnTutor.Visible = true;
+            }
+            else if (btnConsultaUsuarios.Visible == true)
+            {
+                btnConsultaUsuarios.Visible = false;
                 btnCalificaciones.Visible = false;
                 btnListadoAsignaturas.Visible = false;
                 btnListadoEstudiantes.Visible = false;
@@ -89,6 +101,19 @@ namespace proyectoFinal
                 btnCalificaciones.Visible = true;
                 btnListadoAsignaturas.Visible = true;
                 btnListadoEstudiantes.Visible = true;
+                btnConsultaUsuarios.Visible = false;
+            }
+            else if (btnConsultaUsuarios.Visible == true)
+            {
+
+                btnTutor.Visible = false;
+                btnEmpleado.Visible = false;
+                btnEstudiante.Visible = false;
+                btnAsignatura.Visible = false;
+                btnCalificaciones.Visible = true;
+                btnListadoAsignaturas.Visible = true;
+                btnListadoEstudiantes.Visible = true;
+                btnConsultaUsuarios.Visible = false;
             }
             else
             {
@@ -157,8 +182,9 @@ namespace proyectoFinal
 
         private void ModuloAdministracionUsuarios_Click(object sender, EventArgs e)
         {
-            if(btnConsultaUsuarios.Visible == true)
+            if (btnCalificaciones.Visible == true)
             {
+                btnConsultaUsuarios.Visible = true;
                 btnCalificaciones.Visible = false;
                 btnListadoAsignaturas.Visible = false;
                 btnListadoEstudiantes.Visible = false;
@@ -166,6 +192,20 @@ namespace proyectoFinal
                 btnEmpleado.Visible = false;
                 btnEstudiante.Visible = false;
                 btnTutor.Visible = false;
+            }
+            else if (btnTutor.Visible == true)
+            {
+                btnConsultaUsuarios.Visible = true;
+                btnCalificaciones.Visible = false;
+                btnListadoAsignaturas.Visible = false;
+                btnListadoEstudiantes.Visible = false;
+                btnAsignatura.Visible = false;
+                btnEmpleado.Visible = false;
+                btnEstudiante.Visible = false;
+                btnTutor.Visible = false;
+            }
+            {
+                btnConsultaUsuarios.Visible = true;
             }
         }
 
