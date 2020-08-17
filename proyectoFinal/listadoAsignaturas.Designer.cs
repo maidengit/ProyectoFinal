@@ -107,7 +107,7 @@
             // 
             // MenuSuperior
             // 
-            this.MenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.MenuSuperior.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.MenuSuperior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.MenuSuperior.Controls.Add(this.Restaurarpic);
             this.MenuSuperior.Controls.Add(this.Minimizarpic);
@@ -146,7 +146,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 58);
             this.panel1.Name = "panel1";
