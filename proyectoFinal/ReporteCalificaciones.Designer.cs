@@ -182,7 +182,7 @@
             this.Controls.Add(this.cbgrado);
             this.Controls.Add(this.button1);
             this.Name = "ReporteCalificaciones";
-            this.Text = "ReporteCalificaciones";
+            this.Text = "ReporteBoletaCalificaciones";
             this.Load += new System.EventHandler(this.ReporteCalificaciones_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

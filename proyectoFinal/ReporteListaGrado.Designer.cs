@@ -42,7 +42,7 @@
             this.btngenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngenerar.Image = global::proyectoFinal.Properties.Resources.Educacio1;
             this.btngenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btngenerar.Location = new System.Drawing.Point(207, 117);
+            this.btngenerar.Location = new System.Drawing.Point(247, 119);
             this.btngenerar.Name = "btngenerar";
             this.btngenerar.Size = new System.Drawing.Size(93, 23);
             this.btngenerar.TabIndex = 36;
@@ -55,7 +55,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 50);
+            this.label2.Location = new System.Drawing.Point(63, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 15);
@@ -67,7 +67,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::proyectoFinal.Properties.Resources.Cancelar;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(114, 117);
+            this.button1.Location = new System.Drawing.Point(154, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 30;
@@ -80,7 +80,7 @@
             this.cbgrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbgrado.ForeColor = System.Drawing.Color.Gray;
             this.cbgrado.FormattingEnabled = true;
-            this.cbgrado.Location = new System.Drawing.Point(26, 67);
+            this.cbgrado.Location = new System.Drawing.Point(66, 69);
             this.cbgrado.Margin = new System.Windows.Forms.Padding(2);
             this.cbgrado.Name = "cbgrado";
             this.cbgrado.Size = new System.Drawing.Size(253, 23);
@@ -102,25 +102,25 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(207, 12);
+            this.label3.Location = new System.Drawing.Point(193, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(326, 20);
+            this.label3.Size = new System.Drawing.Size(389, 20);
             this.label3.TabIndex = 28;
-            this.label3.Text = "REPORTE GRADO POR ASIGNATURA";
+            this.label3.Text = "REPORTE LISTA ESTUDIANTES POR GRADO";
             // 
             // ReporteListaGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 184);
+            this.ClientSize = new System.Drawing.Size(410, 184);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btngenerar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbgrado);
             this.Controls.Add(this.button1);
             this.Name = "ReporteListaGrado";
-            this.Text = "ReporteListaGrado";
+            this.Text = "ReporteListaEstudiantesPorGrado";
             this.Load += new System.EventHandler(this.ReporteListaGrado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
