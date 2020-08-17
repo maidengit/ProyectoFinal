@@ -44,6 +44,8 @@
             this.Maximizarpic = new System.Windows.Forms.PictureBox();
             this.btnAsignatura = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MenuWrapper = new System.Windows.Forms.Panel();
+            this.labelID = new System.Windows.Forms.Label();
+            this.Nombre = new System.Windows.Forms.Label();
             this.btnConsultaUsuarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListadoEstudiantes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListadoAsignaturas = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -51,8 +53,6 @@
             this.btnEstudiante = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmpleado = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Nombre = new System.Windows.Forms.Label();
-            this.labelID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
@@ -110,7 +110,7 @@
             // 
             // MenuLateral
             // 
-            this.MenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.MenuLateral.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.MenuLateral.Controls.Add(this.ModulosPagos);
             this.MenuLateral.Controls.Add(this.ModuloAdministracionUsuarios);
             this.MenuLateral.Controls.Add(this.ModuloReporteria);
@@ -227,10 +227,9 @@
             // 
             // ModuloEducativo
             // 
-            this.ModuloEducativo.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.ModuloEducativo.Activecolor = System.Drawing.Color.Transparent;
             this.ModuloEducativo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ModuloEducativo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ModuloEducativo.BorderRadius = 0;
+            this.ModuloEducativo.BorderRadius = 1;
             this.ModuloEducativo.ButtonText = "Modulo Educativo";
             this.ModuloEducativo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ModuloEducativo.DisabledColor = System.Drawing.Color.Gray;
@@ -297,7 +296,7 @@
             // 
             // MenuSuperior
             // 
-            this.MenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.MenuSuperior.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.MenuSuperior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.MenuSuperior.Controls.Add(this.Restaurarpic);
             this.MenuSuperior.Controls.Add(this.Minimizarpic);
@@ -390,6 +389,24 @@
             this.MenuWrapper.Name = "MenuWrapper";
             this.MenuWrapper.Size = new System.Drawing.Size(800, 450);
             this.MenuWrapper.TabIndex = 5;
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(218, 99);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(108, 13);
+            this.labelID.TabIndex = 10;
+            this.labelID.Text = "[aqui va su identidad]";
+            // 
+            // Nombre
+            // 
+            this.Nombre.AutoSize = true;
+            this.Nombre.Location = new System.Drawing.Point(218, 74);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(184, 13);
+            this.Nombre.TabIndex = 9;
+            this.Nombre.Text = "[Aqui va el nombre del usuario activo]";
             // 
             // btnConsultaUsuarios
             // 
@@ -646,24 +663,6 @@
             this.btnEmpleado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleado.Visible = false;
             this.btnEmpleado.Click += new System.EventHandler(this.btnEmpleado_Click_1);
-            // 
-            // Nombre
-            // 
-            this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(218, 74);
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(184, 13);
-            this.Nombre.TabIndex = 9;
-            this.Nombre.Text = "[Aqui va el nombre del usuario activo]";
-            // 
-            // labelID
-            // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(218, 99);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(108, 13);
-            this.labelID.TabIndex = 10;
-            this.labelID.Text = "[aqui va su identidad]";
             // 
             // Menu
             // 

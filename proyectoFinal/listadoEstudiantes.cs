@@ -41,6 +41,7 @@ namespace proyectoFinal
             grid.Columns[6].Width = grid.Width * 5 / 100;
             grid.Columns[7].Width = grid.Width * 29 / 100;
             grid.Columns[8].Width = grid.Width * 10 / 100;
+            filtro.Focus();
         }
         private void load()
         {

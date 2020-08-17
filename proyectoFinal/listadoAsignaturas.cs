@@ -35,6 +35,7 @@ namespace proyectoFinal
                 grid1.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
             }
             comboBox1.SelectedIndex = 0;
+            filtro.Focus();
         }
         DataTable dt = new DataTable();
         private void load()
