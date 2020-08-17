@@ -169,6 +169,8 @@ namespace proyectoFinal
             link.docente.Text = this.Nombre.Text;
             link.labelID.Text = this.labelID.Text;
             link.Show();
+
+            
         }
 
         private void btnListadoAsignaturas_Click_1(object sender, EventArgs e)
@@ -214,6 +216,24 @@ namespace proyectoFinal
             ConsultaUsuarios link = new ConsultaUsuarios();
             link.Visible = true;
             link.Show();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            ReporteCalificaciones m = new ReporteCalificaciones();
+            m.Show();
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            ReporteListaGrado m = new ReporteListaGrado();
+            m.Show();
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            ReporteGradoAsignatura m = new ReporteGradoAsignatura();
+            m.Show();
         }
     }
 }
