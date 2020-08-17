@@ -40,9 +40,11 @@
             // btngenerar
             // 
             this.btngenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngenerar.Image = global::proyectoFinal.Properties.Resources.Educacio1;
+            this.btngenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngenerar.Location = new System.Drawing.Point(207, 117);
             this.btngenerar.Name = "btngenerar";
-            this.btngenerar.Size = new System.Drawing.Size(75, 23);
+            this.btngenerar.Size = new System.Drawing.Size(93, 23);
             this.btngenerar.TabIndex = 36;
             this.btngenerar.Text = "Generar";
             this.btngenerar.UseVisualStyleBackColor = true;
@@ -63,9 +65,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::proyectoFinal.Properties.Resources.Cancelar;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(114, 117);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 30;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = true;
@@ -109,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 211);
+            this.ClientSize = new System.Drawing.Size(370, 184);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btngenerar);
             this.Controls.Add(this.label2);

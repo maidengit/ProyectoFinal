@@ -44,9 +44,11 @@
             // btngenerar
             // 
             this.btngenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngenerar.Image = global::proyectoFinal.Properties.Resources.Educacio1;
+            this.btngenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngenerar.Location = new System.Drawing.Point(225, 259);
             this.btngenerar.Name = "btngenerar";
-            this.btngenerar.Size = new System.Drawing.Size(75, 23);
+            this.btngenerar.Size = new System.Drawing.Size(92, 23);
             this.btngenerar.TabIndex = 36;
             this.btngenerar.Text = "Generar";
             this.btngenerar.UseVisualStyleBackColor = true;
@@ -105,9 +107,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::proyectoFinal.Properties.Resources.Cancelar;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(132, 259);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 30;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = true;
