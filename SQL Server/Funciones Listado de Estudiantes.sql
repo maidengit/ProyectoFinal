@@ -1,5 +1,5 @@
 --Nombre del tutor
-createfunction fnNombreTutor(@estudiante int) returns varchar(50) as begin declare @tutor varchar(50),
+create function fnNombreTutor(@estudiante int) returns varchar(50) as begin declare @tutor varchar(50),
 @telefono int
 select
     @tutor = t.nombre
@@ -21,7 +21,7 @@ where
     EstudianteID = @estudiante return @telefono
 end
 go
-    alter function fnEdad(@estudiante int) returns int as begin declare @edad int
+    create function fnEdad(@estudiante int) returns int as begin declare @edad int
 select
     @edad = floor(
         (
