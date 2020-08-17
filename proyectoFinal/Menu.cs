@@ -235,5 +235,18 @@ namespace proyectoFinal
             ReporteGradoAsignatura m = new ReporteGradoAsignatura();
             m.Show();
         }
+
+        private void btnTutor_Click_1(object sender, EventArgs e)
+        {
+            ConsultaTutor ct = new ConsultaTutor();
+            ct.ShowDialog();
+        }
+
+        private void btnEstudiante_Click_1(object sender, EventArgs e)
+        {
+            Mantenimineto m = new Mantenimineto();
+            m.Show();
+            
+        }
     }
 }

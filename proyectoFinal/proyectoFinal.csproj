@@ -34,7 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\..\Archivos\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaCon">
+      <HintPath>..\LibreriaCon\bin\Debug\LibreriaCon.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -89,6 +92,12 @@
     <Compile Include="ConsultaEmpleadoAdministrativo.Designer.cs">
       <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaTutor.Designer.cs">
+      <DependentUpon>ConsultaTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +110,7 @@
     <Compile Include="CuadroCalificaiciones.Designer.cs">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSetPrincipal.Designer.cs" />
     <Compile Include="IngresoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,19 +141,73 @@
     <Compile Include="MantenimientoCalificaciones.Designer.cs">
       <DependentUpon>MantenimientoCalificaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimineto De Estudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimineto De Estudiantes.designer.cs">
+      <DependentUpon>Mantenimineto De Estudiantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostarReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostarReporte.Designer.cs">
+      <DependentUpon>MostarReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostarReporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostarReporte2.Designer.cs">
+      <DependentUpon>MostarReporte2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostarReporte3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostarReporte3.Designer.cs">
+      <DependentUpon>MostarReporte3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEstudiante.Designer.cs">
+      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroTutor.Designer.cs">
+      <DependentUpon>RegistroTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistroUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroUsuarios.Designer.cs">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCalificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCalificaciones.Designer.cs">
+      <DependentUpon>ReporteCalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteGradoAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteGradoAsignatura.Designer.cs">
+      <DependentUpon>ReporteGradoAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteListaGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteListaGrado.Designer.cs">
+      <DependentUpon>ReporteListaGrado.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="ConsultaAsignaturaAdministrativa.resx">
@@ -151,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEmpleadoAdministrativo.resx">
       <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaTutor.resx">
+      <DependentUpon>ConsultaTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaUsuarios.resx">
       <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
@@ -173,8 +240,20 @@
     <EmbeddedResource Include="MantenimientoCalificaciones.resx">
       <DependentUpon>MantenimientoCalificaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimineto De Estudiantes.resx">
+      <DependentUpon>Mantenimineto De Estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostarReporte.resx">
+      <DependentUpon>MostarReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostarReporte2.resx">
+      <DependentUpon>MostarReporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostarReporte3.resx">
+      <DependentUpon>MostarReporte3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -186,9 +265,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistroEstudiante.resx">
+      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroTutor.resx">
+      <DependentUpon>RegistroTutor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCalificaciones.resx">
+      <DependentUpon>ReporteCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteGradoAsignatura.resx">
+      <DependentUpon>ReporteGradoAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteListaGrado.resx">
+      <DependentUpon>ReporteListaGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetPrincipal.xsc">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPrincipal.xsd" />
+    <None Include="DataSetPrincipal.xss">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -337,6 +438,12 @@
       <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\iconfinder_019_14043.ico" />
+    <None Include="Resources\iconfinder_019_140431.ico" />
+    <Content Include="Resources\iconfinder_103_14127.ico" />
+    <None Include="Resources\iconfinder_103_141271.ico" />
+    <Content Include="Resources\iconfinder_150_14174.ico" />
+    <None Include="Resources\iconfinder_150_141741.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
