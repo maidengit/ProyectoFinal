@@ -101,7 +101,7 @@
             this.estudianteBox2.FormattingEnabled = true;
             this.estudianteBox2.Location = new System.Drawing.Point(474, 69);
             this.estudianteBox2.Name = "estudianteBox2";
-            this.estudianteBox2.Size = new System.Drawing.Size(159, 21);
+            this.estudianteBox2.Size = new System.Drawing.Size(172, 21);
             this.estudianteBox2.TabIndex = 7;
             this.estudianteBox2.SelectedIndexChanged += new System.EventHandler(this.estudianteBox2_SelectedIndexChanged);
             // 
@@ -156,16 +156,16 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Nota: Presione  Esc para cancelar ";
             // 
-            // NombreForm
+            // Nombre
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.BackColor = System.Drawing.Color.Transparent;
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nombre.Location = new System.Drawing.Point(410, 71);
-            this.Nombre.Name = "NombreForm";
+            this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(62, 15);
             this.Nombre.TabIndex = 12;
-            this.Nombre.Text = "NombreForm:";
+            this.Nombre.Text = "Nombre:";
             // 
             // label1
             // 

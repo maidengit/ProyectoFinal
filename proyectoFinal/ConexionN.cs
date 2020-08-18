@@ -19,8 +19,12 @@ namespace proyectoFinal
         {
             try
             {
-                //con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True");
-                con = new SqlConnection("Data Source = DESKTOP - 76J3QBF\\SQLEXPRESS; Initial Catalog = proyescuela; Integrated Security = True");
+                //Conexion de Melvin
+                //con = new SqlConnection("Data Source=DESKTOP-AO482B2\\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True");
+                //Conexion de Nata
+                con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela1;Integrated Security=True");
+                //Conexion de ...
+                //con = new SqlConnection("Data Source = DESKTOP - 76J3QBF\\SQLEXPRESS; Initial Catalog = proyescuela; Integrated Security = True");
                 con.Open();
             }
             catch (Exception e)
@@ -113,42 +117,54 @@ namespace proyectoFinal
                 }
                 dr.Close();
             }
-             catch (Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
         }
-        private int[] InformacionParaIngresar(string Estudiante,string Asignatura)
+        private int BuscarID(Boolean EsAsignatura, string valor)
         {
-            int[] informacion;
+            int informacion = 0;
             try
             {
-                string sql = "select EstudianteID, AsignaturaID from vParaIngresarCalificacion where nombre='" + Estudiante + "'" +
-                    "and asignatura='"+Asignatura+"'";
-                cmd = new SqlCommand(sql, con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                informacion = new int[dr.FieldCount];
-                while (dr.Read())
+                if (EsAsignatura == false)
                 {
-                    informacion[0] = (int)dr["EstudianteID"];
-                    informacion[1] = (int)dr["AsignaturaID"];
+                    string sql = "select EstudianteID from Estudiante where nombre='" + valor + "'";
+                    cmd = new SqlCommand(sql, con);
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        informacion = (int)dr[0];
+                    }
+                    dr.Close();
+                    return informacion;
                 }
-                dr.Close();
-                return informacion;
+                else
+                {
+                    string sql = "select AsignaturaID from asignatura where nombre='" + valor + "'";
+                    cmd = new SqlCommand(sql, con);
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        informacion = (int)dr[0];
+                    }
+                    dr.Close();
+                    return informacion;
+                }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                return null;
+                return -1;
             }
         }
-        public void ingresar(string NEstudiante, string NAsignatura, float nota,int parcial)
+        public void ingresar(string NEstudiante, string NAsignatura, float nota, int parcial)
         {
             try
             {
-                int[] IDs = InformacionParaIngresar(NEstudiante, NAsignatura);
-                int EsId = IDs[0];int AsId = IDs[1];
-                string sql = string.Format("EXEC spAgregarCalificacion {0},{1},{2},{3}",IDs[0],nota,parcial,IDs[1]);
+                int EsId = BuscarID(false, NEstudiante);
+                int AsId = BuscarID(true, NAsignatura);
+                string sql = string.Format("EXEC spAgregarCalificacion {0},{1},{2},{3}", AsId, nota,parcial,EsId);
                 cmd = new SqlCommand(sql, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Calificacion Ingresada"); 
@@ -185,6 +201,7 @@ namespace proyectoFinal
                 string sql = "select calificacionID,asignaturaID,numeroparcial from vCalificaciones where parcial = '" + parcial + "' and " +
                     "materia='" + asignatura + "' and nombre='" + nombre + "'";
                 cmd = new SqlCommand(sql, con);
+                MessageBox.Show(sql);
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {

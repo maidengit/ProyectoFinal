@@ -21,6 +21,7 @@ namespace proyectoFinal
         public string ParT;
         public string AsT;
         public string NombreT;
+        public MantenimientoCalificaciones MC1;
         private void CuadroCalificaiciones_Load(object sender, EventArgs e)
         {
             con = new ConexionN();
@@ -98,24 +99,27 @@ namespace proyectoFinal
             if (Editar)
             {
                 editar();
+                MC1.llenar();
             }
             else
             {
                 guardar();
+                MC1.llenar();
             }          
         }
         private void guardar()
         {
-            string Grado = cbGrado.SelectedItem.ToString();
             string Asignatura = cbAsignatura.SelectedItem.ToString();
             string alumno = cbEstudiante.SelectedItem.ToString();
             int Parcial = cbParcial.SelectedIndex+1;
             float calificacion = (float)nmCalificacion.Value;
             con.ingresar(alumno, Asignatura, calificacion, Parcial);
+            this.Dispose();
         }
         private void editar()
         {
             con.actualizarCalificacion((float)nmCalificacion.Value, ParT, AsT, NombreT);
+            this.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)

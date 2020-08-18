@@ -13,7 +13,9 @@ namespace proyectoFinal
     class conexionbdasignaturayempleadoadmin
     {
         //string cadena = "Data Source=DESKTOP-70OJMFT\\MIKTO;Initial Catalog=proyescuela;Integrated Security=True";
-        string cadena = "Data Source=DESKTOP-76J3QBF\\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True";
+        //string cadena = "Data Source=DESKTOP-76J3QBF\\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True";
+        //string cadena = " Data Source = DESKTOP - AO482B2\\SQLEXPRESS;Initial Catalog = proyescuela2; Integrated Security = True";
+        string cadena = "Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela1;Integrated Security=True";
         public SqlConnection conectarbd = new SqlConnection();
         DataSet ds;
 

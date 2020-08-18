@@ -42,7 +42,7 @@ namespace proyectoFinal
         {
             try
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+                SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
                 string sql = "select u.UsuarioNombre, e.Nombre as NombreEmpleado, d.Nombre as Departamento, u.Estado from Usuario as u inner join Empleado as e on u.EmpleadoID = e.EmpleadoID inner join Departamento as d on e.DepartamentoID = d.DepartamentoID";
                 SqlDataAdapter da = new SqlDataAdapter(sql, conexion);
                 da.Fill(dt);
