@@ -118,85 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="regresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\regresar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancelar1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pagos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pagos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Maximize Window_2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Maximize Window_2 48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reporteria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reporteria2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guardar1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reporteria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reporteria1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minimize Window_2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimize Window_2 48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_103_14127" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_103_141271.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_150_14174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_150_141741.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Administrativo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administrativo21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restore Window 2_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Restore Window 2_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="empleado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empleado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tutor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tutor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\estudiante1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadena" xml:space="preserve">
-    <value>Data Source=DESKTOP-76J3QBF\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True</value>
-  </data>
-  <data name="Pagos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pagos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot_244" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot_244.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cadenaConexion" xml:space="preserve">
-    <value>Data Source = DESKTOP-AO482B2\SQLEXPRESS; Initial Catalog = proyescuela2; Integrated Security = True;</value>
+    <value>Data Source = DESKTOP-70OJMFT\MIKTO; Initial Catalog = proyescuela; Integrated Security = True;</value>
   </data>
-  <data name="calificaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calificaciones1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_103_14127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_103_141271.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize Window_2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize Window_2 48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancelar1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_019_14043" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_019_140431.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore Window 2_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restore Window 2_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="asignatura" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asignatura1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pagos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pagos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Educacio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Educacio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calificaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calificaciones1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pagos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pagos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Educacio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Educacio2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="regresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regresar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadena" xml:space="preserve">
+    <value>Data Source=DESKTOP-76J3QBF\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True</value>
   </data>
   <data name="Close Window_ 2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close Window_ 2 48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconfinder_150_14174" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_150_141741.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Educacio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Educacio2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Usuariosx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuariosx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asignatura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asignatura1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reporteria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reporteria2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maximize Window_2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maximize Window_2 48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_244.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empleado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empleado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estudiante1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tutor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tutor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reporteria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reporteria1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Educacio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Educacio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EducacionM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EducacionM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

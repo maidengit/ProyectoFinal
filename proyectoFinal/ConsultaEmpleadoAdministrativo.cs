@@ -16,7 +16,9 @@ namespace proyectoFinal
         {
             InitializeComponent();
         }
-
+        conexionbdasignaturayempleadoadmin link = new conexionbdasignaturayempleadoadmin();
+        String id; String nombre; String identidad; String fechanacimiento; String depid;
+        String Direccion; String telefono; String email; String sexo; String estado;
         private void MenuSuperior_Paint(object sender, PaintEventArgs e)
         {
 
@@ -76,6 +78,66 @@ namespace proyectoFinal
         {
             IngresoEmpleado link = new IngresoEmpleado();
             link.Show();
+        }
+
+        private void ConsultaEmpleadoAdministrativo_Load(object sender, EventArgs e)
+        {
+            Tabla.DataSource = link.mostrarDatosEmpleados();
+            cbDepartamento.DataSource = link.llenadoDepartamento();
+            cbDepartamento.DisplayMember = "nombre";
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            IngresoEmpleado jj = new IngresoEmpleado();
+            jj.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (nombre == null)
+            {
+                MessageBox.Show("Por favor selecciona una filla para modificar");
+            }
+            else
+            {
+                IngresoEmpleado jj = new IngresoEmpleado(id, nombre, identidad, fechanacimiento, depid,
+                        Direccion,telefono,email,sexo,estado, true);
+                jj.ShowDialog();
+            }
+        }
+
+        private void Tabla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow Fila = Tabla.Rows[e.RowIndex];
+            id = Convert.ToString(Fila.Cells[0].Value);
+            nombre = Convert.ToString(Fila.Cells[1].Value);
+            identidad = Convert.ToString(Fila.Cells[2].Value);
+            fechanacimiento = Convert.ToString(Fila.Cells[3].Value);
+            depid = Convert.ToString(Fila.Cells[4].Value);
+            /*Direccion = Convert.ToString(Fila.Cells[5].Value);*/
+            telefono = Convert.ToString(Fila.Cells[5].Value);
+            email = Convert.ToString(Fila.Cells[6].Value);
+            /*sexo = Convert.ToString(Fila.Cells[7].Value);*/
+            /*estado = Convert.ToString(Fila.Cells[9].Value);*/
+
+            /*String id; String nombre; String identidad; String fechanacimiento; String depid;
+            String Direccion; String telefono; String email; String sexo; String estado;*/
+
+        }
+
+        private void txtNombre_TextChanged_1(object sender, EventArgs e)
+        {
+            {
+                if (txtNombre.Text != "") Tabla.DataSource = link.BuscarEmpleado(txtNombre.Text);
+                else Tabla.DataSource = link.mostrarDatos3();
+            }
+        }
+
+        private void cbDepartamento_TextChanged(object sender, EventArgs e)
+        {
+            if (cbDepartamento.Text != "") Tabla.DataSource = link.BuscarEmpleadoporDepartamento(cbDepartamento.Text);
+            else Tabla.DataSource = link.mostrarDatos3();
         }
     }
 }
