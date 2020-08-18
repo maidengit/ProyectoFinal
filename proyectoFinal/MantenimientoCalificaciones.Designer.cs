@@ -65,9 +65,9 @@
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.Tabla = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.menupic = new System.Windows.Forms.PictureBox();
-            this.Cerrarpic = new System.Windows.Forms.PictureBox();
             this.Minimizarpic = new System.Windows.Forms.PictureBox();
+            this.Cerrarpic = new System.Windows.Forms.PictureBox();
+            this.menupic = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -76,9 +76,9 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -286,6 +286,7 @@
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(127, 292);
             this.flowLayoutPanel3.TabIndex = 2;
+            this.flowLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel3_Paint);
             // 
             // label4
             // 
@@ -529,18 +530,17 @@
             this.panel10.Size = new System.Drawing.Size(826, 50);
             this.panel10.TabIndex = 3;
             // 
-            // menupic
+            // Minimizarpic
             // 
-            this.menupic.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.menupic.ErrorImage = global::proyectoFinal.Properties.Resources.regresar;
-            this.menupic.Image = global::proyectoFinal.Properties.Resources.regresar;
-            this.menupic.Location = new System.Drawing.Point(3, 3);
-            this.menupic.Name = "menupic";
-            this.menupic.Size = new System.Drawing.Size(40, 38);
-            this.menupic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.menupic.TabIndex = 5;
-            this.menupic.TabStop = false;
-            this.menupic.Click += new System.EventHandler(this.menupic_Click);
+            this.Minimizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Minimizarpic.Image = global::proyectoFinal.Properties.Resources.Minimize_Window_2_48px;
+            this.Minimizarpic.Location = new System.Drawing.Point(740, 0);
+            this.Minimizarpic.Name = "Minimizarpic";
+            this.Minimizarpic.Size = new System.Drawing.Size(40, 38);
+            this.Minimizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Minimizarpic.TabIndex = 7;
+            this.Minimizarpic.TabStop = false;
+            this.Minimizarpic.Click += new System.EventHandler(this.Minimizarpic_Click);
             // 
             // Cerrarpic
             // 
@@ -554,17 +554,18 @@
             this.Cerrarpic.TabStop = false;
             this.Cerrarpic.Click += new System.EventHandler(this.Cerrarpic_Click);
             // 
-            // Minimizarpic
+            // menupic
             // 
-            this.Minimizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Minimizarpic.Image = global::proyectoFinal.Properties.Resources.Minimize_Window_2_48px;
-            this.Minimizarpic.Location = new System.Drawing.Point(740, 0);
-            this.Minimizarpic.Name = "Minimizarpic";
-            this.Minimizarpic.Size = new System.Drawing.Size(40, 38);
-            this.Minimizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Minimizarpic.TabIndex = 7;
-            this.Minimizarpic.TabStop = false;
-            this.Minimizarpic.Click += new System.EventHandler(this.Minimizarpic_Click);
+            this.menupic.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.menupic.ErrorImage = global::proyectoFinal.Properties.Resources.regresar;
+            this.menupic.Image = global::proyectoFinal.Properties.Resources.regresar;
+            this.menupic.Location = new System.Drawing.Point(3, 3);
+            this.menupic.Name = "menupic";
+            this.menupic.Size = new System.Drawing.Size(40, 38);
+            this.menupic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.menupic.TabIndex = 5;
+            this.menupic.TabStop = false;
+            this.menupic.Click += new System.EventHandler(this.menupic_Click);
             // 
             // MantenimientoCalificaciones
             // 
@@ -597,9 +598,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menupic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menupic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

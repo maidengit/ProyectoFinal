@@ -71,7 +71,7 @@ namespace proyectoFinal
             }
             else
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+                SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
                 string sql = "SELECT e.Identidad, UsuarioNombre, Clave from Usuario as u inner join Empleado as e on u.EmpleadoID = e.EmpleadoID where UsuarioNombre like @Usuario and Clave like @Password";
                 SqlCommand cmd = new SqlCommand(sql, conexion);
                 cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);

@@ -298,5 +298,10 @@ namespace proyectoFinal
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
