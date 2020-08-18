@@ -47,7 +47,7 @@ namespace proyectoFinal
         {
             try
             {
-                SqlConnection con = new SqlConnection(Properties.Resources.cadenaConexion);
+                SqlConnection con = new SqlConnection(Properties.Resources.cadena);
                 //String Query = "SELECT es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso FROM empleado e inner join Grado g on e.EmpleadoID = g.EmpleadoID inner join Estudiante es on g.GradoID = es.GradoID where es.estado = 'A'and e.Identidad='0501312364521' group by e.Identidad, es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso order by Nombre";
                 String Query = "SELECT es.estudianteID[ID] , es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso, dbo.fnEdad(es.EstudianteID) [Edad], dbo.fnNombreTutor(EstudianteID)[Tutor], dbo.fnTelefonoTutor(EstudianteID)[Telefono] FROM empleado e    inner join Grado g on e.EmpleadoID = g.EmpleadoID    inner join Estudiante es on g.GradoID = es.GradoID where es.estado = 'A'    and e.Identidad = '0501312364521'group by    es.EstudianteID, e.Identidad, es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso,  es.Fecha order by Nombre";
                 SqlDataAdapter da = new SqlDataAdapter(Query, con);

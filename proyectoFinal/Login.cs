@@ -20,7 +20,7 @@ namespace proyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+            SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
             string sql = "SELECT UsuarioNombre, Clave from Usuario where UsuarioNombre like @Usuario and Clave like @Password ";
             SqlCommand cmd = new SqlCommand(sql, conexion);
             cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
@@ -92,6 +92,11 @@ namespace proyectoFinal
             Menu Pp = new Menu();
             Pp.Show();
             this.Hide();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

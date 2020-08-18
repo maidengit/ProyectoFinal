@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using Microsoft.SqlServer.Server;
 using System.Drawing;
+using System.Windows.Forms.PropertyGridInternal;
 
 namespace LibreriaCon
 {
@@ -17,9 +18,9 @@ namespace LibreriaCon
         public Conexion()
         {
            try
-            { 
-                con = new SqlConnection("Data Source=DESKTOP-AO482B2\\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True");
-                
+            {
+                //con = new SqlConnection("Data Source=DESKTOP-AO482B2\\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True");
+                  con = new SqlConnection("Data Source = DESKTOP - 76J3QBF\\SQLEXPRESS; Initial Catalog = proyescuela; Integrated Security = True");
             }
             catch (Exception )
             {
