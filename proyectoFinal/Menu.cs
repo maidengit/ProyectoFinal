@@ -270,7 +270,8 @@ namespace proyectoFinal
         {
             Mantenimineto m = new Mantenimineto();
             m.Show();
-            
+            this.Hide();
+
         }
 
         private void ModulosPagos_Click(object sender, EventArgs e)
@@ -320,6 +321,16 @@ namespace proyectoFinal
         {
             MantenimientoCalificaciones m = new MantenimientoCalificaciones();
             m.Show();
+        }
+
+        private void NombreForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuWrapper_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

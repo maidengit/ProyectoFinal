@@ -36,6 +36,9 @@ namespace proyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            Menu m = new Menu();
+            m.Show();
             this.Close();
         }
         private void Gradobox_KeyPress(object sender, KeyPressEventArgs e)
@@ -114,6 +117,7 @@ namespace proyectoFinal
             {
                 string nombre;
                 nombre = this.tabla1.CurrentRow.Cells[0].Value.ToString();
+
                 string[] datos = c.capturarEstudiante(nombre);
                 DialogResult dr = MessageBox.Show("Esta Seguro que desea Cancelar", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dr == DialogResult.Yes)
@@ -135,8 +139,8 @@ namespace proyectoFinal
     }
         private void menupic_Click(object sender, EventArgs e)
         {
-            //Menu link = new Menu();
-            //link.Show();
+            Menu link = new Menu();
+            link.Show();
             this.Dispose();
         }
         private void Restaurarpic_Click(object sender, EventArgs e)
@@ -147,6 +151,8 @@ namespace proyectoFinal
         }
         private void Cerrarpic_Click(object sender, EventArgs e)
         {
+            Menu m = new Menu();
+            m.Show();
             this.Close();
         }
 

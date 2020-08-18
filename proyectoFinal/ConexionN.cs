@@ -20,9 +20,9 @@ namespace proyectoFinal
             try
             {
                 //Conexion de Melvin
-                con = new SqlConnection("Data Source=DESKTOP-AO482B2\\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True");
+                //con = new SqlConnection("Data Source=DESKTOP-AO482B2\\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True");
                 //Conexion de Nata
-                //con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True");
+                con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela1;Integrated Security=True");
                 //Conexion de ...
                 //con = new SqlConnection("Data Source = DESKTOP - 76J3QBF\\SQLEXPRESS; Initial Catalog = proyescuela; Integrated Security = True");
                 con.Open();
@@ -166,7 +166,6 @@ namespace proyectoFinal
                 int AsId = BuscarID(true, NAsignatura);
                 string sql = string.Format("EXEC spAgregarCalificacion {0},{1},{2},{3}", AsId, nota,parcial,EsId);
                 cmd = new SqlCommand(sql, con);
-                MessageBox.Show(sql);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Calificacion Ingresada"); 
             }
@@ -202,6 +201,7 @@ namespace proyectoFinal
                 string sql = "select calificacionID,asignaturaID,numeroparcial from vCalificaciones where parcial = '" + parcial + "' and " +
                     "materia='" + asignatura + "' and nombre='" + nombre + "'";
                 cmd = new SqlCommand(sql, con);
+                MessageBox.Show(sql);
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {

@@ -52,16 +52,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
             this.SuspendLayout();
             // 
-            // NombreForm
+            // Nombre
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.BackColor = System.Drawing.Color.Transparent;
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nombre.Location = new System.Drawing.Point(266, 69);
-            this.Nombre.Name = "NombreForm";
+            this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(62, 15);
             this.Nombre.TabIndex = 22;
-            this.Nombre.Text = "NombreForm:";
+            this.Nombre.Text = "Nombre:";
             // 
             // tutorBox2
             // 

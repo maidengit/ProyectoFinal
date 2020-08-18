@@ -26,6 +26,7 @@ namespace proyectoFinal
         {
             CuadroCalificaiciones CC = new CuadroCalificaiciones();
             CC.MdiParent = this.MdiParent;
+            CC.MC1 = this;
             CC.Editar = false;
             CC.ShowDialog();
         }
@@ -80,6 +81,7 @@ namespace proyectoFinal
                 CC.cbAsignatura.Text = Tabla.CurrentRow.Cells[3].Value.ToString();
                 CC.AsT = Tabla.CurrentRow.Cells[3].Value.ToString();
                 CC.nmCalificacion.Value = Convert.ToDecimal(Tabla.CurrentRow.Cells[4].Value.ToString());
+                CC.MC1 = this;
                 CC.ShowDialog();
             }
             else { MessageBox.Show("Es necesario seleccionar una Fila");  }
@@ -141,7 +143,7 @@ namespace proyectoFinal
             cbAignatura.Text = "---Es necesario seleccionar un grado---";
             Conectar.llenarComboBox(cbGrado, "grado", "curso");
         }
-        private void llenar()
+        public void llenar()
         {
             Conectar = new ConexionN();
             if(rbAprobado.Checked || rbReprobado.Checked)
@@ -291,7 +293,8 @@ namespace proyectoFinal
         {
             Menu link = new Menu();
             link.Show();
-            this.Dispose();
+
+            this.Close();
         }
 
         private void Minimizarpic_Click(object sender, EventArgs e)
