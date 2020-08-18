@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cbGrado = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -39,6 +39,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.Tabla = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -88,99 +88,118 @@
             this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Controls.Add(this.txtNombre);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 56);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(8, 36);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1254, 72);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(836, 47);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // label3
+            // panel8
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(390, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(507, 37);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "CUADRO DE CALIFICACIONES";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel8.Location = new System.Drawing.Point(2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(87, 18);
+            this.panel8.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(140, 0);
+            this.label1.Location = new System.Drawing.Point(93, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 22);
+            this.label1.Size = new System.Drawing.Size(50, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Grado:";
             // 
             // cbGrado
             // 
             this.cbGrado.FormattingEnabled = true;
-            this.cbGrado.Location = new System.Drawing.Point(217, 3);
+            this.cbGrado.Location = new System.Drawing.Point(147, 2);
+            this.cbGrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbGrado.Name = "cbGrado";
-            this.cbGrado.Size = new System.Drawing.Size(277, 28);
+            this.cbGrado.Size = new System.Drawing.Size(186, 21);
             this.cbGrado.TabIndex = 1;
             this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(500, 3);
+            this.panel4.Location = new System.Drawing.Point(337, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(119, 28);
+            this.panel4.Size = new System.Drawing.Size(79, 18);
             this.panel4.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(625, 0);
+            this.label2.Location = new System.Drawing.Point(420, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 22);
+            this.label2.Size = new System.Drawing.Size(79, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Asignatura:";
             // 
             // cbAignatura
             // 
             this.cbAignatura.FormattingEnabled = true;
-            this.cbAignatura.Location = new System.Drawing.Point(743, 3);
+            this.cbAignatura.Location = new System.Drawing.Point(503, 2);
+            this.cbAignatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbAignatura.Name = "cbAignatura";
-            this.cbAignatura.Size = new System.Drawing.Size(271, 28);
+            this.cbAignatura.Size = new System.Drawing.Size(182, 21);
             this.cbAignatura.TabIndex = 3;
             this.cbAignatura.SelectedIndexChanged += new System.EventHandler(this.cbAignatura_SelectedIndexChanged);
             // 
             // panel7
             // 
-            this.panel7.Location = new System.Drawing.Point(1020, 3);
+            this.panel7.Location = new System.Drawing.Point(689, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(185, 28);
+            this.panel7.Size = new System.Drawing.Size(123, 18);
             this.panel7.TabIndex = 4;
             // 
             // panel9
             // 
-            this.panel9.Location = new System.Drawing.Point(3, 37);
+            this.panel9.Location = new System.Drawing.Point(2, 27);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(250, 28);
+            this.panel9.Size = new System.Drawing.Size(167, 18);
             this.panel9.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(259, 34);
+            this.label5.Location = new System.Drawing.Point(173, 25);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(219, 22);
+            this.label5.Size = new System.Drawing.Size(158, 15);
             this.label5.TabIndex = 5;
             this.label5.Text = "Nombre del Estudiante:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(484, 37);
+            this.txtNombre.Location = new System.Drawing.Point(335, 27);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(414, 26);
+            this.txtNombre.Size = new System.Drawing.Size(277, 20);
             this.txtNombre.TabIndex = 6;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(260, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(359, 26);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "CUADRO DE CALIFICACIONES";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel2
             // 
@@ -189,10 +208,12 @@
             this.flowLayoutPanel2.Controls.Add(this.button2);
             this.flowLayoutPanel2.Controls.Add(this.button3);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1090, 134);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(727, 87);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(176, 450);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(117, 292);
             this.flowLayoutPanel2.TabIndex = 1;
+            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // button1
             // 
@@ -201,9 +222,10 @@
             this.button1.FlatAppearance.BorderSize = 4;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 50);
+            this.button1.Size = new System.Drawing.Size(113, 32);
             this.button1.TabIndex = 0;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
@@ -216,9 +238,10 @@
             this.button2.FlatAppearance.BorderSize = 4;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 59);
+            this.button2.Location = new System.Drawing.Point(2, 38);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 50);
+            this.button2.Size = new System.Drawing.Size(113, 32);
             this.button2.TabIndex = 1;
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = false;
@@ -231,9 +254,10 @@
             this.button3.FlatAppearance.BorderSize = 4;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(3, 115);
+            this.button3.Location = new System.Drawing.Point(2, 74);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 50);
+            this.button3.Size = new System.Drawing.Size(113, 32);
             this.button3.TabIndex = 2;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = false;
@@ -248,18 +272,20 @@
             this.flowLayoutPanel3.Controls.Add(this.panel6);
             this.flowLayoutPanel3.Controls.Add(this.panel3);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(15, 134);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(10, 87);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(191, 450);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(127, 292);
             this.flowLayoutPanel3.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Location = new System.Drawing.Point(2, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 22);
+            this.label4.Size = new System.Drawing.Size(93, 15);
             this.label4.TabIndex = 1;
             this.label4.Text = "Mostrar Solo:";
             // 
@@ -268,17 +294,19 @@
             this.panel5.Controls.Add(this.rbReprobado);
             this.panel5.Controls.Add(this.rbAprobado);
             this.panel5.Controls.Add(this.shapeContainer2);
-            this.panel5.Location = new System.Drawing.Point(3, 25);
+            this.panel5.Location = new System.Drawing.Point(2, 17);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(180, 80);
+            this.panel5.Size = new System.Drawing.Size(120, 52);
             this.panel5.TabIndex = 0;
             // 
             // rbReprobado
             // 
             this.rbReprobado.AutoSize = true;
-            this.rbReprobado.Location = new System.Drawing.Point(8, 37);
+            this.rbReprobado.Location = new System.Drawing.Point(5, 24);
+            this.rbReprobado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbReprobado.Name = "rbReprobado";
-            this.rbReprobado.Size = new System.Drawing.Size(122, 24);
+            this.rbReprobado.Size = new System.Drawing.Size(83, 17);
             this.rbReprobado.TabIndex = 1;
             this.rbReprobado.Text = "Reprobados";
             this.rbReprobado.UseVisualStyleBackColor = true;
@@ -289,9 +317,10 @@
             // 
             this.rbAprobado.AutoSize = true;
             this.rbAprobado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbAprobado.Location = new System.Drawing.Point(8, 8);
+            this.rbAprobado.Location = new System.Drawing.Point(5, 5);
+            this.rbAprobado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbAprobado.Name = "rbAprobado";
-            this.rbAprobado.Size = new System.Drawing.Size(112, 24);
+            this.rbAprobado.Size = new System.Drawing.Size(76, 17);
             this.rbAprobado.TabIndex = 0;
             this.rbAprobado.Text = "Aprobados";
             this.rbAprobado.UseVisualStyleBackColor = true;
@@ -305,7 +334,7 @@
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape1});
-            this.shapeContainer2.Size = new System.Drawing.Size(180, 80);
+            this.shapeContainer2.Size = new System.Drawing.Size(120, 52);
             this.shapeContainer2.TabIndex = 2;
             this.shapeContainer2.TabStop = false;
             // 
@@ -321,17 +350,19 @@
             this.panel6.Controls.Add(this.rbMasculino);
             this.panel6.Controls.Add(this.rbFemenino);
             this.panel6.Controls.Add(this.shapeContainer3);
-            this.panel6.Location = new System.Drawing.Point(3, 111);
+            this.panel6.Location = new System.Drawing.Point(2, 73);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(180, 80);
+            this.panel6.Size = new System.Drawing.Size(120, 52);
             this.panel6.TabIndex = 2;
             // 
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(8, 37);
+            this.rbMasculino.Location = new System.Drawing.Point(5, 24);
+            this.rbMasculino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(105, 24);
+            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
             this.rbMasculino.TabIndex = 1;
             this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
@@ -341,9 +372,10 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
-            this.rbFemenino.Location = new System.Drawing.Point(8, 8);
+            this.rbFemenino.Location = new System.Drawing.Point(5, 5);
+            this.rbFemenino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(105, 24);
+            this.rbFemenino.Size = new System.Drawing.Size(71, 17);
             this.rbFemenino.TabIndex = 0;
             this.rbFemenino.TabStop = true;
             this.rbFemenino.Text = "Femenino";
@@ -358,7 +390,7 @@
             this.shapeContainer3.Name = "shapeContainer3";
             this.shapeContainer3.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape3});
-            this.shapeContainer3.Size = new System.Drawing.Size(180, 80);
+            this.shapeContainer3.Size = new System.Drawing.Size(120, 52);
             this.shapeContainer3.TabIndex = 2;
             this.shapeContainer3.TabStop = false;
             // 
@@ -376,17 +408,19 @@
             this.panel3.Controls.Add(this.rbMuySatisfactorio);
             this.panel3.Controls.Add(this.rbAvanzado);
             this.panel3.Controls.Add(this.shapeContainer1);
-            this.panel3.Location = new System.Drawing.Point(3, 197);
+            this.panel3.Location = new System.Drawing.Point(2, 129);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 138);
+            this.panel3.Size = new System.Drawing.Size(120, 90);
             this.panel3.TabIndex = 2;
             // 
             // rbInsuficiente
             // 
             this.rbInsuficiente.AutoSize = true;
-            this.rbInsuficiente.Location = new System.Drawing.Point(8, 95);
+            this.rbInsuficiente.Location = new System.Drawing.Point(5, 62);
+            this.rbInsuficiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbInsuficiente.Name = "rbInsuficiente";
-            this.rbInsuficiente.Size = new System.Drawing.Size(116, 24);
+            this.rbInsuficiente.Size = new System.Drawing.Size(79, 17);
             this.rbInsuficiente.TabIndex = 5;
             this.rbInsuficiente.TabStop = true;
             this.rbInsuficiente.Text = "Insuficiente";
@@ -397,9 +431,10 @@
             // rbSatisfactorio
             // 
             this.rbSatisfactorio.AutoSize = true;
-            this.rbSatisfactorio.Location = new System.Drawing.Point(8, 66);
+            this.rbSatisfactorio.Location = new System.Drawing.Point(5, 43);
+            this.rbSatisfactorio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbSatisfactorio.Name = "rbSatisfactorio";
-            this.rbSatisfactorio.Size = new System.Drawing.Size(123, 24);
+            this.rbSatisfactorio.Size = new System.Drawing.Size(83, 17);
             this.rbSatisfactorio.TabIndex = 3;
             this.rbSatisfactorio.TabStop = true;
             this.rbSatisfactorio.Text = "Satisfactorio";
@@ -410,9 +445,10 @@
             // rbMuySatisfactorio
             // 
             this.rbMuySatisfactorio.AutoSize = true;
-            this.rbMuySatisfactorio.Location = new System.Drawing.Point(8, 37);
+            this.rbMuySatisfactorio.Location = new System.Drawing.Point(5, 24);
+            this.rbMuySatisfactorio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbMuySatisfactorio.Name = "rbMuySatisfactorio";
-            this.rbMuySatisfactorio.Size = new System.Drawing.Size(156, 24);
+            this.rbMuySatisfactorio.Size = new System.Drawing.Size(106, 17);
             this.rbMuySatisfactorio.TabIndex = 1;
             this.rbMuySatisfactorio.TabStop = true;
             this.rbMuySatisfactorio.Text = "Muy Satisfactorio";
@@ -423,9 +459,10 @@
             // rbAvanzado
             // 
             this.rbAvanzado.AutoSize = true;
-            this.rbAvanzado.Location = new System.Drawing.Point(8, 8);
+            this.rbAvanzado.Location = new System.Drawing.Point(5, 5);
+            this.rbAvanzado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbAvanzado.Name = "rbAvanzado";
-            this.rbAvanzado.Size = new System.Drawing.Size(105, 24);
+            this.rbAvanzado.Size = new System.Drawing.Size(73, 17);
             this.rbAvanzado.TabIndex = 0;
             this.rbAvanzado.TabStop = true;
             this.rbAvanzado.Text = "Avanzado";
@@ -440,7 +477,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(180, 138);
+            this.shapeContainer1.Size = new System.Drawing.Size(120, 90);
             this.shapeContainer1.TabIndex = 6;
             this.shapeContainer1.TabStop = false;
             // 
@@ -457,14 +494,15 @@
             this.Tabla.AllowUserToDeleteRows = false;
             this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabla.Location = new System.Drawing.Point(209, 134);
+            this.Tabla.Location = new System.Drawing.Point(139, 87);
+            this.Tabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tabla.Name = "Tabla";
             this.Tabla.ReadOnly = true;
             this.Tabla.RowHeadersWidth = 62;
             this.Tabla.RowTemplate.Height = 28;
             this.Tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Tabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Tabla.Size = new System.Drawing.Size(875, 450);
+            this.Tabla.Size = new System.Drawing.Size(583, 292);
             this.Tabla.TabIndex = 1;
             this.Tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellContentClick);
             // 
@@ -474,29 +512,24 @@
             this.panel10.Controls.Add(this.label3);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1278, 50);
+            this.panel10.Size = new System.Drawing.Size(852, 32);
             this.panel10.TabIndex = 3;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(131, 28);
-            this.panel8.TabIndex = 4;
             // 
             // MantenimientoCalificaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1278, 600);
+            this.ClientSize = new System.Drawing.Size(852, 390);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.Tabla);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MantenimientoCalificaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantenimientoCalificaciones";

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{746C83EF-A54A-4C7F-8C93-43720AEB016F}</ProjectGuid>
+    <ProjectGuid>{2911872C-AF46-457D-9EDC-1C78989C1BCF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>proyectoFinal</RootNamespace>
     <AssemblyName>proyectoFinal</AssemblyName>
@@ -34,34 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\..\Archivos\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
-    <Reference Include="LibreriaCon">
-      <HintPath>..\LibreriaCon\bin\Debug\LibreriaCon.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Design.DLL</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.1\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Analisis y Sistemas\proy\ICONOS\btn\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -87,17 +60,17 @@
     <Compile Include="ConsultaAsignaturaAdministrativa.Designer.cs">
       <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultaDeAsignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaDeAsignaturas.Designer.cs">
+      <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaEmpleadoAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultaEmpleadoAdministrativo.Designer.cs">
       <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConsultaTutor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConsultaTutor.Designer.cs">
-      <DependentUpon>ConsultaTutor.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultaUsuarios.cs">
       <SubType>Form</SubType>
@@ -111,7 +84,6 @@
     <Compile Include="CuadroCalificaiciones.Designer.cs">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSetPrincipal.Designer.cs" />
     <Compile Include="IngresoAsignaturaAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +95,6 @@
     </Compile>
     <Compile Include="IngresoEmpleado.Designer.cs">
       <DependentUpon>IngresoEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="listadoAsignaturas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="listadoAsignaturas.Designer.cs">
-      <DependentUpon>listadoAsignaturas.cs</DependentUpon>
     </Compile>
     <Compile Include="listadoEstudiantes.cs">
       <SubType>Form</SubType>
@@ -148,83 +114,28 @@
     <Compile Include="MantenimientoCalificaciones.Designer.cs">
       <DependentUpon>MantenimientoCalificaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimineto De Estudiantes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimineto De Estudiantes.designer.cs">
-      <DependentUpon>Mantenimineto De Estudiantes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MostarReporte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MostarReporte.Designer.cs">
-      <DependentUpon>MostarReporte.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MostarReporte2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MostarReporte2.Designer.cs">
-      <DependentUpon>MostarReporte2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MostarReporte3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MostarReporte3.Designer.cs">
-      <DependentUpon>MostarReporte3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistroEstudiante.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistroEstudiante.Designer.cs">
-      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RegistroTutor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistroTutor.Designer.cs">
-      <DependentUpon>RegistroTutor.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistroUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroUsuarios.Designer.cs">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteCalificaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReporteCalificaciones.Designer.cs">
-      <DependentUpon>ReporteCalificaciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ReporteGradoAsignatura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReporteGradoAsignatura.Designer.cs">
-      <DependentUpon>ReporteGradoAsignatura.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ReporteListaGrado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReporteListaGrado.Designer.cs">
-      <DependentUpon>ReporteListaGrado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="ConsultaAsignaturaAdministrativa.resx">
       <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="consultaDeAsignaturas.resx">
+      <DependentUpon>consultaDeAsignaturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEmpleadoAdministrativo.resx">
       <DependentUpon>ConsultaEmpleadoAdministrativo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConsultaTutor.resx">
-      <DependentUpon>ConsultaTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaUsuarios.resx">
       <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
@@ -238,9 +149,6 @@
     <EmbeddedResource Include="IngresoEmpleado.resx">
       <DependentUpon>IngresoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="listadoAsignaturas.resx">
-      <DependentUpon>listadoAsignaturas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="listadoEstudiantes.resx">
       <DependentUpon>listadoEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,20 +158,8 @@
     <EmbeddedResource Include="MantenimientoCalificaciones.resx">
       <DependentUpon>MantenimientoCalificaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimineto De Estudiantes.resx">
-      <DependentUpon>Mantenimineto De Estudiantes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MostarReporte.resx">
-      <DependentUpon>MostarReporte.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MostarReporte2.resx">
-      <DependentUpon>MostarReporte2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MostarReporte3.resx">
-      <DependentUpon>MostarReporte3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -275,32 +171,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegistroEstudiante.resx">
-      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistroTutor.resx">
-      <DependentUpon>RegistroTutor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteCalificaciones.resx">
-      <DependentUpon>ReporteCalificaciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteGradoAsignatura.resx">
-      <DependentUpon>ReporteGradoAsignatura.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReporteListaGrado.resx">
-      <DependentUpon>ReporteListaGrado.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="DataSetPrincipal.xsc">
-      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
-    </None>
-    <None Include="DataSetPrincipal.xsd" />
-    <None Include="DataSetPrincipal.xss">
-      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
-    </None>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -432,30 +305,13 @@
     <None Include="Resources\Reporteria2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x64\msvcr100.dll">
-      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x64\SqlServerSpatial110.dll">
-      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x86\msvcr100.dll">
-      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x86\SqlServerSpatial110.dll">
-      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LibreriaCon.dll" />
-    <Content Include="Resources\iconfinder_019_14043.ico" />
-    <None Include="Resources\iconfinder_019_140431.ico" />
-    <Content Include="Resources\iconfinder_103_14127.ico" />
-    <None Include="Resources\iconfinder_103_141271.ico" />
-    <Content Include="Resources\iconfinder_150_14174.ico" />
-    <None Include="Resources\iconfinder_150_141741.ico" />
-    <Content Include="SqlServerTypes\readme.htm" />
+    <None Include="Resources\iconfinder_103_14127.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_019_14043.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_150_14174.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
