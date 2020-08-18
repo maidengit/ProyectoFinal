@@ -85,6 +85,7 @@
     <Compile Include="cambioContrasenia.Designer.cs">
       <DependentUpon>cambioContrasenia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="conexionbdasignaturayempleadoadmin.cs" />
     <Compile Include="ConexionN.cs" />
     <Compile Include="ConsultaAsignaturaAdministrativa.cs">

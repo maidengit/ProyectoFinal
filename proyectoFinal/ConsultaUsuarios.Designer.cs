@@ -44,6 +44,7 @@
             this.btnCambiarContrasenia = new System.Windows.Forms.Button();
             this.gridUsuario = new System.Windows.Forms.DataGridView();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
@@ -67,9 +68,9 @@
             // txtFiltroUsuario
             // 
             this.txtFiltroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltroUsuario.Location = new System.Drawing.Point(277, 121);
+            this.txtFiltroUsuario.Location = new System.Drawing.Point(338, 121);
             this.txtFiltroUsuario.Name = "txtFiltroUsuario";
-            this.txtFiltroUsuario.Size = new System.Drawing.Size(236, 21);
+            this.txtFiltroUsuario.Size = new System.Drawing.Size(201, 21);
             this.txtFiltroUsuario.TabIndex = 3;
             this.txtFiltroUsuario.TextChanged += new System.EventHandler(this.txtFiltroUsuario_TextChanged);
             // 
@@ -77,7 +78,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 122);
+            this.label2.Location = new System.Drawing.Point(79, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 15);
             this.label2.TabIndex = 4;
@@ -110,14 +111,14 @@
             this.MenuSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.MenuSuperior.Location = new System.Drawing.Point(0, 0);
             this.MenuSuperior.Name = "MenuSuperior";
-            this.MenuSuperior.Size = new System.Drawing.Size(793, 58);
+            this.MenuSuperior.Size = new System.Drawing.Size(778, 58);
             this.MenuSuperior.TabIndex = 9;
             // 
             // Restaurarpic
             // 
             this.Restaurarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Restaurarpic.Image = global::proyectoFinal.Properties.Resources.Restore_Window_2_48px;
-            this.Restaurarpic.Location = new System.Drawing.Point(691, 10);
+            this.Restaurarpic.Location = new System.Drawing.Point(676, 10);
             this.Restaurarpic.Name = "Restaurarpic";
             this.Restaurarpic.Size = new System.Drawing.Size(40, 38);
             this.Restaurarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +131,7 @@
             // 
             this.Minimizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizarpic.Image = global::proyectoFinal.Properties.Resources.Minimize_Window_2_48px;
-            this.Minimizarpic.Location = new System.Drawing.Point(691, 10);
+            this.Minimizarpic.Location = new System.Drawing.Point(676, 10);
             this.Minimizarpic.Name = "Minimizarpic";
             this.Minimizarpic.Size = new System.Drawing.Size(40, 38);
             this.Minimizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,7 +142,7 @@
             // 
             this.Maximizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Maximizarpic.Image = global::proyectoFinal.Properties.Resources.Maximize_Window_2_48px;
-            this.Maximizarpic.Location = new System.Drawing.Point(691, 10);
+            this.Maximizarpic.Location = new System.Drawing.Point(676, 10);
             this.Maximizarpic.Name = "Maximizarpic";
             this.Maximizarpic.Size = new System.Drawing.Size(40, 38);
             this.Maximizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,7 +153,7 @@
             // 
             this.Cerrarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cerrarpic.Image = global::proyectoFinal.Properties.Resources.Close_Window__2_48px;
-            this.Cerrarpic.Location = new System.Drawing.Point(737, 10);
+            this.Cerrarpic.Location = new System.Drawing.Point(722, 10);
             this.Cerrarpic.Name = "Cerrarpic";
             this.Cerrarpic.Size = new System.Drawing.Size(40, 38);
             this.Cerrarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +190,7 @@
             "Nombre del empleado",
             "Departamento",
             "Estado"});
-            this.filtrado.Location = new System.Drawing.Point(98, 121);
+            this.filtrado.Location = new System.Drawing.Point(159, 121);
             this.filtrado.Name = "filtrado";
             this.filtrado.Size = new System.Drawing.Size(173, 21);
             this.filtrado.TabIndex = 10;
@@ -198,7 +199,7 @@
             // btnCambiarContrasenia
             // 
             this.btnCambiarContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiarContrasenia.Location = new System.Drawing.Point(21, 64);
+            this.btnCambiarContrasenia.Location = new System.Drawing.Point(67, 64);
             this.btnCambiarContrasenia.Name = "btnCambiarContrasenia";
             this.btnCambiarContrasenia.Size = new System.Drawing.Size(144, 26);
             this.btnCambiarContrasenia.TabIndex = 12;
@@ -211,11 +212,11 @@
             this.gridUsuario.AllowUserToAddRows = false;
             this.gridUsuario.AllowUserToDeleteRows = false;
             this.gridUsuario.AllowUserToOrderColumns = true;
-            this.gridUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridUsuario.Location = new System.Drawing.Point(21, 161);
+            this.gridUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridUsuario.Location = new System.Drawing.Point(82, 161);
             this.gridUsuario.Name = "gridUsuario";
             this.gridUsuario.ReadOnly = true;
-            this.gridUsuario.Size = new System.Drawing.Size(651, 300);
+            this.gridUsuario.Size = new System.Drawing.Size(601, 300);
             this.gridUsuario.TabIndex = 13;
             // 
             // btnEditar
@@ -232,11 +233,22 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(61, 428);
+            this.panel1.TabIndex = 15;
+            // 
             // ConsultaUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 486);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(778, 486);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.gridUsuario);
             this.Controls.Add(this.btnCambiarContrasenia);
@@ -280,5 +292,6 @@
         private System.Windows.Forms.Button btnCambiarContrasenia;
         private System.Windows.Forms.DataGridView gridUsuario;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Panel panel1;
     }
 }

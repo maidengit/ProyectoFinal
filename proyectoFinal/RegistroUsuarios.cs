@@ -13,9 +13,8 @@ namespace proyectoFinal
         bool validacionConfirmacionContrasenia = false;
         bool validacionIdentidad = false;
 
-        string EmpleadoID;
         string Estado = "Activo";
-
+        string empleadoID;
 
         public RegistroUsuarios()
         {
@@ -55,25 +54,21 @@ namespace proyectoFinal
             }
             else
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
-                string sql = "exec spInsertarUsuarios @empleadoID, @contrasenia, @estado, @usuario";
+                /*SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+                string sql = "exec spInsertarUsuarios @empleadoid, @contrasenia, @estado, @usuario";
                 SqlCommand cmd = new SqlCommand(sql, conexion);
                 cmd.Parameters.AddWithValue("@usuario", txtNombreUsuario.Text);
                 cmd.Parameters.AddWithValue("@contrasenia", txtContrasenia.Text);
-                if (String.IsNullOrEmpty(EmpleadoID))
-                {
-                    cmd.Parameters.AddWithValue("@empleadoID", DBNull.Value);
-                }
-                else
-                    cmd.Parameters.AddWithValue("@empleadoID", EmpleadoID);
+                cmd.Parameters.AddWithValue("@empleadoid", empleadoID);
+
                 if (String.IsNullOrEmpty(Estado))
                 {
                     cmd.Parameters.AddWithValue("@estado", DBNull.Value);
                 }
                 else
                     cmd.Parameters.AddWithValue("@estado", Estado);
-                //cmd.Parameters.AddWithValue("@empleadoID", EmpleadoID);
-                //cmd.Parameters.AddWithValue("@estado", Estado);
+                ////cmd.Parameters.AddWithValue("@empleadoID", EmpleadoID);
+                ////cmd.Parameters.AddWithValue("@estado", Estado);
                 try
                 {
                     cmd.Connection.Open();
@@ -89,7 +84,9 @@ namespace proyectoFinal
                     cmd.Connection.Close();
                 }
                 
-                this.Dispose();
+                this.Dispose();*/
+
+                MessageBox.Show("En construcción");
             }
             
         }
@@ -142,7 +139,7 @@ namespace proyectoFinal
         private void txtIdentidad_Validated(object sender, EventArgs e)
         {
             SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
-            string sql = "select e.EmpleadoID, e.Nombre, d.Nombre as Departamento from Empleado as e inner join Departamento as d on e.DepartamentoID = d.DepartamentoID where e.Identidad = @identidad";
+            string sql = "select e.Nombre, d.Nombre as Departamento, e.EmpleadoID from Empleado as e inner join Departamento as d on e.DepartamentoID = d.DepartamentoID where e.Identidad = @identidad";
             SqlCommand cmd = new SqlCommand(sql, conexion);
             cmd.Parameters.AddWithValue("@identidad", txtIdentidad.Text);
             cmd.Parameters.AddWithValue("@departamento", txtDepartamento.Text);
@@ -156,15 +153,16 @@ namespace proyectoFinal
                 {
                     while (reader.Read())
                     {
-                        txtNombreEmpleado.Text = reader[1] as string;
-                        txtDepartamento.Text = reader[2] as string;
-                        EmpleadoID = reader[0] as string;
+                        txtNombreEmpleado.Text = reader[0] as string;
+                        txtDepartamento.Text = reader[1] as string;
+                        empleadoID = reader[2] as string;
+
                     }
 
                 }
                 else
                 {
-                    errorProviderEmpleadoID.SetError(txtIdentidad, "EmpleadoID no está registrado");
+                    errorProviderEmpleadoID.SetError(txtIdentidad, "Identidad no está registrada");
                     return;
                 }
             }
@@ -207,6 +205,13 @@ namespace proyectoFinal
         private void Cerrarpic_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Restaurarpic_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+            Maximizarpic.Visible = true;
+            Restaurarpic.Visible = false;
         }
     }
 }

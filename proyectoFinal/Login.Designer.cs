@@ -132,7 +132,6 @@
             this.label1.Size = new System.Drawing.Size(269, 42);
             this.label1.TabIndex = 6;
             this.label1.Text = "INSTITUTO NO GUBERNAMENTAL \r\n         CRISTIANO IMPACTO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -182,7 +181,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

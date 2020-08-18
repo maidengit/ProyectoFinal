@@ -315,5 +315,11 @@ namespace proyectoFinal
             }
             
         }
+
+        private void btnCalificaciones_Click_1(object sender, EventArgs e)
+        {
+            MantenimientoCalificaciones m = new MantenimientoCalificaciones();
+            m.Show();
+        }
     }
 }

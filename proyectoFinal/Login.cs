@@ -220,47 +220,5 @@ namespace proyectoFinal
 
         }
 
-        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
-        {
-                if ((int)e.KeyChar == (int)Keys.Enter)
-                {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
-                string sql = "SELECT UsuarioNombre, Clave from Usuario where UsuarioNombre like @Usuario and Clave like @Password ";
-                SqlCommand cmd = new SqlCommand(sql, conexion);
-                cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
-                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-                try
-                {
-                    cmd.Connection.Open();
-                    cmd.ExecuteNonQuery();
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    if (reader.Read())
-                    {
-                        Menu pp = new Menu();
-                        MessageBox.Show("Bienvenido " + txtUsuario.Text);
-                        pp.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuario o Contraseña son incorrecto, por favor intenta de nuevo");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    cmd.Connection.Close();
-                }
-            }
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
