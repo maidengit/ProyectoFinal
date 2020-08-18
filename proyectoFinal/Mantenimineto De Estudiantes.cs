@@ -24,7 +24,7 @@ namespace proyectoFinal
 
         private void Mantenimineto_De_Estudiantes_Load(object sender, EventArgs e)
         {
-            c.con.Close();
+            //c.con.Close();
             tabla1.DataSource = c.Llenartabla(null, 0).Tables[0];
             c.Llenarcob(Gradobox, "curso", "Grado");
             c.Llenarcob(estudianteBox2, "Nombre", "Estudiante");

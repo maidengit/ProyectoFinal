@@ -156,16 +156,16 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Nota: Presione  Esc para cancelar ";
             // 
-            // Nombre
+            // NombreForm
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.BackColor = System.Drawing.Color.Transparent;
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nombre.Location = new System.Drawing.Point(410, 71);
-            this.Nombre.Name = "Nombre";
+            this.Nombre.Name = "NombreForm";
             this.Nombre.Size = new System.Drawing.Size(62, 15);
             this.Nombre.TabIndex = 12;
-            this.Nombre.Text = "Nombre:";
+            this.Nombre.Text = "NombreForm:";
             // 
             // label1
             // 

@@ -20,7 +20,7 @@ namespace LibreriaCon
            try
             {
                 //con = new SqlConnection("Data Source=DESKTOP-AO482B2\\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True");
-                  con = new SqlConnection("Data Source = DESKTOP - 76J3QBF\\SQLEXPRESS; Initial Catalog = proyescuela; Integrated Security = True");
+                  con = new SqlConnection("Data Source = DESKTOP-76J3QBF\\SQLEXPRESS; Initial Catalog = proyescuela; Integrated Security = True");
             }
             catch (Exception )
             {

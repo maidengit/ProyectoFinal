@@ -177,7 +177,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 15);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Nombre del Estudiante:";
+            this.label5.Text = "NombreForm del Estudiante:";
             // 
             // txtNombre
             // 

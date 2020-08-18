@@ -12,6 +12,8 @@ namespace proyectoFinal
 {
     public partial class Menu : Form
     {
+        public object Nombre { get;  set; }
+
         public Menu()
         {
             InitializeComponent();
@@ -182,8 +184,8 @@ namespace proyectoFinal
         private void btnListadoEstudiantes_Click_1(object sender, EventArgs e)
         {
             listadoEstudiantes link = new listadoEstudiantes();
-            link.docente.Text = this.Nombre.Text;
-            link.labelID.Text = this.labelID.Text;
+            link.docente.Text = this.NombreForm.Text;
+            link.labelID.Text = this.labelIDForm.Text;
             link.Show();
 
             
@@ -192,8 +194,8 @@ namespace proyectoFinal
         private void btnListadoAsignaturas_Click_1(object sender, EventArgs e)
         {
             listadoAsignaturas link = new listadoAsignaturas();
-            link.docente.Text = this.Nombre.Text;
-            link.labelID.Text = this.labelID.Text;
+            link.docente.Text = this.NombreForm.Text;
+            link.labelID.Text = this.labelIDForm.Text;
             link.Show();
             link.Show();
         }
@@ -236,9 +238,8 @@ namespace proyectoFinal
 
         private void btnConsultaUsuarios_Click(object sender, EventArgs e)
         {
-            ConsultaUsuarios link = new ConsultaUsuarios();
-            link.Visible = true;
-            link.Show();
+            ConsultaUsuarios cu = new ConsultaUsuarios();
+            cu.ShowDialog();
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)

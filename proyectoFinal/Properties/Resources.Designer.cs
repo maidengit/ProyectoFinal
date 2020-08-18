@@ -90,7 +90,7 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source = DESKTOP-70OJMFT\MIKTO; Initial Catalog = proyescuela; Integrated Security = True;.
+        ///   Busca una cadena traducida similar a Data Source = DESKTOP-R0IB2V5; Initial Catalog = proyescuela; Integrated Security = True;.
         /// </summary>
         internal static string cadenaConexion {
             get {

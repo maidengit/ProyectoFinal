@@ -55,6 +55,7 @@ namespace proyectoFinal
             }
             else
             {
+                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
                 string sql = "exec spInsertarUsuarios @empleadoID, @contrasenia, @estado, @usuario";
                 SqlCommand cmd = new SqlCommand(sql, conexion);
                 cmd.Parameters.AddWithValue("@usuario", txtNombreUsuario.Text);
@@ -140,7 +141,7 @@ namespace proyectoFinal
 
         private void txtIdentidad_Validated(object sender, EventArgs e)
         {
-            //string sql = "Select Nombre from Empleado where Identidad like '%" + txtIdentidad.Text + "%'";
+            SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
             string sql = "select e.EmpleadoID, e.Nombre, d.Nombre as Departamento from Empleado as e inner join Departamento as d on e.DepartamentoID = d.DepartamentoID where e.Identidad = @identidad";
             SqlCommand cmd = new SqlCommand(sql, conexion);
             cmd.Parameters.AddWithValue("@identidad", txtIdentidad.Text);
@@ -163,8 +164,7 @@ namespace proyectoFinal
                 }
                 else
                 {
-                    MessageBox.Show("La identidad del empleado no está registrada");
-                    //errorProviderEmpleadoID.SetError(txtIdentidad, "EmpleadoID no está registrado");
+                    errorProviderEmpleadoID.SetError(txtIdentidad, "EmpleadoID no está registrado");
                     return;
                 }
             }
@@ -204,6 +204,9 @@ namespace proyectoFinal
 
         }
 
-        
+        private void Cerrarpic_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -543,7 +543,7 @@ namespace proyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre = base.Columns["Nombre"];
+                this.columnNombre = base.Columns["NombreForm"];
                 this.columnGrado = base.Columns["Grado"];
                 this.columnAsignatura = base.Columns["Asignatura"];
                 this.columnI = base.Columns["I"];
@@ -557,7 +557,7 @@ namespace proyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnNombre = new global::System.Data.DataColumn("NombreForm", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNombre);
                 this.columnGrado = new global::System.Data.DataColumn("Grado", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGrado);
@@ -915,7 +915,7 @@ namespace proyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre = base.Columns["Nombre"];
+                this.columnNombre = base.Columns["NombreForm"];
                 this.columnGrado = base.Columns["Grado"];
                 this.columnAsignatura = base.Columns["Asignatura"];
                 this.columnParcial = base.Columns["Parcial"];
@@ -929,7 +929,7 @@ namespace proyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnNombre = new global::System.Data.DataColumn("NombreForm", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNombre);
                 this.columnGrado = new global::System.Data.DataColumn("Grado", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGrado);
@@ -1263,7 +1263,7 @@ namespace proyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnEstudianteID = base.Columns["EstudianteID"];
-                this.columnNombre = base.Columns["Nombre"];
+                this.columnNombre = base.Columns["NombreForm"];
                 this.columnEdad = base.Columns["Edad"];
                 this.columnCurso = base.Columns["Curso"];
                 this.columnAño = base.Columns["Año"];
@@ -1275,7 +1275,7 @@ namespace proyectoFinal {
             private void InitClass() {
                 this.columnEstudianteID = new global::System.Data.DataColumn("EstudianteID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEstudianteID);
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnNombre = new global::System.Data.DataColumn("NombreForm", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNombre);
                 this.columnEdad = new global::System.Data.DataColumn("Edad", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEdad);
@@ -2147,7 +2147,7 @@ namespace proyectoFinal.DataSetPrincipalTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "spBoletaCalificaciones";
-            tableMapping.ColumnMappings.Add("Nombre", "Nombre");
+            tableMapping.ColumnMappings.Add("NombreForm", "NombreForm");
             tableMapping.ColumnMappings.Add("Grado", "Grado");
             tableMapping.ColumnMappings.Add("Asignatura", "Asignatura");
             tableMapping.ColumnMappings.Add("I", "I");
@@ -2362,7 +2362,7 @@ namespace proyectoFinal.DataSetPrincipalTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "spGradoAsignatura";
-            tableMapping.ColumnMappings.Add("Nombre", "Nombre");
+            tableMapping.ColumnMappings.Add("NombreForm", "NombreForm");
             tableMapping.ColumnMappings.Add("Grado", "Grado");
             tableMapping.ColumnMappings.Add("Asignatura", "Asignatura");
             tableMapping.ColumnMappings.Add("Parcial", "Parcial");
@@ -2578,7 +2578,7 @@ namespace proyectoFinal.DataSetPrincipalTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "spListaGrado";
             tableMapping.ColumnMappings.Add("EstudianteID", "EstudianteID");
-            tableMapping.ColumnMappings.Add("Nombre", "Nombre");
+            tableMapping.ColumnMappings.Add("NombreForm", "NombreForm");
             tableMapping.ColumnMappings.Add("Edad", "Edad");
             tableMapping.ColumnMappings.Add("Curso", "Curso");
             tableMapping.ColumnMappings.Add("Año", "Año");

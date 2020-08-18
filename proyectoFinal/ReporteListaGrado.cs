@@ -14,8 +14,8 @@ namespace proyectoFinal
     public partial class ReporteListaGrado : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=KIRITOPC\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True");
 
+        SqlConnection con = new SqlConnection(Properties.Resources.cadena);
 
         public ReporteListaGrado()
         {

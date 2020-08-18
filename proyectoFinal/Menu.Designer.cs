@@ -47,8 +47,8 @@
             this.Maximizarpic = new System.Windows.Forms.PictureBox();
             this.btnAsignatura = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MenuWrapper = new System.Windows.Forms.Panel();
-            this.labelID = new System.Windows.Forms.Label();
-            this.Nombre = new System.Windows.Forms.Label();
+            this.labelIDForm = new System.Windows.Forms.Label();
+            this.NombreForm = new System.Windows.Forms.Label();
             this.btnConsultaUsuarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListadoEstudiantes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListadoAsignaturas = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -492,9 +492,9 @@
             // MenuWrapper
             // 
             this.MenuWrapper.Controls.Add(this.bunifuFlatButton3);
-            this.MenuWrapper.Controls.Add(this.labelID);
+            this.MenuWrapper.Controls.Add(this.labelIDForm);
             this.MenuWrapper.Controls.Add(this.bunifuFlatButton2);
-            this.MenuWrapper.Controls.Add(this.Nombre);
+            this.MenuWrapper.Controls.Add(this.NombreForm);
             this.MenuWrapper.Controls.Add(this.bunifuFlatButton1);
             this.MenuWrapper.Controls.Add(this.btnConsultaUsuarios);
             this.MenuWrapper.Controls.Add(this.btnListadoEstudiantes);
@@ -510,23 +510,23 @@
             this.MenuWrapper.Size = new System.Drawing.Size(800, 450);
             this.MenuWrapper.TabIndex = 5;
             // 
-            // labelID
+            // labelIDForm
             // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(218, 99);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(108, 13);
-            this.labelID.TabIndex = 10;
-            this.labelID.Text = "[aqui va su identidad]";
+            this.labelIDForm.AutoSize = true;
+            this.labelIDForm.Location = new System.Drawing.Point(218, 99);
+            this.labelIDForm.Name = "labelIDForm";
+            this.labelIDForm.Size = new System.Drawing.Size(108, 13);
+            this.labelIDForm.TabIndex = 10;
+            this.labelIDForm.Text = "[aqui va su identidad]";
             // 
-            // Nombre
+            // NombreForm
             // 
-            this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(218, 74);
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(184, 13);
-            this.Nombre.TabIndex = 9;
-            this.Nombre.Text = "[Aqui va el nombre del usuario activo]";
+            this.NombreForm.AutoSize = true;
+            this.NombreForm.Location = new System.Drawing.Point(218, 74);
+            this.NombreForm.Name = "NombreForm";
+            this.NombreForm.Size = new System.Drawing.Size(184, 13);
+            this.NombreForm.TabIndex = 9;
+            this.NombreForm.Text = "[Aqui va el nombre del usuario activo]";
             // 
             // btnConsultaUsuarios
             // 
@@ -837,10 +837,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnEmpleado;
         private Bunifu.Framework.UI.BunifuFlatButton ModulosPagos;
         private Bunifu.Framework.UI.BunifuFlatButton btnConsultaUsuarios;
-        private System.Windows.Forms.Label Nombre;
-        private System.Windows.Forms.Label labelID;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        public System.Windows.Forms.Label NombreForm;
+        public System.Windows.Forms.Label labelIDForm;
     }
 }
