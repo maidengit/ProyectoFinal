@@ -202,11 +202,6 @@ namespace proyectoFinal
                 }
                 
                 eu.Show();
-                //string[] d1 = c.capturarInfTutor2(nombre);
-                
-                //rg.id1.Text = d1[0];
-                //rg.ban.Text = "3";
-                //rg.Show();
             }
         }
 
