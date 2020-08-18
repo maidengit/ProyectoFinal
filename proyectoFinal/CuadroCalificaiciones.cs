@@ -21,6 +21,7 @@ namespace proyectoFinal
         public string ParT;
         public string AsT;
         public string NombreT;
+        public MantenimientoCalificaciones MC1;
         private void CuadroCalificaiciones_Load(object sender, EventArgs e)
         {
             con = new ConexionN();
@@ -97,13 +98,13 @@ namespace proyectoFinal
         {
             if (Editar)
             {
-                //editar();
-                MessageBox.Show("Calificacion Editada correctamente");
+                editar();
+                MC1.llenar();
             }
             else
             {
-                MessageBox.Show("Calificacion agregada correctamente");
-                // guardar();
+                guardar();
+                MC1.llenar();
             }          
         }
         private void guardar()
@@ -113,10 +114,12 @@ namespace proyectoFinal
             int Parcial = cbParcial.SelectedIndex+1;
             float calificacion = (float)nmCalificacion.Value;
             con.ingresar(alumno, Asignatura, calificacion, Parcial);
+            this.Dispose();
         }
         private void editar()
         {
             con.actualizarCalificacion((float)nmCalificacion.Value, ParT, AsT, NombreT);
+            this.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -124,8 +127,6 @@ namespace proyectoFinal
             DialogResult dr = MessageBox.Show("Esta seguro de Cancelar", "Cancelar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr==DialogResult.Yes)
             {
-                MantenimientoCalificaciones mc = new MantenimientoCalificaciones();
-                mc.ShowDialog();
                 this.Dispose();
             }
         }

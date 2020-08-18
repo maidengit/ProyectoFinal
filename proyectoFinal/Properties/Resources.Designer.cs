@@ -81,7 +81,7 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-AO482B2\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True.
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-KV58B2F\SQLEXPRESS;Initial Catalog=proyescuela1;Integrated Security=True.
         /// </summary>
         internal static string cadena {
             get {
@@ -90,7 +90,7 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-AO482B2\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True.
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-KV58B2F\SQLEXPRESS;Initial Catalog=proyescuela1;Integrated Security=True.
         /// </summary>
         internal static string cadenaConexion {
             get {
