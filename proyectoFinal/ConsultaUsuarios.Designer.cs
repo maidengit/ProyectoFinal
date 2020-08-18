@@ -41,6 +41,9 @@
             this.Cerrarpic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menupic = new System.Windows.Forms.PictureBox();
+            this.filtrado = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCambiarContrasenia = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).BeginInit();
             this.MenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).BeginInit();
@@ -55,7 +58,7 @@
             this.gridUsuario.AllowUserToAddRows = false;
             this.gridUsuario.AllowUserToDeleteRows = false;
             this.gridUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridUsuario.Location = new System.Drawing.Point(21, 139);
+            this.gridUsuario.Location = new System.Drawing.Point(21, 161);
             this.gridUsuario.Name = "gridUsuario";
             this.gridUsuario.ReadOnly = true;
             this.gridUsuario.Size = new System.Drawing.Size(718, 316);
@@ -64,20 +67,20 @@
             // btnConsultar
             // 
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Location = new System.Drawing.Point(659, 92);
+            this.btnConsultar.Location = new System.Drawing.Point(612, 116);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(80, 30);
+            this.btnConsultar.Size = new System.Drawing.Size(127, 30);
             this.btnConsultar.TabIndex = 2;
-            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.Text = "Refrescar datos";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // txtFiltroUsuario
             // 
             this.txtFiltroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltroUsuario.Location = new System.Drawing.Point(156, 92);
+            this.txtFiltroUsuario.Location = new System.Drawing.Point(277, 121);
             this.txtFiltroUsuario.Name = "txtFiltroUsuario";
-            this.txtFiltroUsuario.Size = new System.Drawing.Size(272, 21);
+            this.txtFiltroUsuario.Size = new System.Drawing.Size(281, 21);
             this.txtFiltroUsuario.TabIndex = 3;
             this.txtFiltroUsuario.TextChanged += new System.EventHandler(this.txtFiltroUsuario_TextChanged);
             // 
@@ -85,18 +88,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 93);
+            this.label2.Location = new System.Drawing.Point(18, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 15);
+            this.label2.Size = new System.Drawing.Size(74, 15);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Nombre de usuario";
+            this.label2.Text = "Filtrar por:";
             // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(745, 139);
+            this.btnAgregar.Location = new System.Drawing.Point(745, 161);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(80, 30);
             this.btnAgregar.TabIndex = 5;
@@ -189,11 +192,46 @@
             this.menupic.TabIndex = 0;
             this.menupic.TabStop = false;
             // 
+            // filtrado
+            // 
+            this.filtrado.FormattingEnabled = true;
+            this.filtrado.Items.AddRange(new object[] {
+            "Usuario",
+            "Nombre del empleado",
+            "Departamento",
+            "Estado"});
+            this.filtrado.Location = new System.Drawing.Point(98, 121);
+            this.filtrado.Name = "filtrado";
+            this.filtrado.Size = new System.Drawing.Size(173, 21);
+            this.filtrado.TabIndex = 10;
+            this.filtrado.SelectedIndexChanged += new System.EventHandler(this.filtrado_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(21, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(202, 21);
+            this.textBox1.TabIndex = 11;
+            // 
+            // btnCambiarContrasenia
+            // 
+            this.btnCambiarContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambiarContrasenia.Location = new System.Drawing.Point(229, 68);
+            this.btnCambiarContrasenia.Name = "btnCambiarContrasenia";
+            this.btnCambiarContrasenia.Size = new System.Drawing.Size(177, 29);
+            this.btnCambiarContrasenia.TabIndex = 12;
+            this.btnCambiarContrasenia.Text = "Cambiar contraseña";
+            this.btnCambiarContrasenia.UseVisualStyleBackColor = true;
+            // 
             // ConsultaUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 486);
+            this.Controls.Add(this.btnCambiarContrasenia);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.filtrado);
             this.Controls.Add(this.MenuSuperior);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label2);
@@ -204,6 +242,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaUsuarios";
             this.Load += new System.EventHandler(this.ConsultaUsuarios_Load);
+            this.SizeChanged += new System.EventHandler(this.ConsultaUsuarios_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).EndInit();
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
@@ -231,5 +270,8 @@
         private System.Windows.Forms.PictureBox Cerrarpic;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox menupic;
+        private System.Windows.Forms.ComboBox filtrado;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCambiarContrasenia;
     }
 }

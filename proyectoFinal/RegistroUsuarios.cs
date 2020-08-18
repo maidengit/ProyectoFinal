@@ -13,6 +13,10 @@ namespace proyectoFinal
         bool validacionConfirmacionContrasenia = false;
         bool validacionIdentidad = false;
 
+        string EmpleadoID;
+        string Estado = "Activo";
+
+
         public RegistroUsuarios()
         {
             InitializeComponent();
@@ -51,10 +55,24 @@ namespace proyectoFinal
             }
             else
             {
-                string sql = "Insert into Usuarios values(@usuario, @contrasenia, 'Activo')";
+                string sql = "exec spInsertarUsuarios @empleadoID, @contrasenia, @estado, @usuario";
                 SqlCommand cmd = new SqlCommand(sql, conexion);
                 cmd.Parameters.AddWithValue("@usuario", txtNombreUsuario.Text);
                 cmd.Parameters.AddWithValue("@contrasenia", txtContrasenia.Text);
+                if (String.IsNullOrEmpty(EmpleadoID))
+                {
+                    cmd.Parameters.AddWithValue("@empleadoID", DBNull.Value);
+                }
+                else
+                    cmd.Parameters.AddWithValue("@empleadoID", EmpleadoID);
+                if (String.IsNullOrEmpty(Estado))
+                {
+                    cmd.Parameters.AddWithValue("@estado", DBNull.Value);
+                }
+                else
+                    cmd.Parameters.AddWithValue("@estado", Estado);
+                //cmd.Parameters.AddWithValue("@empleadoID", EmpleadoID);
+                //cmd.Parameters.AddWithValue("@estado", Estado);
                 try
                 {
                     cmd.Connection.Open();
@@ -123,7 +141,7 @@ namespace proyectoFinal
         private void txtIdentidad_Validated(object sender, EventArgs e)
         {
             //string sql = "Select Nombre from Empleado where Identidad like '%" + txtIdentidad.Text + "%'";
-            string sql = "select e.Nombre, d.Nombre as Departamento from Empleado as e inner join Departamento as d on e.DepartamentoID = d.DepartamentoID where e.Identidad = @identidad";
+            string sql = "select e.EmpleadoID, e.Nombre, d.Nombre as Departamento from Empleado as e inner join Departamento as d on e.DepartamentoID = d.DepartamentoID where e.Identidad = @identidad";
             SqlCommand cmd = new SqlCommand(sql, conexion);
             cmd.Parameters.AddWithValue("@identidad", txtIdentidad.Text);
             cmd.Parameters.AddWithValue("@departamento", txtDepartamento.Text);
@@ -137,8 +155,9 @@ namespace proyectoFinal
                 {
                     while (reader.Read())
                     {
-                        txtNombreEmpleado.Text = reader[0] as string;
-                        txtDepartamento.Text = reader[1] as string;
+                        txtNombreEmpleado.Text = reader[1] as string;
+                        txtDepartamento.Text = reader[2] as string;
+                        EmpleadoID = reader[0] as string;
                     }
 
                 }

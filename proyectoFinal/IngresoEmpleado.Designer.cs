@@ -259,11 +259,11 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Email:";
             // 
-            // comboBox1
+            // filtrado
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(235, 257);
-            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Name = "filtrado";
             this.comboBox1.Size = new System.Drawing.Size(182, 21);
             this.comboBox1.TabIndex = 21;
             // 

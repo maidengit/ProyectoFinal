@@ -220,20 +220,20 @@ namespace proyectoFinal
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            ReporteCalificaciones m = new ReporteCalificaciones();
-            m.Show();
+            //ReporteCalificaciones m = new ReporteCalificaciones();
+            //m.Show();
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            ReporteListaGrado m = new ReporteListaGrado();
-            m.Show();
+            //ReporteListaGrado m = new ReporteListaGrado();
+            //m.Show();
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            ReporteGradoAsignatura m = new ReporteGradoAsignatura();
-            m.Show();
+            //ReporteGradoAsignatura m = new ReporteGradoAsignatura();
+            //m.Show();
         }
     }
 }

@@ -13,15 +13,14 @@ namespace proyectoFinal
 {
     public partial class ConsultaUsuarios : Form
     {
+        SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
         DataTable dt = new DataTable();
 
         private void CargarDatos()
         {
             try
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
-                //String Query = "SELECT es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso FROM empleado e inner join Grado g on e.EmpleadoID = g.EmpleadoID inner join Estudiante es on g.GradoID = es.GradoID where es.estado = 'A'and e.Identidad='0501312364521' group by e.Identidad, es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso order by Nombre";
-                String sql = "SELECT a.Nombre, a.Semestre, g.Curso FROM Departamento d inner join Empleado e on d.DepartamentoID = e.DepartamentoID inner join Asignatura a on a.EmpleadoID = e.EmpleadoID inner join Grado g on a.GradoID = g.GradoID where e.Identidad = '1943199400094' group by a.Nombre, a.Semestre, g.Curso";
+                string sql = "select u.UsuarioNombre, e.Nombre as NombreEmpleado, d.Nombre as Departamento, u.Estado from Usuario as u inner join Empleado as e on u.EmpleadoID = e.EmpleadoID inner join Departamento as d on e.DepartamentoID = d.DepartamentoID";
                 SqlDataAdapter da = new SqlDataAdapter(sql, conexion);
                 da.Fill(dt);
                 gridUsuario.DataSource = dt;
@@ -53,10 +52,10 @@ namespace proyectoFinal
         {
             try
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
-                //String Query = "SELECT es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso FROM empleado e inner join Grado g on e.EmpleadoID = g.EmpleadoID inner join Estudiante es on g.GradoID = es.GradoID where es.estado = 'A'and e.Identidad='0501312364521' group by e.Identidad, es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso order by Nombre";
-                string sql = "SELECT a.Nombre, a.Semestre, g.Curso FROM Departamento d inner join Empleado e on d.DepartamentoID = e.DepartamentoID inner join Asignatura a on a.EmpleadoID = e.EmpleadoID inner join Grado g on a.GradoID = g.GradoID where e.Identidad = '1943199400094' group by a.Nombre, a.Semestre, g.Curso";
+                string sql = "select u.UsuarioNombre, e.Nombre as NombreEmpleado, d.Nombre as 'Departamento', u.Estado from Usuario as u inner join Empleado as e on u.EmpleadoID = e.EmpleadoID inner join Departamento as d on e.DepartamentoID = d.DepartamentoID";
                 SqlDataAdapter da = new SqlDataAdapter(sql, conexion);
+              
+
                 da.Fill(dt);
                 gridUsuario.DataSource = dt;
                 conexion.Close();
@@ -69,7 +68,10 @@ namespace proyectoFinal
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            dt.Clear();
+            CargarDatos();
+            txtFiltroUsuario.Text = "";
+            filtrado.Text = "";
         }
 
         private void Restaurarpic_Click(object sender, EventArgs e)
@@ -84,9 +86,83 @@ namespace proyectoFinal
             Application.Exit();
         }
 
-        private void txtFiltroUsuario_TextChanged(object sender, EventArgs e)
+       private void txtFiltroUsuario_TextChanged(object sender, EventArgs e)
         {
 
+            if (txtFiltroUsuario.Text.Trim().Length == 0)
+            {
+                dt.DefaultView.RowFilter = "";
+                return;
+            }
+
+            if (filtrado.SelectedIndex == 0)
+            {
+                dt.DefaultView.RowFilter = "UsuarioNombre like '%" + txtFiltroUsuario.Text + "%'";
+            }
+
+            if (filtrado.SelectedIndex == 1)
+            {
+                dt.DefaultView.RowFilter = "NombreEmpleado like '%" + txtFiltroUsuario.Text + "%'";
+            }
+
+            if (filtrado.SelectedIndex == 2)
+            {
+                dt.DefaultView.RowFilter = "Departamento like '%" + txtFiltroUsuario.Text + "%'";
+            }
+
+            if (filtrado.SelectedIndex == 3)
+            {
+                dt.DefaultView.RowFilter = "Estado like '%" + txtFiltroUsuario.Text + "%'";
+            }
+            
+        }
+
+        private void filtrado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtFiltroUsuario.Text.Trim().Length == 0)
+            {
+                dt.DefaultView.RowFilter = "";
+                return;
+            }
+
+            if (filtrado.SelectedIndex == 0)
+            {
+                dt.DefaultView.RowFilter = "UsuarioNombre like '%" + txtFiltroUsuario.Text + "%'";
+            }
+
+            if (filtrado.SelectedIndex == 1)
+            {
+                dt.DefaultView.RowFilter = "NombreEmpleado like '%" + txtFiltroUsuario.Text + "%'";
+            }
+
+            if (filtrado.SelectedIndex == 2)
+            {
+                dt.DefaultView.RowFilter = "Departamento like '%" + txtFiltroUsuario.Text + "%'";
+            }
+
+            if (filtrado.SelectedIndex == 3)
+            {
+                dt.DefaultView.RowFilter = "Estado like '%" + txtFiltroUsuario.Text + "%'";
+            }
+        }
+
+        private void ConsultaUsuarios_SizeChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                gridUsuario.Columns[0].Width = 100;   
+                
+                gridUsuario.Columns[1].Width = gridUsuario.Width * 50 / 100; 
+                
+                gridUsuario.Columns[2].Width = gridUsuario.Width * 50 / 100;
+
+                gridUsuario.Columns[3].Width = gridUsuario.Width * 50 / 100;
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
     }
 }
