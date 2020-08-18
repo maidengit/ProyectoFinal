@@ -162,15 +162,15 @@
             this.label3.Location = new System.Drawing.Point(79, 20);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(326, 20);
+            this.label3.Size = new System.Drawing.Size(372, 20);
             this.label3.TabIndex = 28;
-            this.label3.Text = "REPORTE GRADO POR ASIGNATURA";
+            this.label3.Text = "REPORTE CALIFICACIONES POR MATERIA";
             // 
             // ReporteGradoAsignatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 336);
+            this.ClientSize = new System.Drawing.Size(398, 336);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbsemestre);
@@ -181,7 +181,7 @@
             this.Controls.Add(this.cbgrado);
             this.Controls.Add(this.button1);
             this.Name = "ReporteGradoAsignatura";
-            this.Text = "ReporteGradoAsignatura";
+            this.Text = "ReporteCalificacionesPorMateria";
             this.Load += new System.EventHandler(this.ReporteGradoAsignatura_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

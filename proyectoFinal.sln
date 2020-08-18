@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyectoFinal", "proyectoFinal\proyectoFinal.csproj", "{746C83EF-A54A-4C7F-8C93-43720AEB016F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyectoFinalUltimate", "..\..\Pictures\Analisis\proyectoFinal\proyectoFinalUltimate.csproj", "{F25B99F1-D13A-4045-AE79-A593D5E48927}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaCon", "..\ProyectoFinal Original\LibreriaCon\LibreriaCon.csproj", "{EC199F05-2E50-42A6-B5B4-540BF2A25B64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{746C83EF-A54A-4C7F-8C93-43720AEB016F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{746C83EF-A54A-4C7F-8C93-43720AEB016F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{746C83EF-A54A-4C7F-8C93-43720AEB016F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F25B99F1-D13A-4045-AE79-A593D5E48927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F25B99F1-D13A-4045-AE79-A593D5E48927}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F25B99F1-D13A-4045-AE79-A593D5E48927}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F25B99F1-D13A-4045-AE79-A593D5E48927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC199F05-2E50-42A6-B5B4-540BF2A25B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC199F05-2E50-42A6-B5B4-540BF2A25B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC199F05-2E50-42A6-B5B4-540BF2A25B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC199F05-2E50-42A6-B5B4-540BF2A25B64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

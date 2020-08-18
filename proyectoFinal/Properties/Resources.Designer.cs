@@ -90,7 +90,7 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source = DESKTOP-R0IB2V5; Initial Catalog = proyescuela; Integrated Security = True;.
+        ///   Busca una cadena traducida similar a Data Source = DESKTOP-AO482B2\SQLEXPRESS; Initial Catalog = proyescuela2; Integrated Security = True;.
         /// </summary>
         internal static string cadenaConexion {
             get {
@@ -184,6 +184,36 @@ namespace proyectoFinal.Properties {
         internal static System.Drawing.Bitmap guardar {
             get {
                 object obj = ResourceManager.GetObject("guardar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_019_14043 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_019_14043", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_103_14127 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_103_14127", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_150_14174 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_150_14174", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
