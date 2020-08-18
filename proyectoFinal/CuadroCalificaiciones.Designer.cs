@@ -116,7 +116,7 @@
             this.cbParcial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbParcial.ForeColor = System.Drawing.Color.Black;
             this.cbParcial.FormattingEnabled = true;
-            this.cbParcial.Location = new System.Drawing.Point(455, 98);
+            this.cbParcial.Location = new System.Drawing.Point(426, 98);
             this.cbParcial.Name = "cbParcial";
             this.cbParcial.Size = new System.Drawing.Size(300, 30);
             this.cbParcial.TabIndex = 7;
@@ -126,7 +126,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(451, 73);
+            this.label5.Location = new System.Drawing.Point(422, 73);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 22);
             this.label5.TabIndex = 6;
@@ -137,7 +137,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(451, 158);
+            this.label6.Location = new System.Drawing.Point(422, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 22);
             this.label6.TabIndex = 10;
@@ -147,7 +147,7 @@
             // 
             this.nmCalificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nmCalificacion.ForeColor = System.Drawing.Color.Black;
-            this.nmCalificacion.Location = new System.Drawing.Point(455, 186);
+            this.nmCalificacion.Location = new System.Drawing.Point(426, 186);
             this.nmCalificacion.Name = "nmCalificacion";
             this.nmCalificacion.Size = new System.Drawing.Size(300, 28);
             this.nmCalificacion.TabIndex = 11;
@@ -157,7 +157,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(614, 323);
+            this.button2.Location = new System.Drawing.Point(585, 323);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 32);
             this.button2.TabIndex = 16;
@@ -171,7 +171,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(459, 323);
+            this.button1.Location = new System.Drawing.Point(430, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 32);
             this.button1.TabIndex = 17;
@@ -199,14 +199,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 50);
+            this.panel1.Size = new System.Drawing.Size(763, 50);
             this.panel1.TabIndex = 18;
             // 
             // CuadroCalificaiciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 401);
+            this.ClientSize = new System.Drawing.Size(763, 401);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);

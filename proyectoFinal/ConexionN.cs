@@ -19,7 +19,7 @@ namespace proyectoFinal
         {
             try
             {
-                con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True");
+                con = new SqlConnection("Data Source=DESKTOP-KV58B2F\\SQLEXPRESS;Initial Catalog=proyescuela1;Integrated Security=True");
                 con.Open();
             }
             catch (Exception e)
@@ -125,6 +125,7 @@ namespace proyectoFinal
                 string sql = "select EstudianteID, AsignaturaID from vParaIngresarCalificacion where nombre='" + Estudiante + "'" +
                     "and asignatura='"+Asignatura+"'";
                 cmd = new SqlCommand(sql, con);
+
                 SqlDataReader dr = cmd.ExecuteReader();
                 informacion = new int[dr.FieldCount];
                 while (dr.Read())
@@ -132,6 +133,7 @@ namespace proyectoFinal
                     informacion[0] = (int)dr["EstudianteID"];
                     informacion[1] = (int)dr["AsignaturaID"];
                 }
+               // MessageBox.Show()
                 dr.Close();
                 return informacion;
             }

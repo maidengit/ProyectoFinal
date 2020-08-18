@@ -70,9 +70,10 @@
             // 
             this.Minimizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizarpic.Image = global::proyectoFinal.Properties.Resources.Minimize_Window_2_48px;
-            this.Minimizarpic.Location = new System.Drawing.Point(654, 10);
+            this.Minimizarpic.Location = new System.Drawing.Point(983, 15);
+            this.Minimizarpic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Minimizarpic.Name = "Minimizarpic";
-            this.Minimizarpic.Size = new System.Drawing.Size(40, 38);
+            this.Minimizarpic.Size = new System.Drawing.Size(60, 58);
             this.Minimizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Minimizarpic.TabIndex = 4;
             this.Minimizarpic.TabStop = false;
@@ -82,9 +83,10 @@
             // 
             this.Cerrarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cerrarpic.Image = global::proyectoFinal.Properties.Resources.Close_Window__2_48px;
-            this.Cerrarpic.Location = new System.Drawing.Point(746, 10);
+            this.Cerrarpic.Location = new System.Drawing.Point(1121, 15);
+            this.Cerrarpic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Cerrarpic.Name = "Cerrarpic";
-            this.Cerrarpic.Size = new System.Drawing.Size(40, 38);
+            this.Cerrarpic.Size = new System.Drawing.Size(60, 58);
             this.Cerrarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Cerrarpic.TabIndex = 2;
             this.Cerrarpic.TabStop = false;
@@ -95,18 +97,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(97, 11);
+            this.label1.Location = new System.Drawing.Point(146, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 37);
+            this.label1.Size = new System.Drawing.Size(145, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
             // 
             // menupic
             // 
             this.menupic.Image = global::proyectoFinal.Properties.Resources.Menu_48px;
-            this.menupic.Location = new System.Drawing.Point(39, 10);
+            this.menupic.Location = new System.Drawing.Point(58, 15);
+            this.menupic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.menupic.Name = "menupic";
-            this.menupic.Size = new System.Drawing.Size(40, 38);
+            this.menupic.Size = new System.Drawing.Size(60, 58);
             this.menupic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.menupic.TabIndex = 0;
             this.menupic.TabStop = false;
@@ -120,9 +124,10 @@
             this.MenuLateral.Controls.Add(this.ModuloEducativo);
             this.MenuLateral.Controls.Add(this.ModuloAdministativo);
             this.MenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuLateral.Location = new System.Drawing.Point(0, 57);
+            this.MenuLateral.Location = new System.Drawing.Point(0, 86);
+            this.MenuLateral.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuLateral.Name = "MenuLateral";
-            this.MenuLateral.Size = new System.Drawing.Size(199, 393);
+            this.MenuLateral.Size = new System.Drawing.Size(298, 606);
             this.MenuLateral.TabIndex = 4;
             // 
             // ModulosPagos
@@ -146,13 +151,14 @@
             this.ModulosPagos.IconVisible = true;
             this.ModulosPagos.IconZoom = 80D;
             this.ModulosPagos.IsTab = false;
-            this.ModulosPagos.Location = new System.Drawing.Point(10, 232);
+            this.ModulosPagos.Location = new System.Drawing.Point(15, 357);
+            this.ModulosPagos.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.ModulosPagos.Name = "ModulosPagos";
             this.ModulosPagos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ModulosPagos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ModulosPagos.OnHoverTextColor = System.Drawing.Color.White;
             this.ModulosPagos.selected = false;
-            this.ModulosPagos.Size = new System.Drawing.Size(185, 38);
+            this.ModulosPagos.Size = new System.Drawing.Size(278, 58);
             this.ModulosPagos.TabIndex = 4;
             this.ModulosPagos.Text = "Modulo de Pagos";
             this.ModulosPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,13 +187,14 @@
             this.ModuloAdministracionUsuarios.IconVisible = true;
             this.ModuloAdministracionUsuarios.IconZoom = 80D;
             this.ModuloAdministracionUsuarios.IsTab = false;
-            this.ModuloAdministracionUsuarios.Location = new System.Drawing.Point(10, 178);
+            this.ModuloAdministracionUsuarios.Location = new System.Drawing.Point(15, 274);
+            this.ModuloAdministracionUsuarios.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.ModuloAdministracionUsuarios.Name = "ModuloAdministracionUsuarios";
             this.ModuloAdministracionUsuarios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ModuloAdministracionUsuarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ModuloAdministracionUsuarios.OnHoverTextColor = System.Drawing.Color.White;
             this.ModuloAdministracionUsuarios.selected = false;
-            this.ModuloAdministracionUsuarios.Size = new System.Drawing.Size(185, 38);
+            this.ModuloAdministracionUsuarios.Size = new System.Drawing.Size(278, 58);
             this.ModuloAdministracionUsuarios.TabIndex = 3;
             this.ModuloAdministracionUsuarios.Text = "Administración de usuarios";
             this.ModuloAdministracionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,13 +223,14 @@
             this.ModuloReporteria.IconVisible = true;
             this.ModuloReporteria.IconZoom = 80D;
             this.ModuloReporteria.IsTab = false;
-            this.ModuloReporteria.Location = new System.Drawing.Point(10, 125);
+            this.ModuloReporteria.Location = new System.Drawing.Point(15, 192);
+            this.ModuloReporteria.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.ModuloReporteria.Name = "ModuloReporteria";
             this.ModuloReporteria.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ModuloReporteria.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ModuloReporteria.OnHoverTextColor = System.Drawing.Color.White;
             this.ModuloReporteria.selected = false;
-            this.ModuloReporteria.Size = new System.Drawing.Size(185, 38);
+            this.ModuloReporteria.Size = new System.Drawing.Size(278, 58);
             this.ModuloReporteria.TabIndex = 2;
             this.ModuloReporteria.Text = "Reporteria";
             this.ModuloReporteria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,13 +259,14 @@
             this.ModuloEducativo.IconVisible = true;
             this.ModuloEducativo.IconZoom = 80D;
             this.ModuloEducativo.IsTab = false;
-            this.ModuloEducativo.Location = new System.Drawing.Point(10, 72);
+            this.ModuloEducativo.Location = new System.Drawing.Point(15, 111);
+            this.ModuloEducativo.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.ModuloEducativo.Name = "ModuloEducativo";
             this.ModuloEducativo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ModuloEducativo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ModuloEducativo.OnHoverTextColor = System.Drawing.Color.White;
             this.ModuloEducativo.selected = false;
-            this.ModuloEducativo.Size = new System.Drawing.Size(185, 38);
+            this.ModuloEducativo.Size = new System.Drawing.Size(278, 58);
             this.ModuloEducativo.TabIndex = 1;
             this.ModuloEducativo.Text = "Modulo Educativo";
             this.ModuloEducativo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -286,13 +295,14 @@
             this.ModuloAdministativo.IconVisible = true;
             this.ModuloAdministativo.IconZoom = 80D;
             this.ModuloAdministativo.IsTab = false;
-            this.ModuloAdministativo.Location = new System.Drawing.Point(10, 17);
+            this.ModuloAdministativo.Location = new System.Drawing.Point(15, 26);
+            this.ModuloAdministativo.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.ModuloAdministativo.Name = "ModuloAdministativo";
             this.ModuloAdministativo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ModuloAdministativo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ModuloAdministativo.OnHoverTextColor = System.Drawing.Color.White;
             this.ModuloAdministativo.selected = false;
-            this.ModuloAdministativo.Size = new System.Drawing.Size(185, 38);
+            this.ModuloAdministativo.Size = new System.Drawing.Size(278, 58);
             this.ModuloAdministativo.TabIndex = 0;
             this.ModuloAdministativo.Text = "Modulo Administrativo";
             this.ModuloAdministativo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -321,13 +331,14 @@
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 80D;
             this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(221, 141);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(332, 217);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(270, 98);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(405, 151);
             this.bunifuFlatButton3.TabIndex = 7;
             this.bunifuFlatButton3.Text = "Reporte Lista por Grado";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -357,13 +368,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 80D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(221, 271);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(332, 417);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(270, 98);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(405, 151);
             this.bunifuFlatButton2.TabIndex = 6;
             this.bunifuFlatButton2.Text = "Reporte Calificacion por Grado";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -393,13 +405,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 80D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(516, 141);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(774, 217);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(270, 100);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(405, 154);
             this.bunifuFlatButton1.TabIndex = 5;
             this.bunifuFlatButton1.Text = "Reporte Calificaciones";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -420,17 +433,19 @@
             this.MenuSuperior.Controls.Add(this.menupic);
             this.MenuSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.MenuSuperior.Location = new System.Drawing.Point(0, 0);
+            this.MenuSuperior.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuSuperior.Name = "MenuSuperior";
-            this.MenuSuperior.Size = new System.Drawing.Size(800, 57);
+            this.MenuSuperior.Size = new System.Drawing.Size(1200, 86);
             this.MenuSuperior.TabIndex = 3;
             // 
             // Restaurarpic
             // 
             this.Restaurarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Restaurarpic.Image = global::proyectoFinal.Properties.Resources.Restore_Window_2_48px;
-            this.Restaurarpic.Location = new System.Drawing.Point(700, 12);
+            this.Restaurarpic.Location = new System.Drawing.Point(1052, 18);
+            this.Restaurarpic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Restaurarpic.Name = "Restaurarpic";
-            this.Restaurarpic.Size = new System.Drawing.Size(40, 38);
+            this.Restaurarpic.Size = new System.Drawing.Size(60, 58);
             this.Restaurarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Restaurarpic.TabIndex = 5;
             this.Restaurarpic.TabStop = false;
@@ -441,9 +456,10 @@
             // 
             this.Maximizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Maximizarpic.Image = global::proyectoFinal.Properties.Resources.Maximize_Window_2_48px;
-            this.Maximizarpic.Location = new System.Drawing.Point(700, 10);
+            this.Maximizarpic.Location = new System.Drawing.Point(1052, 15);
+            this.Maximizarpic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Maximizarpic.Name = "Maximizarpic";
-            this.Maximizarpic.Size = new System.Drawing.Size(40, 38);
+            this.Maximizarpic.Size = new System.Drawing.Size(60, 58);
             this.Maximizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Maximizarpic.TabIndex = 3;
             this.Maximizarpic.TabStop = false;
@@ -471,13 +487,14 @@
             this.btnAsignatura.IconVisible = true;
             this.btnAsignatura.IconZoom = 90D;
             this.btnAsignatura.IsTab = false;
-            this.btnAsignatura.Location = new System.Drawing.Point(221, 273);
+            this.btnAsignatura.Location = new System.Drawing.Point(332, 420);
+            this.btnAsignatura.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnAsignatura.Name = "btnAsignatura";
             this.btnAsignatura.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnAsignatura.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnAsignatura.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAsignatura.selected = false;
-            this.btnAsignatura.Size = new System.Drawing.Size(270, 100);
+            this.btnAsignatura.Size = new System.Drawing.Size(405, 154);
             this.btnAsignatura.TabIndex = 2;
             this.btnAsignatura.Text = "Consulta Asignatura";
             this.btnAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -503,25 +520,28 @@
             this.MenuWrapper.Controls.Add(this.btnEmpleado);
             this.MenuWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MenuWrapper.Location = new System.Drawing.Point(0, 0);
+            this.MenuWrapper.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuWrapper.Name = "MenuWrapper";
-            this.MenuWrapper.Size = new System.Drawing.Size(800, 450);
+            this.MenuWrapper.Size = new System.Drawing.Size(1200, 692);
             this.MenuWrapper.TabIndex = 5;
             // 
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(218, 99);
+            this.labelID.Location = new System.Drawing.Point(327, 152);
+            this.labelID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(108, 13);
+            this.labelID.Size = new System.Drawing.Size(157, 20);
             this.labelID.TabIndex = 10;
             this.labelID.Text = "[aqui va su identidad]";
             // 
             // Nombre
             // 
             this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(218, 74);
+            this.Nombre.Location = new System.Drawing.Point(327, 114);
+            this.Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(184, 13);
+            this.Nombre.Size = new System.Drawing.Size(269, 20);
             this.Nombre.TabIndex = 9;
             this.Nombre.Text = "[Aqui va el nombre del usuario activo]";
             // 
@@ -547,13 +567,14 @@
             this.btnConsultaUsuarios.IconVisible = true;
             this.btnConsultaUsuarios.IconZoom = 90D;
             this.btnConsultaUsuarios.IsTab = false;
-            this.btnConsultaUsuarios.Location = new System.Drawing.Point(221, 141);
+            this.btnConsultaUsuarios.Location = new System.Drawing.Point(332, 217);
+            this.btnConsultaUsuarios.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnConsultaUsuarios.Name = "btnConsultaUsuarios";
             this.btnConsultaUsuarios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnConsultaUsuarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnConsultaUsuarios.OnHoverTextColor = System.Drawing.Color.White;
             this.btnConsultaUsuarios.selected = false;
-            this.btnConsultaUsuarios.Size = new System.Drawing.Size(270, 100);
+            this.btnConsultaUsuarios.Size = new System.Drawing.Size(405, 154);
             this.btnConsultaUsuarios.TabIndex = 8;
             this.btnConsultaUsuarios.Text = "Usuarios";
             this.btnConsultaUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -584,13 +605,14 @@
             this.btnListadoEstudiantes.IconVisible = true;
             this.btnListadoEstudiantes.IconZoom = 90D;
             this.btnListadoEstudiantes.IsTab = false;
-            this.btnListadoEstudiantes.Location = new System.Drawing.Point(221, 141);
+            this.btnListadoEstudiantes.Location = new System.Drawing.Point(332, 217);
+            this.btnListadoEstudiantes.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnListadoEstudiantes.Name = "btnListadoEstudiantes";
             this.btnListadoEstudiantes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnListadoEstudiantes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnListadoEstudiantes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnListadoEstudiantes.selected = false;
-            this.btnListadoEstudiantes.Size = new System.Drawing.Size(270, 100);
+            this.btnListadoEstudiantes.Size = new System.Drawing.Size(405, 154);
             this.btnListadoEstudiantes.TabIndex = 7;
             this.btnListadoEstudiantes.Text = "Mis Estudiantes";
             this.btnListadoEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -621,13 +643,14 @@
             this.btnListadoAsignaturas.IconVisible = true;
             this.btnListadoAsignaturas.IconZoom = 90D;
             this.btnListadoAsignaturas.IsTab = false;
-            this.btnListadoAsignaturas.Location = new System.Drawing.Point(221, 271);
+            this.btnListadoAsignaturas.Location = new System.Drawing.Point(332, 417);
+            this.btnListadoAsignaturas.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnListadoAsignaturas.Name = "btnListadoAsignaturas";
             this.btnListadoAsignaturas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnListadoAsignaturas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnListadoAsignaturas.OnHoverTextColor = System.Drawing.Color.White;
             this.btnListadoAsignaturas.selected = false;
-            this.btnListadoAsignaturas.Size = new System.Drawing.Size(270, 100);
+            this.btnListadoAsignaturas.Size = new System.Drawing.Size(405, 154);
             this.btnListadoAsignaturas.TabIndex = 6;
             this.btnListadoAsignaturas.Text = "Mis Asignaturas";
             this.btnListadoAsignaturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -658,19 +681,21 @@
             this.btnCalificaciones.IconVisible = true;
             this.btnCalificaciones.IconZoom = 90D;
             this.btnCalificaciones.IsTab = false;
-            this.btnCalificaciones.Location = new System.Drawing.Point(516, 201);
+            this.btnCalificaciones.Location = new System.Drawing.Point(774, 309);
+            this.btnCalificaciones.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnCalificaciones.Name = "btnCalificaciones";
             this.btnCalificaciones.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnCalificaciones.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnCalificaciones.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCalificaciones.selected = false;
-            this.btnCalificaciones.Size = new System.Drawing.Size(270, 100);
+            this.btnCalificaciones.Size = new System.Drawing.Size(405, 154);
             this.btnCalificaciones.TabIndex = 5;
             this.btnCalificaciones.Text = "Mis Calificaciones";
             this.btnCalificaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCalificaciones.Textcolor = System.Drawing.Color.Black;
             this.btnCalificaciones.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalificaciones.Visible = false;
+            this.btnCalificaciones.Click += new System.EventHandler(this.btnCalificaciones_Click_1);
             // 
             // btnEstudiante
             // 
@@ -694,13 +719,14 @@
             this.btnEstudiante.IconVisible = true;
             this.btnEstudiante.IconZoom = 90D;
             this.btnEstudiante.IsTab = false;
-            this.btnEstudiante.Location = new System.Drawing.Point(516, 273);
+            this.btnEstudiante.Location = new System.Drawing.Point(774, 420);
+            this.btnEstudiante.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnEstudiante.Name = "btnEstudiante";
             this.btnEstudiante.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnEstudiante.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnEstudiante.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEstudiante.selected = false;
-            this.btnEstudiante.Size = new System.Drawing.Size(270, 100);
+            this.btnEstudiante.Size = new System.Drawing.Size(405, 154);
             this.btnEstudiante.TabIndex = 3;
             this.btnEstudiante.Text = "Consulta Estudiante";
             this.btnEstudiante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -731,13 +757,14 @@
             this.btnTutor.IconVisible = true;
             this.btnTutor.IconZoom = 90D;
             this.btnTutor.IsTab = false;
-            this.btnTutor.Location = new System.Drawing.Point(516, 141);
+            this.btnTutor.Location = new System.Drawing.Point(774, 217);
+            this.btnTutor.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnTutor.Name = "btnTutor";
             this.btnTutor.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnTutor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnTutor.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTutor.selected = false;
-            this.btnTutor.Size = new System.Drawing.Size(270, 100);
+            this.btnTutor.Size = new System.Drawing.Size(405, 154);
             this.btnTutor.TabIndex = 1;
             this.btnTutor.Text = "Consulta Tutor";
             this.btnTutor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -768,13 +795,14 @@
             this.btnEmpleado.IconVisible = true;
             this.btnEmpleado.IconZoom = 90D;
             this.btnEmpleado.IsTab = false;
-            this.btnEmpleado.Location = new System.Drawing.Point(221, 143);
+            this.btnEmpleado.Location = new System.Drawing.Point(332, 220);
+            this.btnEmpleado.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnEmpleado.Name = "btnEmpleado";
             this.btnEmpleado.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnEmpleado.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.btnEmpleado.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmpleado.selected = false;
-            this.btnEmpleado.Size = new System.Drawing.Size(270, 100);
+            this.btnEmpleado.Size = new System.Drawing.Size(405, 154);
             this.btnEmpleado.TabIndex = 0;
             this.btnEmpleado.Text = "Consulta Empleado";
             this.btnEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -785,14 +813,15 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.MenuLateral);
             this.Controls.Add(this.MenuSuperior);
             this.Controls.Add(this.MenuWrapper);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
