@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Restaurarpic = new System.Windows.Forms.PictureBox();
             this.Minimizarpic = new System.Windows.Forms.PictureBox();
             this.Maximizarpic = new System.Windows.Forms.PictureBox();
@@ -38,11 +39,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.EmpleadoWrapper = new System.Windows.Forms.Panel();
-            this.btnEliminar = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAgregar = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbAignatura = new System.Windows.Forms.ComboBox();
+            this.cbDepartamento = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.Tabla = new System.Windows.Forms.DataGridView();
@@ -108,7 +108,7 @@
             // 
             // MenuSuperior
             // 
-            this.MenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.MenuSuperior.BackColor = System.Drawing.SystemColors.Highlight;
             this.MenuSuperior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.MenuSuperior.Controls.Add(this.Restaurarpic);
             this.MenuSuperior.Controls.Add(this.Minimizarpic);
@@ -147,7 +147,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 58);
@@ -166,11 +166,10 @@
             // EmpleadoWrapper
             // 
             this.EmpleadoWrapper.BackgroundImage = global::proyectoFinal.Properties.Resources.fon2;
-            this.EmpleadoWrapper.Controls.Add(this.btnEliminar);
-            this.EmpleadoWrapper.Controls.Add(this.bunifuTileButton2);
-            this.EmpleadoWrapper.Controls.Add(this.btnAgregar);
+            this.EmpleadoWrapper.Controls.Add(this.btnModificar);
+            this.EmpleadoWrapper.Controls.Add(this.btnNuevo);
             this.EmpleadoWrapper.Controls.Add(this.label2);
-            this.EmpleadoWrapper.Controls.Add(this.cbAignatura);
+            this.EmpleadoWrapper.Controls.Add(this.cbDepartamento);
             this.EmpleadoWrapper.Controls.Add(this.label5);
             this.EmpleadoWrapper.Controls.Add(this.txtNombre);
             this.EmpleadoWrapper.Controls.Add(this.Tabla);
@@ -181,64 +180,33 @@
             this.EmpleadoWrapper.Size = new System.Drawing.Size(739, 392);
             this.EmpleadoWrapper.TabIndex = 4;
             // 
-            // btnEliminar
+            // btnModificar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnEliminar.color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnEliminar.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Image = null;
-            this.btnEliminar.ImagePosition = 21;
-            this.btnEliminar.ImageZoom = 50;
-            this.btnEliminar.LabelPosition = 43;
-            this.btnEliminar.LabelText = "Eliminar";
-            this.btnEliminar.Location = new System.Drawing.Point(609, 193);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(115, 50);
-            this.btnEliminar.TabIndex = 14;
+            this.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Image = global::proyectoFinal.Properties.Resources.iconfinder_019_14043;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(627, 138);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(100, 25);
+            this.btnModificar.TabIndex = 17;
+            this.btnModificar.Text = "   Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // bunifuTileButton2
+            // btnNuevo
             // 
-            this.bunifuTileButton2.AccessibleName = "btnModificar";
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.bunifuTileButton2.color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton2.Image = null;
-            this.bunifuTileButton2.ImagePosition = 20;
-            this.bunifuTileButton2.ImageZoom = 50;
-            this.bunifuTileButton2.LabelPosition = 43;
-            this.bunifuTileButton2.LabelText = "Modificar";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(609, 130);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(115, 51);
-            this.bunifuTileButton2.TabIndex = 13;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnAgregar.color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnAgregar.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Image = null;
-            this.btnAgregar.ImagePosition = 21;
-            this.btnAgregar.ImageZoom = 50;
-            this.btnAgregar.LabelPosition = 43;
-            this.btnAgregar.LabelText = "Agregar";
-            this.btnAgregar.Location = new System.Drawing.Point(609, 67);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(115, 51);
-            this.btnAgregar.TabIndex = 12;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnNuevo.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Image = global::proyectoFinal.Properties.Resources.iconfinder_103_14127;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(627, 90);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 30);
+            this.btnNuevo.TabIndex = 16;
+            this.btnNuevo.Text = "   Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label2
             // 
@@ -251,14 +219,15 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Departamento:";
             // 
-            // cbAignatura
+            // cbDepartamento
             // 
-            this.cbAignatura.FormattingEnabled = true;
-            this.cbAignatura.Location = new System.Drawing.Point(110, 31);
-            this.cbAignatura.Margin = new System.Windows.Forms.Padding(2);
-            this.cbAignatura.Name = "cbAignatura";
-            this.cbAignatura.Size = new System.Drawing.Size(158, 21);
-            this.cbAignatura.TabIndex = 8;
+            this.cbDepartamento.FormattingEnabled = true;
+            this.cbDepartamento.Location = new System.Drawing.Point(110, 31);
+            this.cbDepartamento.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDepartamento.Name = "cbDepartamento";
+            this.cbDepartamento.Size = new System.Drawing.Size(158, 21);
+            this.cbDepartamento.TabIndex = 8;
+            this.cbDepartamento.TextChanged += new System.EventHandler(this.cbDepartamento_TextChanged);
             // 
             // label5
             // 
@@ -276,8 +245,9 @@
             this.txtNombre.Location = new System.Drawing.Point(434, 32);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(277, 20);
+            this.txtNombre.Size = new System.Drawing.Size(291, 20);
             this.txtNombre.TabIndex = 11;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged_1);
             // 
             // Tabla
             // 
@@ -290,10 +260,13 @@
             this.Tabla.Name = "Tabla";
             this.Tabla.ReadOnly = true;
             this.Tabla.RowHeadersWidth = 62;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tabla.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Tabla.RowTemplate.Height = 28;
             this.Tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Tabla.Size = new System.Drawing.Size(583, 292);
+            this.Tabla.Size = new System.Drawing.Size(615, 292);
             this.Tabla.TabIndex = 9;
+            this.Tabla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellClick);
             // 
             // ConsultaEmpleadoAdministrativo
             // 
@@ -307,6 +280,7 @@
             this.Name = "ConsultaEmpleadoAdministrativo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaEmpleadoAdministrativo";
+            this.Load += new System.EventHandler(this.ConsultaEmpleadoAdministrativo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Restaurarpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizarpic)).EndInit();
@@ -334,13 +308,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel EmpleadoWrapper;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbAignatura;
+        private System.Windows.Forms.ComboBox cbDepartamento;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.DataGridView Tabla;
-        private Bunifu.Framework.UI.BunifuTileButton btnAgregar;
-        private Bunifu.Framework.UI.BunifuTileButton btnEliminar;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }

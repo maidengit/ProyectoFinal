@@ -59,7 +59,17 @@ namespace proyectoFinal
 
         private void ModuloAdministativo_Click(object sender, EventArgs e)
         {
-            if (btnListadoAsignaturas.Visible == true)
+            if (bunifuFlatButton1.Visible == true)
+            {
+                bunifuFlatButton1.Visible = false;
+                bunifuFlatButton2.Visible = false;
+                bunifuFlatButton3.Visible = false;
+                btnAsignatura.Visible = true;
+                btnEmpleado.Visible = true;
+                btnEstudiante.Visible = true;
+                btnTutor.Visible = true;
+            }
+            else if (btnListadoAsignaturas.Visible == true)
             {
                 btnConsultaUsuarios.Visible = false;
                 btnCalificaciones.Visible = false;
@@ -73,9 +83,6 @@ namespace proyectoFinal
             else if (btnConsultaUsuarios.Visible == true)
             {
                 btnConsultaUsuarios.Visible = false;
-                btnCalificaciones.Visible = false;
-                btnListadoAsignaturas.Visible = false;
-                btnListadoEstudiantes.Visible = false;
                 btnAsignatura.Visible = true;
                 btnEmpleado.Visible = true;
                 btnEstudiante.Visible = true;
@@ -92,6 +99,15 @@ namespace proyectoFinal
 
         private void ModuloEducativo_Click(object sender, EventArgs e)
         {
+            if (bunifuFlatButton1.Visible == true)
+            {
+                bunifuFlatButton1.Visible = false;
+                bunifuFlatButton2.Visible = false;
+                bunifuFlatButton3.Visible = false;
+                btnCalificaciones.Visible = true;
+                btnListadoAsignaturas.Visible = true;
+                btnListadoEstudiantes.Visible = true;
+            } else
             if (btnTutor.Visible == true)
             {
                 btnTutor.Visible = false;
@@ -184,6 +200,13 @@ namespace proyectoFinal
 
         private void ModuloAdministracionUsuarios_Click(object sender, EventArgs e)
         {
+            if (bunifuFlatButton1.Visible == true)
+            {
+                bunifuFlatButton1.Visible = false;
+                bunifuFlatButton2.Visible = false;
+                bunifuFlatButton3.Visible = false;
+                btnConsultaUsuarios.Visible = true;
+            }else
             if (btnCalificaciones.Visible == true)
             {
                 btnConsultaUsuarios.Visible = true;
@@ -220,20 +243,20 @@ namespace proyectoFinal
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            //ReporteCalificaciones m = new ReporteCalificaciones();
-            //m.Show();
+            ReporteCalificaciones m = new ReporteCalificaciones();
+            m.ShowDialog();
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            //ReporteListaGrado m = new ReporteListaGrado();
-            //m.Show();
+            ReporteListaGrado m = new ReporteListaGrado();
+            m.ShowDialog();
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            //ReporteGradoAsignatura m = new ReporteGradoAsignatura();
-            //m.Show();
+            ReporteGradoAsignatura m = new ReporteGradoAsignatura();
+            m.ShowDialog();
         }
 
         private void btnTutor_Click_1(object sender, EventArgs e)
@@ -246,6 +269,49 @@ namespace proyectoFinal
         {
             Mantenimineto m = new Mantenimineto();
             m.Show();
+            
+        }
+
+        private void ModulosPagos_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Construccion","Estas opciones todavia no estan disponibles!", MessageBoxButtons.OK ,MessageBoxIcon.Warning);
+        }
+
+        private void ModuloReporteria_Click(object sender, EventArgs e)
+        {
+            if (btnAsignatura.Visible==true)
+            {
+                btnAsignatura.Visible = false;
+                btnEmpleado.Visible = false;
+                btnEstudiante.Visible = false;
+                btnTutor.Visible = false;
+                bunifuFlatButton1.Visible = true;
+                bunifuFlatButton2.Visible = true;
+                bunifuFlatButton3.Visible = true;
+            }
+            else
+            if (btnListadoAsignaturas.Visible==true)
+            {
+                btnCalificaciones.Visible = false;
+                btnListadoAsignaturas.Visible = false;
+                btnListadoEstudiantes.Visible = false;
+                btnAsignatura.Visible = false;
+                bunifuFlatButton1.Visible = true;
+                bunifuFlatButton2.Visible = true;
+                bunifuFlatButton3.Visible = true;
+            }else if (btnConsultaUsuarios.Visible == true)
+            {
+                btnConsultaUsuarios.Visible = false;
+                bunifuFlatButton1.Visible = true;
+                bunifuFlatButton2.Visible = true;
+                bunifuFlatButton3.Visible = true;
+            }
+            else
+            {
+                bunifuFlatButton1.Visible = true;
+                bunifuFlatButton2.Visible = true;
+                bunifuFlatButton3.Visible = true;
+            }
             
         }
     }

@@ -90,7 +90,7 @@ namespace proyectoFinal.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source = DESKTOP-AO482B2\SQLEXPRESS; Initial Catalog = proyescuela2; Integrated Security = True;.
+        ///   Busca una cadena traducida similar a Data Source = DESKTOP-70OJMFT\MIKTO; Initial Catalog = proyescuela; Integrated Security = True;.
         /// </summary>
         internal static string cadenaConexion {
             get {
@@ -144,6 +144,16 @@ namespace proyectoFinal.Properties {
         internal static System.Drawing.Bitmap Educacio1 {
             get {
                 object obj = ResourceManager.GetObject("Educacio1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EducacionM {
+            get {
+                object obj = ResourceManager.GetObject("EducacionM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -324,6 +334,16 @@ namespace proyectoFinal.Properties {
         internal static System.Drawing.Bitmap tutor {
             get {
                 object obj = ResourceManager.GetObject("tutor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Usuariosx {
+            get {
+                object obj = ResourceManager.GetObject("Usuariosx", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
