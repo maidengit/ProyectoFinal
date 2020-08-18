@@ -69,11 +69,22 @@ namespace proyectoFinal
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CuadroCalificaiciones CC = new CuadroCalificaiciones();
-            CC.MdiParent = this.MdiParent;
-            CC.Editar = true;
-            CC.Show();
-            this.Hide();
+            if (Tabla.SelectedRows.Count>0) {
+                CuadroCalificaiciones CC = new CuadroCalificaiciones();
+                CC.MdiParent = this.MdiParent;
+                CC.Editar = true;
+                CC.cbEstudiante.Text = Tabla.CurrentRow.Cells[0].Value.ToString();
+                CC.NombreT = Tabla.CurrentRow.Cells[0].Value.ToString();
+                CC.cbGrado.Text = Tabla.CurrentRow.Cells[1].Value.ToString();
+                CC.cbParcial.Text = Tabla.CurrentRow.Cells[2].Value.ToString();
+                CC.ParT = Tabla.CurrentRow.Cells[2].Value.ToString();
+                CC.cbAsignatura.Text = Tabla.CurrentRow.Cells[3].Value.ToString();
+                CC.AsT = Tabla.CurrentRow.Cells[3].Value.ToString();
+                CC.nmCalificacion.Value = Convert.ToDecimal(Tabla.CurrentRow.Cells[4].Value.ToString());
+                CC.Show();
+                this.Hide();
+            }
+            else { MessageBox.Show("Es necesario seleccionar una Fila");  }
         }
 
         private void rbAvanzado_MouseClick(object sender, MouseEventArgs e)
@@ -233,6 +244,30 @@ namespace proyectoFinal
         private void rbReprobado_CheckedChanged(object sender, EventArgs e)
         {
             llenar();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Tabla.SelectedRows.Count > 0)
+            {
+                eliminar();
+                llenar();
+            }
+            else
+            {
+                MessageBox.Show("Es necesario seleccionar una fila.");
+            }
+            
+        }
+        private void eliminar()
+        {
+            Conectar = new ConexionN();
+            Conectar.Eliminar(Tabla.CurrentRow.Cells[2].Value.ToString(), Tabla.CurrentRow.Cells[3].Value.ToString(), Tabla.CurrentRow.Cells[0].Value.ToString());
+        }
+
+        private void Tabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

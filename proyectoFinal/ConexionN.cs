@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -13,7 +15,6 @@ namespace proyectoFinal
     {
         public SqlConnection con;
         SqlCommand cmd;
-        SqlDataReader dr;
         public ConexionN()
         {
             try
@@ -23,7 +24,7 @@ namespace proyectoFinal
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine(e.Message);
             }
         }
         public void Grado(DataGridView tabla, string grado, string materia, string nombre)
@@ -43,7 +44,7 @@ namespace proyectoFinal
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine(e.Message);
             }
         }
         public void Opcional(DataGridView tabla, string sexo, string estado, string grado, string materia, string nombre, string tipo)
@@ -86,7 +87,6 @@ namespace proyectoFinal
                     }
                     sql = sql.Remove(sql.Length - 3);
                 }
-                MessageBox.Show(sql);
                 cmd = new SqlCommand(sql, con);
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
@@ -96,7 +96,7 @@ namespace proyectoFinal
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine(e.Message);
             }
         }
         public void llenarComboBox(ComboBox comboBox, string tabla, string campo)
@@ -105,16 +105,113 @@ namespace proyectoFinal
             {
                 string sql = "select * from " + tabla;
                 cmd = new SqlCommand(sql, con);
-                dr = cmd.ExecuteReader();
+                SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     comboBox.Items.Add(dr[campo].ToString());
                 }
                 dr.Close();
             }
+             catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+        private int[] InformacionParaIngresar(string Estudiante,string Asignatura)
+        {
+            int[] informacion;
+            try
+            {
+                string sql = "select EstudianteID, AsignaturaID from vParaIngresarCalificacion where nombre='" + Estudiante + "'" +
+                    "and asignatura='"+Asignatura+"'";
+                cmd = new SqlCommand(sql, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                informacion = new int[dr.FieldCount];
+                while (dr.Read())
+                {
+                    informacion[0] = (int)dr["EstudianteID"];
+                    informacion[1] = (int)dr["AsignaturaID"];
+                }
+                dr.Close();
+                return informacion;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
+        }
+        public void ingresar(string NEstudiante, string NAsignatura, float nota,int parcial)
+        {
+            try
+            {
+                int[] IDs = InformacionParaIngresar(NEstudiante, NAsignatura);
+                int EsId = IDs[0];int AsId = IDs[1];
+                string sql = string.Format("EXEC spAgregarCalificacion {0},{1},{2},{3}",IDs[0],nota,parcial,IDs[1]);
+                cmd = new SqlCommand(sql, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Calificacion Ingresada"); 
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Error al ingresar una calificacion ");
+                Console.WriteLine(e.Message);
+            }
+        }
+        
+        public void actualizarCalificacion(float calificacion, string parcial, string asignatura, string nombre)
+        {
+            try
+            {
+                int CalificacionId = CaID(parcial, asignatura, nombre);
+                string sql1 = "update calificaciones set notaparcial=" + calificacion +" where calificacionID=" + CalificacionId;
+                cmd = new SqlCommand(sql1, con);
+                MessageBox.Show(sql1);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Calificacion Actualizada");
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Error al ingresar una calificacion ");
+                Console.WriteLine(e.Message);
+            }
+        }
+        private int CaID(string parcial, string asignatura, string nombre)
+        {
+            try
+            {
+                int CalificacionId = 0;
+                string sql = "select calificacionID,asignaturaID,numeroparcial from vCalificaciones where parcial = '" + parcial + "' and " +
+                    "materia='" + asignatura + "' and nombre='" + nombre + "'";
+                cmd = new SqlCommand(sql, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    CalificacionId = (int)dr["calificacionID"];
+                }
+                dr.Close();
+                return CalificacionId;
+            }
             catch (Exception e)
             {
-                Console.WriteLine("Algo paso" + e.ToString());
+                Console.WriteLine(e.Message);
+                return 0;
+            }
+        }
+        public void Eliminar(string parcial, string asignatura, string nombre)
+        {
+            try
+            {
+                int CalificacionId = CaID(parcial, asignatura, nombre);
+                string sql1 = "delete from calificaciones where calificacionID=" + CalificacionId;
+                cmd = new SqlCommand(sql1, con);
+                MessageBox.Show(sql1);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Calificacion Eliminada");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }

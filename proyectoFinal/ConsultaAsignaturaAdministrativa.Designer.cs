@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.EmpleadoWrapper = new System.Windows.Forms.Panel();
-            this.btnEliminar = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAgregar = new Bunifu.Framework.UI.BunifuTileButton();
+            this.txtAsignaturaDocente = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbAignatura = new System.Windows.Forms.ComboBox();
+            this.cbGradoAsignatura = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtAsignaturaNombre = new System.Windows.Forms.TextBox();
             this.Tabla = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,13 +63,15 @@
             // EmpleadoWrapper
             // 
             this.EmpleadoWrapper.BackgroundImage = global::proyectoFinal.Properties.Resources.fon2;
-            this.EmpleadoWrapper.Controls.Add(this.btnEliminar);
-            this.EmpleadoWrapper.Controls.Add(this.bunifuTileButton2);
-            this.EmpleadoWrapper.Controls.Add(this.btnAgregar);
+            this.EmpleadoWrapper.Controls.Add(this.txtAsignaturaDocente);
+            this.EmpleadoWrapper.Controls.Add(this.button2);
+            this.EmpleadoWrapper.Controls.Add(this.btnModificar);
+            this.EmpleadoWrapper.Controls.Add(this.label4);
+            this.EmpleadoWrapper.Controls.Add(this.btnNuevo);
             this.EmpleadoWrapper.Controls.Add(this.label2);
-            this.EmpleadoWrapper.Controls.Add(this.cbAignatura);
+            this.EmpleadoWrapper.Controls.Add(this.cbGradoAsignatura);
             this.EmpleadoWrapper.Controls.Add(this.label5);
-            this.EmpleadoWrapper.Controls.Add(this.txtNombre);
+            this.EmpleadoWrapper.Controls.Add(this.txtAsignaturaNombre);
             this.EmpleadoWrapper.Controls.Add(this.Tabla);
             this.EmpleadoWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmpleadoWrapper.Location = new System.Drawing.Point(77, 80);
@@ -74,66 +79,73 @@
             this.EmpleadoWrapper.Size = new System.Drawing.Size(723, 370);
             this.EmpleadoWrapper.TabIndex = 7;
             // 
-            // btnEliminar
+            // txtAsignaturaDocente
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnEliminar.color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnEliminar.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Image = null;
-            this.btnEliminar.ImagePosition = 20;
-            this.btnEliminar.ImageZoom = 50;
-            this.btnEliminar.LabelPosition = 41;
-            this.btnEliminar.LabelText = "Eliminar";
-            this.btnEliminar.Location = new System.Drawing.Point(609, 193);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(99, 50);
-            this.btnEliminar.TabIndex = 14;
+            this.txtAsignaturaDocente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAsignaturaDocente.Location = new System.Drawing.Point(303, 32);
+            this.txtAsignaturaDocente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAsignaturaDocente.Name = "txtAsignaturaDocente";
+            this.txtAsignaturaDocente.Size = new System.Drawing.Size(151, 20);
+            this.txtAsignaturaDocente.TabIndex = 17;
+            this.txtAsignaturaDocente.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // bunifuTileButton2
+            // button2
             // 
-            this.bunifuTileButton2.AccessibleName = "btnModificar";
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.bunifuTileButton2.color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton2.Image = null;
-            this.bunifuTileButton2.ImagePosition = 18;
-            this.bunifuTileButton2.ImageZoom = 50;
-            this.bunifuTileButton2.LabelPosition = 38;
-            this.bunifuTileButton2.LabelText = "Modificar";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(609, 130);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(99, 51);
-            this.bunifuTileButton2.TabIndex = 13;
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::proyectoFinal.Properties.Resources.iconfinder_150_14174;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(609, 198);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 26);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "   Eliminar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnAgregar
+            // btnModificar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnAgregar.color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnAgregar.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Image = null;
-            this.btnAgregar.ImagePosition = 20;
-            this.btnAgregar.ImageZoom = 50;
-            this.btnAgregar.LabelPosition = 41;
-            this.btnAgregar.LabelText = "Agregar";
-            this.btnAgregar.Location = new System.Drawing.Point(609, 67);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(99, 51);
-            this.btnAgregar.TabIndex = 12;
+            this.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Image = global::proyectoFinal.Properties.Resources.iconfinder_019_14043;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(609, 153);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(100, 25);
+            this.btnModificar.TabIndex = 15;
+            this.btnModificar.Text = "   Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(235, 31);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 15);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Docente:";
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Image = global::proyectoFinal.Properties.Resources.iconfinder_103_14127;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(609, 105);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 30);
+            this.btnNuevo.TabIndex = 12;
+            this.btnNuevo.Text = "   Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 32);
@@ -143,38 +155,44 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Grado:";
             // 
-            // cbAignatura
+            // cbGradoAsignatura
             // 
-            this.cbAignatura.FormattingEnabled = true;
-            this.cbAignatura.Location = new System.Drawing.Point(58, 31);
-            this.cbAignatura.Margin = new System.Windows.Forms.Padding(2);
-            this.cbAignatura.Name = "cbAignatura";
-            this.cbAignatura.Size = new System.Drawing.Size(158, 21);
-            this.cbAignatura.TabIndex = 8;
+            this.cbGradoAsignatura.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbGradoAsignatura.FormattingEnabled = true;
+            this.cbGradoAsignatura.Location = new System.Drawing.Point(58, 31);
+            this.cbGradoAsignatura.Margin = new System.Windows.Forms.Padding(2);
+            this.cbGradoAsignatura.Name = "cbGradoAsignatura";
+            this.cbGradoAsignatura.Size = new System.Drawing.Size(173, 21);
+            this.cbGradoAsignatura.TabIndex = 8;
+            this.cbGradoAsignatura.TextChanged += new System.EventHandler(this.cbGradoAsignatura_TextChanged);
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(272, 32);
+            this.label5.Location = new System.Drawing.Point(462, 30);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 15);
+            this.label5.Size = new System.Drawing.Size(79, 15);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Nombre de Asignatura:";
+            this.label5.Text = "Asignatura:";
             // 
-            // txtNombre
+            // txtAsignaturaNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(434, 32);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(277, 20);
-            this.txtNombre.TabIndex = 11;
+            this.txtAsignaturaNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAsignaturaNombre.Location = new System.Drawing.Point(547, 32);
+            this.txtAsignaturaNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAsignaturaNombre.Name = "txtAsignaturaNombre";
+            this.txtAsignaturaNombre.Size = new System.Drawing.Size(151, 20);
+            this.txtAsignaturaNombre.TabIndex = 11;
+            this.txtAsignaturaNombre.TextChanged += new System.EventHandler(this.txtAsignaturaNombre_TextChanged);
             // 
             // Tabla
             // 
             this.Tabla.AllowUserToAddRows = false;
             this.Tabla.AllowUserToDeleteRows = false;
+            this.Tabla.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Tabla.Location = new System.Drawing.Point(7, 67);
@@ -182,10 +200,13 @@
             this.Tabla.Name = "Tabla";
             this.Tabla.ReadOnly = true;
             this.Tabla.RowHeadersWidth = 62;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tabla.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Tabla.RowTemplate.Height = 28;
             this.Tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Tabla.Size = new System.Drawing.Size(583, 292);
             this.Tabla.TabIndex = 9;
+            this.Tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellContentClick);
             // 
             // label3
             // 
@@ -197,7 +218,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 80);
@@ -207,7 +228,7 @@
             // 
             // MenuSuperior
             // 
-            this.MenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.MenuSuperior.BackColor = System.Drawing.SystemColors.Highlight;
             this.MenuSuperior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.MenuSuperior.Controls.Add(this.Restaurarpic);
             this.MenuSuperior.Controls.Add(this.Minimizarpic);
@@ -304,6 +325,7 @@
             this.Name = "ConsultaAsignaturaAdministrativa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaAsignaturaAdministrativa";
+            this.Load += new System.EventHandler(this.ConsultaAsignaturaAdministrativa_Load);
             this.EmpleadoWrapper.ResumeLayout(false);
             this.EmpleadoWrapper.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
@@ -322,13 +344,10 @@
         #endregion
 
         private System.Windows.Forms.Panel EmpleadoWrapper;
-        private Bunifu.Framework.UI.BunifuTileButton btnEliminar;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
-        private Bunifu.Framework.UI.BunifuTileButton btnAgregar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbAignatura;
+        private System.Windows.Forms.ComboBox cbGradoAsignatura;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtAsignaturaNombre;
         private System.Windows.Forms.DataGridView Tabla;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
@@ -339,5 +358,10 @@
         private System.Windows.Forms.PictureBox Cerrarpic;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox menupic;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.TextBox txtAsignaturaDocente;
     }
 }

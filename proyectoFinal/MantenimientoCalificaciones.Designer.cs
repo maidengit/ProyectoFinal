@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenimientoCalificaciones));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cbGrado = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -67,6 +63,8 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.Tabla = new System.Windows.Forms.DataGridView();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -74,14 +72,12 @@
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel8);
             this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Controls.Add(this.cbGrado);
@@ -92,48 +88,28 @@
             this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Controls.Add(this.txtNombre);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 56);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1254, 127);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1254, 72);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 36);
-            this.panel2.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(384, 0);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(390, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(507, 37);
             this.label3.TabIndex = 4;
             this.label3.Text = "CUADRO DE CALIFICACIONES";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(897, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 36);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(3, 45);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(131, 28);
-            this.panel8.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(140, 42);
+            this.label1.Location = new System.Drawing.Point(140, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 22);
             this.label1.TabIndex = 0;
@@ -142,7 +118,7 @@
             // cbGrado
             // 
             this.cbGrado.FormattingEnabled = true;
-            this.cbGrado.Location = new System.Drawing.Point(217, 45);
+            this.cbGrado.Location = new System.Drawing.Point(217, 3);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Size = new System.Drawing.Size(277, 28);
             this.cbGrado.TabIndex = 1;
@@ -150,7 +126,7 @@
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(500, 45);
+            this.panel4.Location = new System.Drawing.Point(500, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(119, 28);
             this.panel4.TabIndex = 3;
@@ -159,7 +135,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(625, 42);
+            this.label2.Location = new System.Drawing.Point(625, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 2;
@@ -168,7 +144,7 @@
             // cbAignatura
             // 
             this.cbAignatura.FormattingEnabled = true;
-            this.cbAignatura.Location = new System.Drawing.Point(743, 45);
+            this.cbAignatura.Location = new System.Drawing.Point(743, 3);
             this.cbAignatura.Name = "cbAignatura";
             this.cbAignatura.Size = new System.Drawing.Size(271, 28);
             this.cbAignatura.TabIndex = 3;
@@ -176,14 +152,14 @@
             // 
             // panel7
             // 
-            this.panel7.Location = new System.Drawing.Point(1020, 45);
+            this.panel7.Location = new System.Drawing.Point(1020, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(185, 28);
             this.panel7.TabIndex = 4;
             // 
             // panel9
             // 
-            this.panel9.Location = new System.Drawing.Point(3, 79);
+            this.panel9.Location = new System.Drawing.Point(3, 37);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(250, 28);
             this.panel9.TabIndex = 5;
@@ -192,7 +168,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(259, 76);
+            this.label5.Location = new System.Drawing.Point(259, 34);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(219, 22);
             this.label5.TabIndex = 5;
@@ -200,7 +176,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(484, 79);
+            this.txtNombre.Location = new System.Drawing.Point(484, 37);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(414, 26);
             this.txtNombre.TabIndex = 6;
@@ -213,7 +189,7 @@
             this.flowLayoutPanel2.Controls.Add(this.button2);
             this.flowLayoutPanel2.Controls.Add(this.button3);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1090, 148);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(1090, 134);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(176, 450);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -261,6 +237,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // flowLayoutPanel3
             // 
@@ -271,7 +248,7 @@
             this.flowLayoutPanel3.Controls.Add(this.panel6);
             this.flowLayoutPanel3.Controls.Add(this.panel3);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(12, 148);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(15, 134);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(191, 450);
             this.flowLayoutPanel3.TabIndex = 2;
@@ -480,26 +457,46 @@
             this.Tabla.AllowUserToDeleteRows = false;
             this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabla.Location = new System.Drawing.Point(209, 148);
+            this.Tabla.Location = new System.Drawing.Point(209, 134);
             this.Tabla.Name = "Tabla";
             this.Tabla.ReadOnly = true;
             this.Tabla.RowHeadersWidth = 62;
             this.Tabla.RowTemplate.Height = 28;
             this.Tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Tabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Tabla.Size = new System.Drawing.Size(875, 450);
-            this.Tabla.TabIndex = 3;
+            this.Tabla.TabIndex = 1;
+            this.Tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellContentClick);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel10.Controls.Add(this.label3);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1278, 50);
+            this.panel10.TabIndex = 3;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(131, 28);
+            this.panel8.TabIndex = 4;
             // 
             // MantenimientoCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1278, 757);
+            this.ClientSize = new System.Drawing.Size(1278, 600);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.Tabla);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenimientoCalificaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantenimientoCalificaciones";
@@ -516,6 +513,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,7 +530,6 @@
         private System.Windows.Forms.ComboBox cbAignatura;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.RadioButton rbReprobado;
@@ -543,14 +541,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer3;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape3;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNombre;
@@ -561,5 +557,7 @@
         private System.Windows.Forms.RadioButton rbAvanzado;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel8;
     }
 }
