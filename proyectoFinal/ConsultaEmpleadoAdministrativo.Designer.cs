@@ -238,7 +238,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 15);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Nombre del Empleado:";
+            this.label5.Text = "NombreForm del Empleado:";
             // 
             // txtNombre
             // 

@@ -44,7 +44,7 @@ namespace proyectoFinal
             {
                 SqlConnection con = new SqlConnection(Properties.Resources.cadena);
                 //String Query = "SELECT es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso FROM empleado e inner join Grado g on e.EmpleadoID = g.EmpleadoID inner join Estudiante es on g.GradoID = es.GradoID where es.estado = 'A'and e.Identidad='0501312364521' group by e.Identidad, es.Nombre, es.Identidad, es.Sexo, es.TipoDeSangre, g.Curso order by Nombre";
-                String Query = "SELECT a.Nombre, a.Semestre, g.Curso FROM Departamento d inner join Empleado e on d.DepartamentoID = e.DepartamentoID inner join Asignatura a on a.EmpleadoID = e.EmpleadoID inner join Grado g on a.GradoID = g.GradoID where e.Identidad = '1943199400094' group by a.Nombre, a.Semestre, g.Curso";
+                String Query = "SELECT a.Nombre, a.Semestre, g.Curso FROM Departamento d inner join Empleado e on d.DepartamentoID = e.DepartamentoID inner join Asignatura a on a.EmpleadoID = e.EmpleadoID inner join Grado g on a.GradoID = g.GradoID where  e.Identidad = '0501199908556' and d.DepartamentoID=1 group by a.Nombre, a.Semestre, g.Curso";
                 SqlDataAdapter da = new SqlDataAdapter(Query, con);
                 da.Fill(dt);
                 grid1.DataSource = dt;

@@ -268,6 +268,7 @@
             this.Cerrarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Cerrarpic.TabIndex = 2;
             this.Cerrarpic.TabStop = false;
+            this.Cerrarpic.Click += new System.EventHandler(this.Cerrarpic_Click);
             // 
             // label7
             // 

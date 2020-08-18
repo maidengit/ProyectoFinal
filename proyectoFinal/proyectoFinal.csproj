@@ -34,10 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Archivos\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="LibreriaCon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="LibreriaCon">
       <HintPath>..\LibreriaCon\bin\Debug\LibreriaCon.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -80,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="conexionbdasignaturayempleadoadmin.cs" />
     <Compile Include="ConexionN.cs" />
     <Compile Include="ConsultaAsignaturaAdministrativa.cs">
@@ -450,14 +450,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="LibreriaCon.dll" />
-    <None Include="Resources\EducacionM.png" />
     <Content Include="Resources\iconfinder_019_14043.ico" />
     <None Include="Resources\iconfinder_019_140431.ico" />
     <Content Include="Resources\iconfinder_103_14127.ico" />
     <None Include="Resources\iconfinder_103_141271.ico" />
     <Content Include="Resources\iconfinder_150_14174.ico" />
     <None Include="Resources\iconfinder_150_141741.ico" />
-    <None Include="Resources\Usuariosx.png" />
     <Content Include="SqlServerTypes\readme.htm" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
