@@ -16,7 +16,7 @@ namespace proyectoFinal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MantenimientoCalificaciones());
+            Application.Run(new Login());
         }
     }
 }

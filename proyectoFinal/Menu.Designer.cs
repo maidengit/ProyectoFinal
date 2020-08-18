@@ -513,18 +513,22 @@
             // labelIDForm
             // 
             this.labelIDForm.AutoSize = true;
-            this.labelIDForm.Location = new System.Drawing.Point(218, 99);
+            this.labelIDForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDForm.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelIDForm.Location = new System.Drawing.Point(219, 109);
             this.labelIDForm.Name = "labelIDForm";
-            this.labelIDForm.Size = new System.Drawing.Size(108, 13);
+            this.labelIDForm.Size = new System.Drawing.Size(130, 13);
             this.labelIDForm.TabIndex = 10;
             this.labelIDForm.Text = "[aqui va su identidad]";
             // 
             // NombreForm
             // 
             this.NombreForm.AutoSize = true;
+            this.NombreForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreForm.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.NombreForm.Location = new System.Drawing.Point(218, 74);
             this.NombreForm.Name = "NombreForm";
-            this.NombreForm.Size = new System.Drawing.Size(184, 13);
+            this.NombreForm.Size = new System.Drawing.Size(363, 24);
             this.NombreForm.TabIndex = 9;
             this.NombreForm.Text = "[Aqui va el nombre del usuario activo]";
             // 

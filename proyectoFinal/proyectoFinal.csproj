@@ -79,6 +79,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cambioContrasenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cambioContrasenia.Designer.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="conexionbdasignaturayempleadoadmin.cs" />
     <Compile Include="ConexionN.cs" />
@@ -113,6 +117,10 @@
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSetPrincipal.Designer.cs" />
+    <Compile Include="EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.Designer.cs" />
     <Compile Include="IngresoAsignaturaAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +226,7 @@
       <DependentUpon>ReporteListaGrado.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="cambioContrasenia.resx" />
     <EmbeddedResource Include="ConsultaAsignaturaAdministrativa.resx">
       <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +242,7 @@
     <EmbeddedResource Include="CuadroCalificaiciones.resx">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.resx" />
     <EmbeddedResource Include="IngresoAsignaturaAdministrativo.resx">
       <DependentUpon>IngresoAsignaturaAdministrativo.cs</DependentUpon>
     </EmbeddedResource>

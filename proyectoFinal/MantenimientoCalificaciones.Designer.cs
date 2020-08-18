@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cbGrado = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbAignatura = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbAignatura = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
@@ -94,6 +94,27 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(836, 47);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(2, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 15);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Estudiante:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(85, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(277, 20);
+            this.txtNombre.TabIndex = 6;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.label1);
@@ -124,6 +145,22 @@
             this.cbGrado.TabIndex = 1;
             this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
             // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(647, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(123, 18);
+            this.panel7.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(774, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(57, 18);
+            this.panel9.TabIndex = 5;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -144,43 +181,6 @@
             this.cbAignatura.Size = new System.Drawing.Size(182, 21);
             this.cbAignatura.TabIndex = 3;
             this.cbAignatura.SelectedIndexChanged += new System.EventHandler(this.cbAignatura_SelectedIndexChanged);
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(647, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(123, 18);
-            this.panel7.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(774, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(57, 18);
-            this.panel9.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Estudiante:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(85, 2);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(277, 20);
-            this.txtNombre.TabIndex = 6;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // label3
             // 
@@ -521,6 +521,7 @@
             this.menupic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.menupic.TabIndex = 5;
             this.menupic.TabStop = false;
+            this.menupic.Click += new System.EventHandler(this.menupic_Click);
             // 
             // MantenimientoCalificaciones
             // 

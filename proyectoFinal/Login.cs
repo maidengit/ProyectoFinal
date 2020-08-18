@@ -22,7 +22,7 @@ namespace proyectoFinal
 
         public void Datos()
         {
-            SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+            SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
             string sql = "SELECT  UsuarioNombre, Clave from Usuario where UsuarioNombre like @Usuario and Clave like @Password";
             SqlCommand cmd = new SqlCommand(sql, conexion);
             cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
@@ -145,7 +145,7 @@ namespace proyectoFinal
         {
             if(e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+                SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
                 string sql = "SELECT UsuarioNombre, Clave from Usuario where UsuarioNombre like @Usuario and Clave like @Password";
                 SqlCommand cmd = new SqlCommand(sql, conexion);
                 cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
@@ -182,7 +182,7 @@ namespace proyectoFinal
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                SqlConnection conexion = new SqlConnection(Properties.Resources.cadenaConexion);
+                SqlConnection conexion = new SqlConnection(Properties.Resources.cadena);
                 string sql = "SELECT UsuarioNombre, Clave from Usuario where UsuarioNombre like @Usuario and Clave like @Password";
                 SqlCommand cmd = new SqlCommand(sql, conexion);
                 cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
@@ -220,5 +220,9 @@ namespace proyectoFinal
 
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

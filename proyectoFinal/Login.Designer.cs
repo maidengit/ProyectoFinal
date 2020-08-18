@@ -32,12 +32,12 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +104,26 @@
             this.shapeContainer1.TabIndex = 5;
             this.shapeContainer1.TabStop = false;
             // 
+            // lineShape4
+            // 
+            this.lineShape4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lineShape4.Enabled = false;
+            this.lineShape4.Name = "lineShape2";
+            this.lineShape4.X1 = 48;
+            this.lineShape4.X2 = 318;
+            this.lineShape4.Y1 = 245;
+            this.lineShape4.Y2 = 245;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape1";
+            this.lineShape3.X1 = 50;
+            this.lineShape3.X2 = 320;
+            this.lineShape3.Y1 = 197;
+            this.lineShape3.Y2 = 197;
+            // 
             // lineShape2
             // 
             this.lineShape2.Enabled = false;
@@ -143,26 +163,6 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // lineShape3
-            // 
-            this.lineShape3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape1";
-            this.lineShape3.X1 = 50;
-            this.lineShape3.X2 = 320;
-            this.lineShape3.Y1 = 197;
-            this.lineShape3.Y2 = 197;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lineShape4.Enabled = false;
-            this.lineShape4.Name = "lineShape2";
-            this.lineShape4.X1 = 48;
-            this.lineShape4.X2 = 318;
-            this.lineShape4.Y1 = 245;
-            this.lineShape4.Y2 = 245;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +181,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

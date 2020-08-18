@@ -132,7 +132,7 @@ namespace proyectoFinal
             Conectar = new ConexionN();
             try
             {
-                MessageBox.Show("Todo bien");
+                //MessageBox.Show("Todo bien");
                 llenar();
             }
             catch(Exception er)
@@ -278,6 +278,11 @@ namespace proyectoFinal
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void menupic_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
