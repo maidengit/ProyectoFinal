@@ -79,12 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cambioContrasenia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cambioContrasenia.Designer.cs">
-      <DependentUpon>cambioContrasenia.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="conexionbdasignaturayempleadoadmin.cs" />
     <Compile Include="ConexionN.cs" />
     <Compile Include="ConsultaAsignaturaAdministrativa.cs">
@@ -118,12 +113,6 @@
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSetPrincipal.Designer.cs" />
-    <Compile Include="EditarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditarUsuario.Designer.cs">
-      <DependentUpon>EditarUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="IngresoAsignaturaAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,9 +218,6 @@
       <DependentUpon>ReporteListaGrado.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="cambioContrasenia.resx">
-      <DependentUpon>cambioContrasenia.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaAsignaturaAdministrativa.resx">
       <DependentUpon>ConsultaAsignaturaAdministrativa.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,9 +232,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CuadroCalificaiciones.resx">
       <DependentUpon>CuadroCalificaiciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditarUsuario.resx">
-      <DependentUpon>EditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngresoAsignaturaAdministrativo.resx">
       <DependentUpon>IngresoAsignaturaAdministrativo.cs</DependentUpon>
