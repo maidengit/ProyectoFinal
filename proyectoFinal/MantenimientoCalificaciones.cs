@@ -291,7 +291,8 @@ namespace proyectoFinal
         {
             Menu link = new Menu();
             link.Show();
-            this.Dispose();
+
+            this.Close();
         }
 
         private void Minimizarpic_Click(object sender, EventArgs e)

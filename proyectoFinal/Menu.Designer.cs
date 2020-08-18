@@ -509,6 +509,7 @@
             this.MenuWrapper.Name = "MenuWrapper";
             this.MenuWrapper.Size = new System.Drawing.Size(800, 450);
             this.MenuWrapper.TabIndex = 5;
+            this.MenuWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuWrapper_Paint);
             // 
             // labelIDForm
             // 
@@ -531,6 +532,7 @@
             this.NombreForm.Size = new System.Drawing.Size(363, 24);
             this.NombreForm.TabIndex = 9;
             this.NombreForm.Text = "[Aqui va el nombre del usuario activo]";
+            this.NombreForm.Click += new System.EventHandler(this.NombreForm_Click);
             // 
             // btnConsultaUsuarios
             // 
