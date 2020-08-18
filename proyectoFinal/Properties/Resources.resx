@@ -125,7 +125,7 @@
     <value>..\Resources\Administrativo21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cadenaConexion" xml:space="preserve">
-    <value>Data Source = DESKTOP-R0IB2V5; Initial Catalog = proyescuela; Integrated Security = True;</value>
+    <value>Data Source=DESKTOP-AO482B2\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True</value>
   </data>
   <data name="iconfinder_103_14127" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_103_141271.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -161,7 +161,7 @@
     <value>..\Resources\regresar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cadena" xml:space="preserve">
-    <value>Data Source=DESKTOP-76J3QBF\SQLEXPRESS;Initial Catalog=proyescuela;Integrated Security=True</value>
+    <value>Data Source=DESKTOP-AO482B2\SQLEXPRESS;Initial Catalog=proyescuela2;Integrated Security=True</value>
   </data>
   <data name="Close Window_ 2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close Window_ 2 48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

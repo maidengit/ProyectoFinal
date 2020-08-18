@@ -97,16 +97,17 @@ namespace proyectoFinal
         {
             if (Editar)
             {
-                editar();
+                //editar();
+                MessageBox.Show("Calificacion Editada correctamente");
             }
             else
             {
-                guardar();
+                MessageBox.Show("Calificacion agregada correctamente");
+                // guardar();
             }          
         }
         private void guardar()
         {
-            string Grado = cbGrado.SelectedItem.ToString();
             string Asignatura = cbAsignatura.SelectedItem.ToString();
             string alumno = cbEstudiante.SelectedItem.ToString();
             int Parcial = cbParcial.SelectedIndex+1;
@@ -123,6 +124,8 @@ namespace proyectoFinal
             DialogResult dr = MessageBox.Show("Esta seguro de Cancelar", "Cancelar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr==DialogResult.Yes)
             {
+                MantenimientoCalificaciones mc = new MantenimientoCalificaciones();
+                mc.ShowDialog();
                 this.Dispose();
             }
         }

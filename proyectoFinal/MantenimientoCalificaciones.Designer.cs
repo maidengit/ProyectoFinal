@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cbGrado = new System.Windows.Forms.ComboBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.cbAignatura = new System.Windows.Forms.ComboBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
@@ -65,8 +66,9 @@
             this.Tabla = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
             this.menupic = new System.Windows.Forms.PictureBox();
+            this.Cerrarpic = new System.Windows.Forms.PictureBox();
+            this.Minimizarpic = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -75,50 +77,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.txtNombre);
             this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Controls.Add(this.cbGrado);
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Controls.Add(this.label2);
             this.flowLayoutPanel1.Controls.Add(this.cbAignatura);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 75);
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Controls.Add(this.txtNombre);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 54);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(836, 47);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(815, 47);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Estudiante:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(85, 2);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(277, 20);
-            this.txtNombre.TabIndex = 6;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Location = new System.Drawing.Point(366, 2);
+            this.panel8.Location = new System.Drawing.Point(2, 2);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(87, 18);
@@ -128,7 +112,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, -2);
+            this.label1.Location = new System.Drawing.Point(93, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 15);
@@ -138,34 +122,26 @@
             // cbGrado
             // 
             this.cbGrado.FormattingEnabled = true;
-            this.cbGrado.Location = new System.Drawing.Point(457, 2);
+            this.cbGrado.Location = new System.Drawing.Point(147, 2);
             this.cbGrado.Margin = new System.Windows.Forms.Padding(2);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Size = new System.Drawing.Size(186, 21);
             this.cbGrado.TabIndex = 1;
             this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
             // 
-            // panel7
+            // panel4
             // 
-            this.panel7.Location = new System.Drawing.Point(647, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(123, 18);
-            this.panel7.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(774, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(57, 18);
-            this.panel9.TabIndex = 5;
+            this.panel4.Location = new System.Drawing.Point(337, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(79, 18);
+            this.panel4.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 25);
+            this.label2.Location = new System.Drawing.Point(420, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 15);
@@ -175,19 +151,55 @@
             // cbAignatura
             // 
             this.cbAignatura.FormattingEnabled = true;
-            this.cbAignatura.Location = new System.Drawing.Point(85, 27);
+            this.cbAignatura.Location = new System.Drawing.Point(503, 2);
             this.cbAignatura.Margin = new System.Windows.Forms.Padding(2);
             this.cbAignatura.Name = "cbAignatura";
             this.cbAignatura.Size = new System.Drawing.Size(182, 21);
             this.cbAignatura.TabIndex = 3;
             this.cbAignatura.SelectedIndexChanged += new System.EventHandler(this.cbAignatura_SelectedIndexChanged);
             // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(689, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(111, 18);
+            this.panel7.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(2, 27);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(167, 18);
+            this.panel9.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(173, 25);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 15);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Nombre del Estudiante:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(335, 27);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(277, 20);
+            this.txtNombre.TabIndex = 6;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(222, 18);
+            this.label3.Location = new System.Drawing.Point(258, 9);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(359, 26);
@@ -202,56 +214,59 @@
             this.flowLayoutPanel2.Controls.Add(this.button2);
             this.flowLayoutPanel2.Controls.Add(this.button3);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(686, 147);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(724, 105);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(117, 292);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(96, 292);
             this.flowLayoutPanel2.TabIndex = 1;
             this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button1.FlatAppearance.BorderSize = 4;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Image = global::proyectoFinal.Properties.Resources.iconfinder_103_14127;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(2, 2);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 32);
+            this.button1.Size = new System.Drawing.Size(83, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Agregar";
+            this.button1.Text = "Nueva";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button2.FlatAppearance.BorderSize = 4;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(2, 38);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.button2.Image = global::proyectoFinal.Properties.Resources.iconfinder_019_14043;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(2, 29);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 32);
+            this.button2.Size = new System.Drawing.Size(83, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Modificar";
+            this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button3.FlatAppearance.BorderSize = 4;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(2, 74);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.button3.Image = global::proyectoFinal.Properties.Resources.iconfinder_150_14174;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(2, 56);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 32);
+            this.button3.Size = new System.Drawing.Size(83, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = false;
@@ -266,7 +281,7 @@
             this.flowLayoutPanel3.Controls.Add(this.panel6);
             this.flowLayoutPanel3.Controls.Add(this.panel3);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(11, 147);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(5, 105);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(127, 292);
@@ -488,7 +503,7 @@
             this.Tabla.AllowUserToDeleteRows = false;
             this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabla.Location = new System.Drawing.Point(142, 147);
+            this.Tabla.Location = new System.Drawing.Point(136, 105);
             this.Tabla.Margin = new System.Windows.Forms.Padding(2);
             this.Tabla.Name = "Tabla";
             this.Tabla.ReadOnly = true;
@@ -496,26 +511,30 @@
             this.Tabla.RowTemplate.Height = 28;
             this.Tabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Tabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Tabla.Size = new System.Drawing.Size(540, 276);
+            this.Tabla.Size = new System.Drawing.Size(583, 334);
             this.Tabla.TabIndex = 1;
             this.Tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellContentClick);
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel10.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel10.Controls.Add(this.Minimizarpic);
+            this.panel10.Controls.Add(this.Cerrarpic);
             this.panel10.Controls.Add(this.menupic);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(800, 58);
+            this.panel10.Size = new System.Drawing.Size(826, 50);
             this.panel10.TabIndex = 3;
             // 
             // menupic
             // 
+            this.menupic.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.menupic.ErrorImage = global::proyectoFinal.Properties.Resources.regresar;
             this.menupic.Image = global::proyectoFinal.Properties.Resources.regresar;
-            this.menupic.Location = new System.Drawing.Point(11, 6);
+            this.menupic.Location = new System.Drawing.Point(3, 3);
             this.menupic.Name = "menupic";
             this.menupic.Size = new System.Drawing.Size(40, 38);
             this.menupic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -523,12 +542,36 @@
             this.menupic.TabStop = false;
             this.menupic.Click += new System.EventHandler(this.menupic_Click);
             // 
+            // Cerrarpic
+            // 
+            this.Cerrarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cerrarpic.Image = global::proyectoFinal.Properties.Resources.Close_Window__2_48px;
+            this.Cerrarpic.Location = new System.Drawing.Point(786, 0);
+            this.Cerrarpic.Name = "Cerrarpic";
+            this.Cerrarpic.Size = new System.Drawing.Size(40, 38);
+            this.Cerrarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cerrarpic.TabIndex = 6;
+            this.Cerrarpic.TabStop = false;
+            this.Cerrarpic.Click += new System.EventHandler(this.Cerrarpic_Click);
+            // 
+            // Minimizarpic
+            // 
+            this.Minimizarpic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Minimizarpic.Image = global::proyectoFinal.Properties.Resources.Minimize_Window_2_48px;
+            this.Minimizarpic.Location = new System.Drawing.Point(740, 0);
+            this.Minimizarpic.Name = "Minimizarpic";
+            this.Minimizarpic.Size = new System.Drawing.Size(40, 38);
+            this.Minimizarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Minimizarpic.TabIndex = 7;
+            this.Minimizarpic.TabStop = false;
+            this.Minimizarpic.Click += new System.EventHandler(this.Minimizarpic_Click);
+            // 
             // MantenimientoCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(826, 450);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.Tabla);
             this.Controls.Add(this.flowLayoutPanel3);
@@ -542,8 +585,6 @@
             this.Load += new System.EventHandler(this.MantenimientoCalificaciones_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
@@ -557,6 +598,8 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menupic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrarpic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizarpic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,6 +615,7 @@
         private System.Windows.Forms.ComboBox cbAignatura;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.RadioButton rbReprobado;
         private System.Windows.Forms.RadioButton rbAprobado;
@@ -601,5 +645,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox menupic;
+        private System.Windows.Forms.PictureBox Cerrarpic;
+        private System.Windows.Forms.PictureBox Minimizarpic;
     }
 }

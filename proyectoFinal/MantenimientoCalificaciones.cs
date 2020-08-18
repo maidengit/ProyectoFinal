@@ -27,8 +27,7 @@ namespace proyectoFinal
             CuadroCalificaiciones CC = new CuadroCalificaiciones();
             CC.MdiParent = this.MdiParent;
             CC.Editar = false;
-            CC.Show();
-            this.Hide();
+            CC.ShowDialog();
         }
         private void rbAprovado_MouseClick(object sender, MouseEventArgs e)
         {
@@ -81,8 +80,7 @@ namespace proyectoFinal
                 CC.cbAsignatura.Text = Tabla.CurrentRow.Cells[3].Value.ToString();
                 CC.AsT = Tabla.CurrentRow.Cells[3].Value.ToString();
                 CC.nmCalificacion.Value = Convert.ToDecimal(Tabla.CurrentRow.Cells[4].Value.ToString());
-                CC.Show();
-                this.Hide();
+                CC.ShowDialog();
             }
             else { MessageBox.Show("Es necesario seleccionar una Fila");  }
         }
@@ -132,7 +130,7 @@ namespace proyectoFinal
             Conectar = new ConexionN();
             try
             {
-                //MessageBox.Show("Todo bien");
+                MessageBox.Show("Todo bien");
                 llenar();
             }
             catch(Exception er)
@@ -248,10 +246,17 @@ namespace proyectoFinal
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DialogResult r = MessageBox.Show("Seguro de eliminar este registro", "Confirmar eliminacion", MessageBoxButtons.YesNo);
             if (Tabla.SelectedRows.Count > 0)
             {
-                eliminar();
-                llenar();
+
+                if (r==DialogResult.Yes)
+                {
+                    eliminar();
+                    llenar();
+                }
+                else { MessageBox.Show("Eliminacion Cancelada"); }
+                
             }
             else
             {
@@ -275,14 +280,23 @@ namespace proyectoFinal
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void menupic_Click(object sender, EventArgs e)
         {
+            Menu link = new Menu();
+            link.Show();
             this.Dispose();
+        }
+
+        private void Cerrarpic_Click(object sender, EventArgs e)
+        {
+            Menu link = new Menu();
+            link.Show();
+            this.Dispose();
+        }
+
+        private void Minimizarpic_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
